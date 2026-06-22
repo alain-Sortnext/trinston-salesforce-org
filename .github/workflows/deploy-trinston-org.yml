@@ -20,53 +20,69 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Install Salesforce CLI
-        run: |
-          npm install -g @salesforce/cli@latest
-          sf --version
+        run: npm install -g @salesforce/cli@latest
 
-      - name: Authenticate via Access Token (username + password + token)
+      - name: Get access token and authenticate
+        env:
+          SF_USERNAME:        ${{ secrets.SF_USERNAME }}
+          SF_PASSWORD:        ${{ secrets.SF_PASSWORD }}
+          SF_SECURITY_TOKEN:  ${{ secrets.SF_SECURITY_TOKEN }}
+          SF_CONSUMER_KEY:    ${{ secrets.SF_CONSUMER_KEY }}
+          SF_CONSUMER_SECRET: ${{ secrets.SF_CONSUMER_SECRET }}
+          SF_INSTANCE_URL:    ${{ secrets.SF_INSTANCE_URL }}
         run: |
-          # Use OAuth2 username-password flow — works immediately, no pre-auth needed
-          RESPONSE=$(curl -s -X POST \
-            "https://login.salesforce.com/services/oauth2/token" \
-            -d "grant_type=password" \
-            -d "client_id=${{ secrets.SF_CONSUMER_KEY }}" \
-            -d "client_secret=${{ secrets.SF_CONSUMER_SECRET }}" \
-            -d "username=${{ secrets.SF_USERNAME }}" \
-            -d "password=${{ secrets.SF_PASSWORD }}${{ secrets.SF_SECURITY_TOKEN }}")
-          
-          echo "Auth response: $RESPONSE" | python3 -c "
-          import sys,json
-          text=sys.stdin.read()
-          # Extract JSON part
-          start=text.find('{')
-          d=json.loads(text[start:])
-          if 'access_token' in d:
-              print('✅ Got access token')
-              print(f'Instance: {d[\"instance_url\"]}')
-              # Write to env for next steps
-              with open('/tmp/sf_token','w') as f:
-                  f.write(d['access_token'])
-              with open('/tmp/sf_instance','w') as f:
-                  f.write(d['instance_url'])
-          else:
-              print(f'❌ Auth failed: {d}')
-              import sys; sys.exit(1)
-          "
-          
-          # Now login to sf cli using the access token
-          ACCESS_TOKEN=$(cat /tmp/sf_token)
-          INSTANCE=$(cat /tmp/sf_instance)
-          
-          sf org login access-token \
-            --instance-url "$INSTANCE" \
+          python3 << 'PYEOF'
+          import urllib.request, urllib.parse, json, os, subprocess
+
+          username      = os.environ['SF_USERNAME']
+          password      = os.environ['SF_PASSWORD'] + os.environ['SF_SECURITY_TOKEN']
+          client_id     = os.environ['SF_CONSUMER_KEY']
+          client_secret = os.environ['SF_CONSUMER_SECRET']
+          instance_url  = os.environ['SF_INSTANCE_URL']
+
+          # Try instance URL first, then login.salesforce.com
+          for auth_url in [f"{instance_url}/services/oauth2/token", "https://login.salesforce.com/services/oauth2/token"]:
+              print(f"Trying: {auth_url}")
+              data = urllib.parse.urlencode({
+                  "grant_type":    "password",
+                  "client_id":     client_id,
+                  "client_secret": client_secret,
+                  "username":      username,
+                  "password":      password,
+              }).encode()
+              req = urllib.request.Request(auth_url, data=data)
+              try:
+                  with urllib.request.urlopen(req, timeout=30) as r:
+                      resp = json.loads(r.read())
+                      if 'access_token' in resp:
+                          token    = resp['access_token']
+                          inst_url = resp['instance_url']
+                          print(f"✅ Got token from {auth_url}")
+                          print(f"Instance: {inst_url}")
+                          
+                          # Build SFDX auth URL: force://client_id:client_secret:access_token@instance
+                          sfdx_url = f"force://{client_id}:{client_secret}:{token}@{inst_url.replace('https://','')}"
+                          
+                          with open('/tmp/sfdx_auth_url.txt', 'w') as f:
+                              f.write(sfdx_url)
+                          print("✅ SFDX URL written")
+                          exit(0)
+                      else:
+                          print(f"❌ Error: {resp}")
+              except Exception as e:
+                  print(f"  Failed: {e}")
+
+          print("❌ All auth attempts failed")
+          exit(1)
+          PYEOF
+
+      - name: Login to SF CLI via SFDX URL
+        run: |
+          sf org login sfdx-url \
+            --sfdx-url-file /tmp/sfdx_auth_url.txt \
             --alias trinston-dev \
-            --set-default \
-            --no-prompt << EOF
-          $ACCESS_TOKEN
-          EOF
-          
-          echo "✅ SF CLI authenticated"
+            --set-default
+          echo "✅ Authenticated"
           sf org display --target-org trinston-dev
 
       - name: Deploy metadata
@@ -75,20 +91,8 @@ jobs:
             --source-dir force-app \
             --target-org trinston-dev \
             --wait 30 \
-            --ignore-conflicts \
-            --json 2>&1 | tee /tmp/deploy_result.json
-          
-          python3 -c "
-          import json,sys
-          d=json.load(open('/tmp/deploy_result.json'))
-          r=d.get('result',{})
-          if d.get('status',1)==0:
-              print(f'✅ Deployed {r.get(\"numberComponentsDeployed\",\"?\")} components')
-          else:
-              for e in r.get('details',{}).get('componentFailures',[]):
-                  print(f'❌ {e.get(\"componentType\")}/{e.get(\"fullName\")}: {e.get(\"problem\")}')
-              sys.exit(1)
-          "
+            --ignore-conflicts
+          echo "✅ Metadata deployed"
 
       - name: Load Accounts (250)
         if: ${{ github.event.inputs.deploy_data == 'true' }}
@@ -121,4 +125,6 @@ jobs:
             COUNT=$(sf data query --query "SELECT COUNT() FROM $OBJ" --target-org trinston-dev --result-format csv | tail -1)
             echo "  $OBJ: $COUNT"
           done
-          echo "✅ Deployment complete — ${{ secrets.SF_INSTANCE_URL }}"
+          echo ""
+          echo "✅ Trinston org fully deployed"
+          echo "Login: ${{ secrets.SF_INSTANCE_URL }}"
