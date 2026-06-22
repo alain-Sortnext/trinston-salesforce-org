@@ -22,7 +22,7 @@ jobs:
       - name: Install Salesforce CLI
         run: npm install -g @salesforce/cli@latest
 
-      - name: Get access token and authenticate
+      - name: Diagnose and authenticate
         env:
           SF_USERNAME:        ${{ secrets.SF_USERNAME }}
           SF_PASSWORD:        ${{ secrets.SF_PASSWORD }}
@@ -31,8 +31,8 @@ jobs:
           SF_CONSUMER_SECRET: ${{ secrets.SF_CONSUMER_SECRET }}
           SF_INSTANCE_URL:    ${{ secrets.SF_INSTANCE_URL }}
         run: |
-          python3 << 'PYEOF'
-          import urllib.request, urllib.parse, json, os, subprocess
+          python3 - << 'PYEOF'
+          import urllib.request, urllib.parse, json, os, subprocess, sys
 
           username      = os.environ['SF_USERNAME']
           password      = os.environ['SF_PASSWORD'] + os.environ['SF_SECURITY_TOKEN']
@@ -40,9 +40,25 @@ jobs:
           client_secret = os.environ['SF_CONSUMER_SECRET']
           instance_url  = os.environ['SF_INSTANCE_URL']
 
-          # Try instance URL first, then login.salesforce.com
-          for auth_url in [f"{instance_url}/services/oauth2/token", "https://login.salesforce.com/services/oauth2/token"]:
-              print(f"Trying: {auth_url}")
+          print(f"Username: {username}")
+          print(f"Instance: {instance_url}")
+          print(f"Consumer Key (first 20): {client_id[:20]}...")
+
+          # Test connectivity first
+          for url in ["https://login.salesforce.com", instance_url]:
+              try:
+                  req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+                  with urllib.request.urlopen(req, timeout=10) as r:
+                      print(f"✅ Reachable: {url} ({r.status})")
+              except Exception as e:
+                  print(f"❌ Cannot reach {url}: {e}")
+
+          # Try OAuth
+          for auth_url in [
+              "https://login.salesforce.com/services/oauth2/token",
+              f"{instance_url}/services/oauth2/token"
+          ]:
+              print(f"\nTrying OAuth at: {auth_url}")
               data = urllib.parse.urlencode({
                   "grant_type":    "password",
                   "client_id":     client_id,
@@ -50,39 +66,36 @@ jobs:
                   "username":      username,
                   "password":      password,
               }).encode()
-              req = urllib.request.Request(auth_url, data=data)
               try:
+                  req = urllib.request.Request(auth_url, data=data)
                   with urllib.request.urlopen(req, timeout=30) as r:
                       resp = json.loads(r.read())
                       if 'access_token' in resp:
                           token    = resp['access_token']
                           inst_url = resp['instance_url']
-                          print(f"✅ Got token from {auth_url}")
-                          print(f"Instance: {inst_url}")
-                          
-                          # Build SFDX auth URL: force://client_id:client_secret:access_token@instance
+                          print(f"✅ SUCCESS - got token")
                           sfdx_url = f"force://{client_id}:{client_secret}:{token}@{inst_url.replace('https://','')}"
-                          
                           with open('/tmp/sfdx_auth_url.txt', 'w') as f:
                               f.write(sfdx_url)
-                          print("✅ SFDX URL written")
-                          exit(0)
+                          sys.exit(0)
                       else:
-                          print(f"❌ Error: {resp}")
+                          print(f"❌ Got response but no token: {resp}")
+              except urllib.error.HTTPError as e:
+                  body = e.read().decode()
+                  print(f"❌ HTTP {e.code}: {body}")
               except Exception as e:
-                  print(f"  Failed: {e}")
+                  print(f"❌ Exception: {type(e).__name__}: {e}")
 
-          print("❌ All auth attempts failed")
-          exit(1)
+          print("\n❌ All auth attempts failed")
+          sys.exit(1)
           PYEOF
 
-      - name: Login to SF CLI via SFDX URL
+      - name: Login to SF CLI
         run: |
           sf org login sfdx-url \
             --sfdx-url-file /tmp/sfdx_auth_url.txt \
             --alias trinston-dev \
             --set-default
-          echo "✅ Authenticated"
           sf org display --target-org trinston-dev
 
       - name: Deploy metadata
@@ -125,6 +138,4 @@ jobs:
             COUNT=$(sf data query --query "SELECT COUNT() FROM $OBJ" --target-org trinston-dev --result-format csv | tail -1)
             echo "  $OBJ: $COUNT"
           done
-          echo ""
-          echo "✅ Trinston org fully deployed"
-          echo "Login: ${{ secrets.SF_INSTANCE_URL }}"
+          echo "✅ Deployment complete"
