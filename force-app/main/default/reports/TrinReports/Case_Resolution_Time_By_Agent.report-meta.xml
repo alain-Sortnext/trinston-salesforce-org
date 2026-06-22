@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TrinReports/Case_Resolution_Time_By_Agent</fullName>
+    <description>Trinston CS — Average case resolution time by agent and by week. Baseline: 4.2 days. Target: 1.8 days at 60 days post go-live. Used in Phase 9 benefits realisation report.</description>
+    <format>Summary</format>
+    <name>Case Resolution Time by Agent</name>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>PRIORITY</field>
+    </columns>
+    <columns>
+        <field>CASE_OWNER</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>CLOSED_DATE</field>
+    </columns>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CASE_OWNER</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+</Report>
