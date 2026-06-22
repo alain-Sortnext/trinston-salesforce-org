@@ -10,25 +10,38 @@ def log(msg):
     print(msg)
     open(summary, "a").write(msg + "\n")
 
+log(f"Authenticating: {username}")
 url = "https://orgfarm-709b3a2059-dev-ed.develop.my.salesforce.com/services/oauth2/token"
+
 data = urllib.parse.urlencode({
     "grant_type": "password", "client_id": consumer_key,
     "client_secret": consumer_secret, "username": username, "password": pw_token,
 }).encode()
 
-with urllib.request.urlopen(urllib.request.Request(url, data=data), timeout=30) as r:
-    resp = json.loads(r.read())
-    token    = resp["access_token"]
-    inst_url = resp["instance_url"]
-    log(f"OAuth SUCCESS: {inst_url}")
+try:
+    with urllib.request.urlopen(urllib.request.Request(url, data=data), timeout=30) as r:
+        resp = json.loads(r.read())
+        if "access_token" not in resp:
+            log(f"FAIL: {resp}")
+            sys.exit(1)
+        token    = resp["access_token"]
+        inst_url = resp["instance_url"]
+        log(f"SUCCESS: {inst_url}")
 
-# Save token and instance for data loading script
-os.makedirs("/tmp/sf", exist_ok=True)
-with open("/tmp/sf/token", "w") as f: f.write(token)
-with open("/tmp/sf/instance", "w") as f: f.write(inst_url)
+    # Save for data loading
+    os.makedirs("/tmp/sf", exist_ok=True)
+    open("/tmp/sf/token", "w").write(token)
+    open("/tmp/sf/instance", "w").write(inst_url)
 
-# Login SF CLI
-sfdx_url = f"force://{consumer_key}:{consumer_secret}:{token}@{inst_url.replace('https://','')}"
-open("/tmp/sfdx_auth_url.txt","w").write(sfdx_url)
-open("/tmp/use_sfdx_url","w").write("yes")
-log("Credentials saved for data load")
+    # Write SFDX URL for sf cli login
+    sfdx_url = f"force://{consumer_key}:{consumer_secret}:{token}@{inst_url.replace('https://','')}"
+    open("/tmp/sfdx_auth_url.txt","w").write(sfdx_url)
+    log("Credentials saved")
+    sys.exit(0)
+
+except urllib.error.HTTPError as e:
+    log(f"HTTP {e.code}: {e.read().decode()[:300]}")
+    sys.exit(1)
+except Exception as ex:
+    log(f"{type(ex).__name__}: {ex}")
+    sys.exit(1)
