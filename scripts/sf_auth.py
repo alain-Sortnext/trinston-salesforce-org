@@ -1,7 +1,10 @@
-import urllib.request, re, os, sys
+import urllib.request, os, re, sys
 
-USERNAME = os.environ.get('SF_USERNAME', '')
-PW_WITH_TOK = os.environ.get('SF_PASSWORD_WITH_TOKEN', '')
+username = os.environ.get('SF_USERNAME', '')
+pw_token = os.environ.get('SF_PASSWORD_WITH_TOKEN', '')
+
+print(f"Username: {username}")
+print(f"Password+token length: {len(pw_token)}")
 
 soap = """<?xml version="1.0" encoding="utf-8"?>
 <env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
@@ -10,8 +13,8 @@ soap = """<?xml version="1.0" encoding="utf-8"?>
     xmlns:urn="urn:partner.soap.sforce.com">
   <env:Body>
     <urn:login>
-      <urn:username>""" + USERNAME + """</urn:username>
-      <urn:password>""" + PW_WITH_TOK + """</urn:password>
+      <urn:username>""" + username + """</urn:username>
+      <urn:password>""" + pw_token + """</urn:password>
     </urn:login>
   </env:Body>
 </env:Envelope>"""
@@ -25,32 +28,36 @@ req = urllib.request.Request(
 try:
     with urllib.request.urlopen(req, timeout=30) as r:
         body = r.read().decode()
-        if '<sessionId>' in body:
-            session  = re.search(r'<sessionId>(.*?)</sessionId>', body).group(1)
-            server   = re.search(r'<serverUrl>(.*?)</serverUrl>', body).group(1)
-            instance = re.search(r'https://([^/]+)', server).group(1)
-            sfdx_url = f"force://PlatformCLI::{session}@{instance}"
-            with open('/tmp/sfdx_auth_url.txt', 'w') as f:
-                f.write(sfdx_url)
+        print("HTTP 200 response received")
+        print(body[:2000])
+        
+        if "<sessionId>" in body:
+            session  = re.search(r"<sessionId>(.*?)</sessionId>", body).group(1)
+            srv_url  = re.search(r"<serverUrl>(.*?)</serverUrl>", body).group(1)
+            instance = re.search(r"https://([^/]+)", srv_url).group(1)
             print(f"SUCCESS: {instance}")
+            sfdx_url = f"force://PlatformCLI::{session}@{instance}"
+            with open("/tmp/sfdx_auth_url.txt", "w") as f:
+                f.write(sfdx_url)
+            
+            # Write success marker
+            with open("auth_result.txt", "w") as f:
+                f.write(f"SUCCESS:{instance}")
             sys.exit(0)
         else:
-            fault = re.search(r'<faultstring>(.*?)</faultstring>', body)
-            msg = fault.group(1) if fault else body[:300]
-            print(f"FAIL: {msg}")
-            with open('auth_debug.txt', 'w') as f:
-                f.write(f"User: {USERNAME}\nPW len: {len(PW_WITH_TOK)}\nError: {msg}\nFull: {body}")
+            with open("auth_result.txt", "w") as f:
+                f.write("FAIL:" + body[:500])
             sys.exit(1)
+
 except urllib.error.HTTPError as e:
     body = e.read().decode()
-    fault = re.search(r'<faultstring>(.*?)</faultstring>', body)
-    msg = fault.group(1) if fault else body[:300]
-    print(f"HTTP {e.code}: {msg}")
-    with open('auth_debug.txt', 'w') as f:
-        f.write(f"User: {USERNAME}\nPW len: {len(PW_WITH_TOK)}\nHTTP {e.code}: {msg}\nBody: {body}")
+    print(f"HTTP {e.code}: {body[:500]}")
+    with open("auth_result.txt", "w") as f:
+        f.write(f"HTTP{e.code}:{body[:500]}")
     sys.exit(1)
-except Exception as e:
-    print(f"{type(e).__name__}: {e}")
-    with open('auth_debug.txt', 'w') as f:
-        f.write(f"Exception: {type(e).__name__}: {e}")
+except Exception as ex:
+    msg = f"{type(ex).__name__}: {ex}"
+    print(msg)
+    with open("auth_result.txt", "w") as f:
+        f.write(f"EXCEPT:{msg}")
     sys.exit(1)
