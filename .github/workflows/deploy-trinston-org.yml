@@ -27,15 +27,18 @@ jobs:
           SF_USERNAME: ${{ secrets.SF_USERNAME }}
           SF_PASSWORD: ${{ secrets.SF_PASSWORD }}
           SF_SECURITY_TOKEN: ${{ secrets.SF_SECURITY_TOKEN }}
-        run: python3 scripts/sf_auth.py 2>&1 | tee /tmp/auth_output.txt && test ${PIPESTATUS[0]} -eq 0
+        run: python3 scripts/sf_auth.py
 
-      - name: Upload auth output on failure
+      - name: Commit error output if auth failed
         if: failure()
-        uses: actions/upload-artifact@v4
-        with:
-          name: auth-debug-output
-          path: /tmp/auth_output.txt
-          retention-days: 1
+        run: |
+          git config user.email "actions@github.com"
+          git config user.name "GitHub Actions"
+          if [ -f auth_error.txt ]; then
+            git add auth_error.txt
+            git commit -m "Auth error output [skip ci]"
+            git push
+          fi
 
       - name: Login SF CLI
         run: |
