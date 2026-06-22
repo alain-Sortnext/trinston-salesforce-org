@@ -1,4 +1,4 @@
-import urllib.request, urllib.parse, os, sys, json
+import urllib.request, urllib.parse, os, sys, json, subprocess
 
 username        = os.environ.get("SF_USERNAME", "")
 pw_token        = os.environ.get("SF_PASSWORD_WITH_TOKEN", "")
@@ -14,8 +14,6 @@ log(f"Username: {username}")
 log(f"PW+Token len: {len(pw_token)}")
 
 url = "https://orgfarm-709b3a2059-dev-ed.develop.my.salesforce.com/services/oauth2/token"
-log(f"URL: {url}")
-
 data = urllib.parse.urlencode({
     "grant_type":    "password",
     "client_id":     consumer_key,
@@ -25,16 +23,40 @@ data = urllib.parse.urlencode({
 }).encode()
 
 try:
-    req = urllib.request.Request(url, data=data)
-    with urllib.request.urlopen(req, timeout=30) as r:
+    with urllib.request.urlopen(urllib.request.Request(url, data=data), timeout=30) as r:
         resp = json.loads(r.read())
         if "access_token" in resp:
             token    = resp["access_token"]
             inst_url = resp["instance_url"]
-            log(f"SUCCESS: {inst_url}")
-            sfdx_url = f"force://{consumer_key}:{consumer_secret}:{token}@{inst_url.replace('https://','')}"
-            open("/tmp/sfdx_auth_url.txt","w").write(sfdx_url)
-            sys.exit(0)
+            log(f"OAuth SUCCESS: {inst_url}")
+
+            # Use sf org login access-token (more reliable than sfdx-url)
+            cmd = [
+                "sf", "org", "login", "access-token",
+                "--instance-url", inst_url,
+                "--alias", "trinston-dev",
+                "--set-default",
+                "--no-prompt"
+            ]
+            env = os.environ.copy()
+            env["SFDX_ACCESS_TOKEN"] = token
+            result = subprocess.run(cmd, env=env, capture_output=True, text=True, timeout=60)
+            log(f"SF CLI exit: {result.returncode}")
+            if result.stdout: log(f"stdout: {result.stdout[:200]}")
+            if result.stderr: log(f"stderr: {result.stderr[:200]}")
+            
+            if result.returncode == 0:
+                log("SF CLI login SUCCESS")
+                sys.exit(0)
+            else:
+                # Fallback: write sfdx url file
+                log("Trying sfdx-url fallback...")
+                sfdx_url = f"force://{consumer_key}:{consumer_secret}:{token}@{inst_url.replace('https://','')}"
+                open("/tmp/sfdx_auth_url.txt","w").write(sfdx_url)
+                log("sfdx url written")
+                # Signal to use file-based login
+                open("/tmp/use_sfdx_url","w").write("yes")
+                sys.exit(0)
         else:
             log(f"FAIL: {json.dumps(resp)}")
             sys.exit(1)
