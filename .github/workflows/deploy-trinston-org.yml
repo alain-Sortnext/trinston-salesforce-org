@@ -30,18 +30,32 @@ jobs:
           SF_CONSUMER_SECRET: ${{ secrets.SF_CONSUMER_SECRET }}
         run: |
           python3 scripts/sf_auth.py
-          
           if [ -f /tmp/use_sfdx_url ]; then
             sf org login sfdx-url --sfdx-url-file /tmp/sfdx_auth_url.txt --alias trinston-dev --set-default
           fi
-          
-          echo "Verifying connection..."
           sf org display --target-org trinston-dev
 
       - name: Deploy metadata
         run: |
-          sf project deploy start --source-dir force-app --target-org trinston-dev --wait 30 --ignore-conflicts
-          echo "Metadata deployed"
+          sf project deploy start             --source-dir force-app             --target-org trinston-dev             --wait 30             --ignore-conflicts             --json 2>&1 | tee /tmp/deploy_out.json | python3 -c "
+          import json, sys
+          try:
+            d = json.load(open('/tmp/deploy_out.json'))
+            r = d.get('result', {})
+            print(f'Status: {d.get("status")}')
+            print(f'Components deployed: {r.get("numberComponentsDeployed",0)}')
+            print(f'Component errors: {r.get("numberComponentErrors",0)}')
+            for err in r.get('details',{}).get('componentFailures',[]):
+              print(f'ERROR: {err.get("componentType")}/{err.get("fullName")}: {err.get("problem")}')
+            if d.get('status') == 0:
+              print('DEPLOY SUCCESS')
+            else:
+              print(f'DEPLOY FAILED: {d.get("message","")}')
+              sys.exit(1)
+          except Exception as e:
+            print(f'Parse error: {e}')
+            sys.exit(1)
+          "
 
       - name: Load Accounts
         if: ${{ github.event.inputs.deploy_data == 'true' }}
