@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TrinDashboards/Trinston_Programme_Dashboard</fullName>
+    <backgroundEndColor>#FFFFFF</backgroundEndColor>
+    <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
+    <backgroundStartColor>#FFFFFF</backgroundStartColor>
+    <dashboardType>SpecifiedUser</dashboardType>
+    <description>Trinston CRM Transformation — Programme KPI Dashboard. Tracks the 8 programme success metrics from the Project Charter. Used in Phase 6 Steering Committee packs and Phase 9 benefits realisation.</description>
+    <isGridLayout>true</isGridLayout>
+    <title>Trinston CRM — Programme KPI Dashboard</title>
+    <components>
+        <chartAxisRange>Auto</chartAxisRange>
+        <componentType>Gauge</componentType>
+        <dashboardFilterColumns/>
+        <displayUnits>Auto</displayUnits>
+        <footer>Baseline: 47% | Target: 85% at 90 days</footer>
+        <header>Forecast Accuracy</header>
+        <indicatorBreakpoint1>60.0</indicatorBreakpoint1>
+        <indicatorBreakpoint2>80.0</indicatorBreakpoint2>
+        <indicatorHighColor>#54C254</indicatorHighColor>
+        <indicatorLowColor>#C25454</indicatorLowColor>
+        <indicatorMiddleColor>#E8C454</indicatorMiddleColor>
+        <maxValue>100.0</maxValue>
+        <minValue>0.0</minValue>
+        <report>TrinReports/Opportunity_Stage_Analysis</report>
+        <showPercentage>true</showPercentage>
+        <showTotal>true</showTotal>
+        <showValues>true</showValues>
+        <sortBy>RowLabelAscending</sortBy>
+        <title>Pipeline Forecast Accuracy</title>
+    </components>
+    <components>
+        <chartAxisRange>Auto</chartAxisRange>
+        <componentType>Metric</componentType>
+        <dashboardFilterColumns/>
+        <displayUnits>Auto</displayUnits>
+        <footer>Baseline: 4.2 days | Target: 1.8 days at 60 days</footer>
+        <header>Avg Case Resolution Time</header>
+        <report>TrinReports/Case_Resolution_Time_By_Agent</report>
+        <showPercentage>false</showPercentage>
+        <showTotal>true</showTotal>
+        <showValues>false</showValues>
+        <sortBy>RowLabelAscending</sortBy>
+        <title>Case Resolution Time (Days)</title>
+    </components>
+    <components>
+        <chartAxisRange>Auto</chartAxisRange>
+        <componentType>Bar</componentType>
+        <chartSummary>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>AMOUNT</column>
+        </chartSummary>
+        <dashboardFilterColumns/>
+        <displayUnits>Thousands</displayUnits>
+        <footer>Open pipeline by stage — real-time</footer>
+        <groupingColumn>STAGE_NAME</groupingColumn>
+        <header>Pipeline by Stage</header>
+        <legendPosition>Bottom</legendPosition>
+        <report>TrinReports/Pipeline_By_Stage_Owner_Region</report>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>true</showValues>
+        <sortBy>RowLabelAscending</sortBy>
+        <title>Open Pipeline by Stage (£)</title>
+    </components>
+    <components>
+        <chartAxisRange>Auto</chartAxisRange>
+        <componentType>Bar</componentType>
+        <dashboardFilterColumns/>
+        <displayUnits>Auto</displayUnits>
+        <footer>Records with blank key fields — target: 0</footer>
+        <groupingColumn>ACCOUNT_NAME</groupingColumn>
+        <header>Data Quality Issues</header>
+        <legendPosition>Bottom</legendPosition>
+        <report>TrinReports/Data_Quality_Account_Completeness</report>
+        <showPercentage>false</showPercentage>
+        <showTotal>true</showTotal>
+        <showValues>true</showValues>
+        <sortBy>RowValueDescending</sortBy>
+        <title>Accounts with Incomplete Data</title>
+    </components>
+    <runningUser>mavadufashion.7880dc71777c@agentforce.com</runningUser>
+</Dashboard>
