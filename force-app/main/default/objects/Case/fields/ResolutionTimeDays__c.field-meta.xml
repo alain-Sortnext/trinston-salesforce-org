@@ -3,10 +3,8 @@
     <fullName>ResolutionTimeDays__c</fullName>
     <label>Resolution Time (Days)</label>
     <description>Calculated field: days from case creation to resolution</description>
-    <type>Formula</type>
-    <formula>IF(NOT(ISBLANK(ResolutionDate__c)), (ResolutionDate__c - CreatedDate) / 86400, NULL)</formula>
-    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-    <returnType>Number</returnType>
+    <type>Number</type>
     <precision>18</precision>
     <scale>2</scale>
+    <required>false</required>
 </CustomField>
