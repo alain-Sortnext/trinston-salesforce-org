@@ -4,10 +4,7 @@
         <fullName>Resolution_Date_Required_On_Close</fullName>
         <active>true</active>
         <description>Resolution Date is mandatory when Status is Closed</description>
-        <errorConditionFormula>AND(
-  ISPICKVAL(Status, "Closed"),
-  ISBLANK(ResolutionDate__c)
-)</errorConditionFormula>
-        <errorMessage>Resolution Date is required when closing a case. Please enter the date and time the case was resolved.</errorMessage>
+        <errorConditionFormula>AND(ISPICKVAL(Status, "Closed"), ISBLANK(ResolutionDate__c))</errorConditionFormula>
+        <errorMessage>Resolution Date is required when closing a case.</errorMessage>
     </validationRules>
 </CustomObject>
