@@ -2,8 +2,4 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>CEO</fullName>
     <name>CEO</name>
-    <description>Marcus Webb — Programme Sponsor</description>
-    <caseAccessLevel>Edit</caseAccessLevel>
-    <contactAccessLevel>Edit</contactAccessLevel>
-    <opportunityAccessLevel>Edit</opportunityAccessLevel>
 </Role>
