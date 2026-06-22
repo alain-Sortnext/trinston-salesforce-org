@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LawfulBasis__c</fullName>
+    <label>GDPR Lawful Basis</label>
+    <description>UK GDPR Article 6 lawful basis for processing this contact record</description>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value><fullName>Legitimate Interest</fullName><default>false</default></value>
+            <value><fullName>Contract Performance</fullName><default>false</default></value>
+            <value><fullName>Consent</fullName><default>false</default></value>
+            <value><fullName>Legal Obligation</fullName><default>false</default></value>
+            <value><fullName>Pending Review</fullName><default>true</default></value>
+        </valueSetDefinition>
+    </valueSet>
+    <required>false</required>
+</CustomField>
