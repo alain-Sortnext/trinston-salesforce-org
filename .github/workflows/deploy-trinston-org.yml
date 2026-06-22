@@ -50,33 +50,15 @@ jobs:
           sf project deploy start --source-dir force-app/main/default/reports --target-org trinston-dev --wait 30 --ignore-conflicts || true
           sf project deploy start --source-dir force-app/main/default/dashboards --target-org trinston-dev --wait 30 --ignore-conflicts || true
 
-      - name: Load Accounts
+      - name: Load all data via REST API
         if: ${{ github.event.inputs.deploy_data == 'true' }}
         run: |
-          sf data create bulk             --sobject Account             --file data/Accounts.csv             --target-org trinston-dev             --wait 10
-          sf data query --query "SELECT COUNT() FROM Account" --target-org trinston-dev --result-format human
-
-      - name: Load Contacts
-        if: ${{ github.event.inputs.deploy_data == 'true' }}
-        run: |
-          sf data create bulk --sobject Contact --file data/Contacts.csv --target-org trinston-dev --wait 10 || true
-          sf data query --query "SELECT COUNT() FROM Contact" --target-org trinston-dev --result-format human
-
-      - name: Load Leads
-        if: ${{ github.event.inputs.deploy_data == 'true' }}
-        run: sf data create bulk --sobject Lead --file data/Leads.csv --target-org trinston-dev --wait 10 || true
-
-      - name: Load Campaigns
-        if: ${{ github.event.inputs.deploy_data == 'true' }}
-        run: sf data create bulk --sobject Campaign --file data/Campaigns.csv --target-org trinston-dev --wait 10 || true
-
-      - name: Load Opportunities
-        if: ${{ github.event.inputs.deploy_data == 'true' }}
-        run: sf data create bulk --sobject Opportunity --file data/Opportunities.csv --target-org trinston-dev --wait 10 || true
-
-      - name: Load Cases
-        if: ${{ github.event.inputs.deploy_data == 'true' }}
-        run: sf data create bulk --sobject Case --file data/Cases.csv --target-org trinston-dev --wait 10 || true
+          python3 scripts/load_data.py Account data/Accounts.csv Account Name
+          python3 scripts/load_data.py Contact data/Contacts.csv Contact LastName
+          python3 scripts/load_data.py Lead data/Leads.csv Lead LastName Company
+          python3 scripts/load_data.py Campaign data/Campaigns.csv Campaign Name
+          python3 scripts/load_data.py Opportunity data/Opportunities.csv Opportunity Name StageName CloseDate
+          python3 scripts/load_data.py Case data/Cases.csv Case Subject
 
       - name: Final verification
         run: |
