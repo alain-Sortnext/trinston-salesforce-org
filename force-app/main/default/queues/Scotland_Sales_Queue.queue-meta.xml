@@ -2,9 +2,7 @@
 <Queue xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Scotland_Sales_Queue</fullName>
     <name>Scotland Sales Queue</name>
-    <description>Lead queue for Scotland region — Glasgow office</description>
     <doesSendEmailToMembers>false</doesSendEmailToMembers>
-    <email>scotland-sales@trinston.co.uk</email>
     <queueSobject>
         <sobjectType>Lead</sobjectType>
     </queueSobject>
