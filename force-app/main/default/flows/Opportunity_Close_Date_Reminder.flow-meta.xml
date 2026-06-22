@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_Close_Date_Reminder</fullName>
+    <label>Opportunity Close Date Reminder</label>
+    <description>Trinston — sends email to Opportunity owner when Close Date passes without a stage change. Part of the To-Be sales process design (REQ-SC-013).</description>
+    <processType>AutoLaunchedFlow</processType>
+    <status>Active</status>
+    <start>
+        <locationX>176</locationX>
+        <locationY>48</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>IsClosed</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>CloseDate</field>
+            <operator>LessThan</operator>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </filters>
+        <object>Opportunity</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+        <scheduledPaths>
+            <name>DailyCheck</name>
+            <connector>
+                <targetReference>Send_Close_Date_Alert</targetReference>
+            </connector>
+            <label>Daily Check</label>
+            <offsetNumber>0</offsetNumber>
+            <offsetUnit>Days</offsetUnit>
+            <timeSource>RecordField</timeSource>
+            <field>CloseDate</field>
+        </scheduledPaths>
+    </start>
+    <actionCalls>
+        <name>Send_Close_Date_Alert</name>
+        <label>Send Close Date Alert Email</label>
+        <locationX>176</locationX>
+        <locationY>168</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>$Record.Owner.Email</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>Action Required: Opportunity Close Date Has Passed — {!$Record.Name}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <stringValue>Your Opportunity &quot;{!$Record.Name}&quot; had a Close Date of {!$Record.CloseDate} but has not been updated to Closed Won or Closed Lost. Please update this Opportunity in Salesforce today. If the deal is still active, update the Close Date to a future date. Account: {!$Record.Account.Name}</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <label>Opportunity Close Date Reminder</label>
+</Flow>
