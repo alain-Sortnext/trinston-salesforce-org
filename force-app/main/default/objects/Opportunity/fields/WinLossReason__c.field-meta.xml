@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WinLossReason__c</fullName>
+    <label>Win/Loss Reason</label>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value><fullName>Price — too expensive</fullName><default>false</default></value>
+            <value><fullName>Lost to competitor</fullName><default>false</default></value>
+            <value><fullName>No decision / budget frozen</fullName><default>false</default></value>
+            <value><fullName>Relationship / incumbent advantage</fullName><default>false</default></value>
+            <value><fullName>Product/service not a fit</fullName><default>false</default></value>
+            <value><fullName>Timing — not ready to buy</fullName><default>false</default></value>
+            <value><fullName>Won — best value</fullName><default>false</default></value>
+            <value><fullName>Won — relationship</fullName><default>false</default></value>
+        </valueSetDefinition>
+    </valueSet>
+    <required>false</required>
+</CustomField>
