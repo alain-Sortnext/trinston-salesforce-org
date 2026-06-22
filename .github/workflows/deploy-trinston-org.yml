@@ -9,9 +9,6 @@ on:
         default: 'true'
         type: choice
         options: ['true', 'false']
-  push:
-    branches: [main]
-    paths: ['force-app/**', 'data/**']
 
 jobs:
   deploy:
@@ -23,25 +20,56 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Install Salesforce CLI
-        run: npm install -g @salesforce/cli@latest
+        run: |
+          npm install -g @salesforce/cli@latest
+          sf --version
 
       - name: Write JWT private key
         run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.SF_JWT_PRIVATE_KEY }}" > ~/.ssh/sf_server.key
-          chmod 600 ~/.ssh/sf_server.key
+          mkdir -p ~/.sf
+          printf '%s' "${{ secrets.SF_JWT_PRIVATE_KEY }}" > ~/.sf/server.key
+          chmod 600 ~/.sf/server.key
+          echo "Key file size: $(wc -c < ~/.sf/server.key) bytes"
+          head -1 ~/.sf/server.key
 
-      - name: Authenticate via JWT (no browser needed)
+      - name: Authenticate via JWT
         run: |
           sf org login jwt \
             --username "${{ secrets.SF_USERNAME }}" \
-            --jwt-key-file ~/.ssh/sf_server.key \
+            --jwt-key-file ~/.sf/server.key \
             --client-id "${{ secrets.SF_CONSUMER_KEY }}" \
             --instance-url "${{ secrets.SF_INSTANCE_URL }}" \
             --alias trinston-dev \
-            --set-default
-          echo "✅ Authenticated"
-          sf org display --target-org trinston-dev
+            --set-default \
+            --no-prompt \
+            --json 2>&1 | tee /tmp/auth_result.json
+          
+          # Check result
+          cat /tmp/auth_result.json | python3 -c "
+          import json,sys
+          d=json.load(sys.stdin)
+          status=d.get('status',d.get('exitCode',1))
+          if status==0 or d.get('result'):
+              print('✅ JWT auth successful')
+              r=d.get('result',{})
+              print(f'  Username: {r.get(\"username\",\"?\")}')
+              print(f'  Instance: {r.get(\"instanceUrl\",\"?\")}')
+          else:
+              msg=d.get('message',d.get('name','Unknown error'))
+              print(f'❌ Auth failed: {msg}')
+              sys.exit(1)
+          "
+
+      - name: Verify connection
+        run: |
+          sf org display --target-org trinston-dev --json | python3 -c "
+          import json,sys
+          d=json.load(sys.stdin)
+          r=d.get('result',{})
+          print(f'Connected as: {r.get(\"username\")}')
+          print(f'Org ID: {r.get(\"id\")}')
+          print(f'Instance: {r.get(\"instanceUrl\")}')
+          "
 
       - name: Deploy metadata
         run: |
@@ -49,64 +77,74 @@ jobs:
             --source-dir force-app \
             --target-org trinston-dev \
             --wait 30 \
-            --ignore-conflicts
-          echo "✅ Metadata deployed"
-
-      - name: Verify custom fields
-        run: |
-          sf data query \
-            --query "SELECT QualifiedApiName, EntityDefinition.QualifiedApiName FROM FieldDefinition WHERE QualifiedApiName LIKE '%__c%' AND EntityDefinition.QualifiedApiName IN ('Account','Opportunity','Case','Contact','Lead','Campaign') ORDER BY EntityDefinition.QualifiedApiName" \
-            --target-org trinston-dev \
-            --result-format human
+            --ignore-conflicts \
+            --json 2>&1 | tee /tmp/deploy_result.json
+          
+          python3 -c "
+          import json,sys
+          d=json.load(open('/tmp/deploy_result.json'))
+          status=d.get('status',1)
+          r=d.get('result',{})
+          if status==0:
+              print(f'✅ Deploy successful')
+              print(f'  Components deployed: {r.get(\"numberComponentsDeployed\",\"?\")}')
+              print(f'  Errors: {r.get(\"numberComponentErrors\",0)}')
+          else:
+              print(f'❌ Deploy failed')
+              for e in r.get('details',{}).get('componentFailures',[]):
+                  print(f'  - {e.get(\"componentType\")}/{e.get(\"fullName\")}: {e.get(\"problem\")}')
+              sys.exit(1)
+          "
 
       - name: Load Accounts (250)
         if: ${{ github.event.inputs.deploy_data == 'true' }}
         run: |
           sf data import tree --files data/Accounts.json --target-org trinston-dev
-          COUNT=$(sf data query --query "SELECT COUNT() FROM Account" --target-org trinston-dev --result-format csv | tail -1)
-          echo "✅ Accounts in org: $COUNT"
+          sf data query --query "SELECT COUNT() FROM Account" --target-org trinston-dev --result-format human
 
       - name: Load Contacts (1000)
         if: ${{ github.event.inputs.deploy_data == 'true' }}
         run: |
           sf data import tree --files data/Contacts.json --target-org trinston-dev
-          COUNT=$(sf data query --query "SELECT COUNT() FROM Contact" --target-org trinston-dev --result-format csv | tail -1)
-          echo "✅ Contacts in org: $COUNT"
+          sf data query --query "SELECT COUNT() FROM Contact" --target-org trinston-dev --result-format human
 
       - name: Load Leads (500)
         if: ${{ github.event.inputs.deploy_data == 'true' }}
         run: |
           sf data import tree --files data/Leads.json --target-org trinston-dev
-          COUNT=$(sf data query --query "SELECT COUNT() FROM Lead" --target-org trinston-dev --result-format csv | tail -1)
-          echo "✅ Leads in org: $COUNT"
+          sf data query --query "SELECT COUNT() FROM Lead" --target-org trinston-dev --result-format human
 
       - name: Load Campaigns (100)
         if: ${{ github.event.inputs.deploy_data == 'true' }}
         run: |
           sf data import tree --files data/Campaigns.json --target-org trinston-dev
-          COUNT=$(sf data query --query "SELECT COUNT() FROM Campaign" --target-org trinston-dev --result-format csv | tail -1)
-          echo "✅ Campaigns in org: $COUNT"
+          sf data query --query "SELECT COUNT() FROM Campaign" --target-org trinston-dev --result-format human
 
       - name: Load Opportunities (400)
         if: ${{ github.event.inputs.deploy_data == 'true' }}
         run: |
           sf data import tree --files data/Opportunities.json --target-org trinston-dev
-          COUNT=$(sf data query --query "SELECT COUNT() FROM Opportunity" --target-org trinston-dev --result-format csv | tail -1)
-          echo "✅ Opportunities in org: $COUNT"
+          sf data query --query "SELECT COUNT() FROM Opportunity" --target-org trinston-dev --result-format human
 
       - name: Load Cases (600)
         if: ${{ github.event.inputs.deploy_data == 'true' }}
         run: |
           sf data import tree --files data/Cases.json --target-org trinston-dev
-          COUNT=$(sf data query --query "SELECT COUNT() FROM Case" --target-org trinston-dev --result-format csv | tail -1)
-          echo "✅ Cases in org: $COUNT"
+          sf data query --query "SELECT COUNT() FROM Case" --target-org trinston-dev --result-format human
 
-      - name: Final record count verification
+      - name: Final verification
         run: |
           echo "=== TRINSTON ORG — FINAL RECORD COUNTS ==="
           for OBJ in Account Contact Lead Campaign Opportunity Case; do
             COUNT=$(sf data query --query "SELECT COUNT() FROM $OBJ" --target-org trinston-dev --result-format csv | tail -1)
-            echo "  $OBJ: $COUNT"
+            echo "  $OBJ: $COUNT records"
           done
-          echo "✅ Deployment complete"
+          echo ""
+          echo "=== Custom Fields Deployed ==="
+          sf data query \
+            --query "SELECT QualifiedApiName, EntityDefinition.QualifiedApiName FROM FieldDefinition WHERE QualifiedApiName LIKE '%__c%' AND EntityDefinition.QualifiedApiName IN ('Account','Opportunity','Case','Contact','Lead','Campaign')" \
+            --target-org trinston-dev \
+            --result-format human
+          echo ""
+          echo "✅ Trinston org deployment complete"
           echo "Org URL: ${{ secrets.SF_INSTANCE_URL }}"
