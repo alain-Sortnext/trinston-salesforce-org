@@ -35,56 +35,50 @@ jobs:
           fi
           sf org display --target-org trinston-dev
 
-      - name: Deploy custom fields only
-        run: |
-          sf project deploy start             --source-dir force-app/main/default/objects             --target-org trinston-dev             --wait 30             --ignore-conflicts
-          echo "Fields deployed: $?"
+      - name: Deploy custom fields
+        run: sf project deploy start --source-dir force-app/main/default/objects --target-org trinston-dev --wait 30 --ignore-conflicts
 
       - name: Deploy roles
-        run: |
-          sf project deploy start             --source-dir force-app/main/default/roles             --target-org trinston-dev             --wait 30             --ignore-conflicts
-          echo "Roles deployed: $?"
+        run: sf project deploy start --source-dir force-app/main/default/roles --target-org trinston-dev --wait 30 --ignore-conflicts
 
       - name: Deploy queues
-        run: |
-          sf project deploy start             --source-dir force-app/main/default/queues             --target-org trinston-dev             --wait 30             --ignore-conflicts
-          echo "Queues deployed: $?"
+        run: sf project deploy start --source-dir force-app/main/default/queues --target-org trinston-dev --wait 30 --ignore-conflicts
 
       - name: Deploy flow
-        run: |
-          sf project deploy start             --source-dir force-app/main/default/flows             --target-org trinston-dev             --wait 30             --ignore-conflicts || echo "Flow deploy failed - continuing"
+        run: sf project deploy start --source-dir force-app/main/default/flows --target-org trinston-dev --wait 30 --ignore-conflicts || echo "Flow skipped"
 
-      - name: Deploy reports
+      - name: Deploy reports and dashboards
         run: |
-          sf project deploy start             --source-dir force-app/main/default/reports             --target-org trinston-dev             --wait 30             --ignore-conflicts || echo "Reports deploy failed - continuing"
-
-      - name: Deploy dashboards
-        run: |
-          sf project deploy start             --source-dir force-app/main/default/dashboards             --target-org trinston-dev             --wait 30             --ignore-conflicts || echo "Dashboard deploy failed - continuing"
+          sf project deploy start --source-dir force-app/main/default/reports --target-org trinston-dev --wait 30 --ignore-conflicts || echo "Reports skipped"
+          sf project deploy start --source-dir force-app/main/default/dashboards --target-org trinston-dev --wait 30 --ignore-conflicts || echo "Dashboards skipped"
 
       - name: Load Accounts
         if: ${{ github.event.inputs.deploy_data == 'true' }}
-        run: sf data import tree --files data/Accounts.json --target-org trinston-dev
+        run: |
+          sf data import tree             --files data/Accounts.json             --target-org trinston-dev             --api-version 59.0
+          sf data query --query "SELECT COUNT() FROM Account" --target-org trinston-dev --result-format human
 
       - name: Load Contacts
         if: ${{ github.event.inputs.deploy_data == 'true' }}
-        run: sf data import tree --files data/Contacts.json --target-org trinston-dev
+        run: |
+          sf data import tree --files data/Contacts.json --target-org trinston-dev --api-version 59.0
+          sf data query --query "SELECT COUNT() FROM Contact" --target-org trinston-dev --result-format human
 
       - name: Load Leads
         if: ${{ github.event.inputs.deploy_data == 'true' }}
-        run: sf data import tree --files data/Leads.json --target-org trinston-dev
+        run: sf data import tree --files data/Leads.json --target-org trinston-dev --api-version 59.0
 
       - name: Load Campaigns
         if: ${{ github.event.inputs.deploy_data == 'true' }}
-        run: sf data import tree --files data/Campaigns.json --target-org trinston-dev
+        run: sf data import tree --files data/Campaigns.json --target-org trinston-dev --api-version 59.0
 
       - name: Load Opportunities
         if: ${{ github.event.inputs.deploy_data == 'true' }}
-        run: sf data import tree --files data/Opportunities.json --target-org trinston-dev
+        run: sf data import tree --files data/Opportunities.json --target-org trinston-dev --api-version 59.0
 
       - name: Load Cases
         if: ${{ github.event.inputs.deploy_data == 'true' }}
-        run: sf data import tree --files data/Cases.json --target-org trinston-dev
+        run: sf data import tree --files data/Cases.json --target-org trinston-dev --api-version 59.0
 
       - name: Final verification
         run: |
