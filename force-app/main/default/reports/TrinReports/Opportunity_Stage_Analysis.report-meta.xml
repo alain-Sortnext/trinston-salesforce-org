@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TrinReports/Opportunity_Stage_Analysis</fullName>
+    <description>Trinston Phase 5 — Opportunity stage distribution. Shows the 46.2% of records with legacy stage values. WRONG DIRECTION TRAP: this looks like a Sales adoption problem — the actual root cause is 4 different legacy stage naming conventions from 4 acquired companies.</description>
+    <format>Summary</format>
+    <name>Opportunity Stage Distribution — Phase 5 Analysis</name>
+    <reportType>Opportunity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY.LegacyStageValue__c</field>
+    </columns>
+    <columns>
+        <field>AMOUNT</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_OWNER</field>
+    </columns>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>STAGE_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+</Report>
