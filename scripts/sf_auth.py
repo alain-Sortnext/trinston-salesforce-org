@@ -1,20 +1,29 @@
 import urllib.request, urllib.parse, os, re, sys, json
 
-username      = os.environ.get("SF_USERNAME", "")
-pw_token      = os.environ.get("SF_PASSWORD_WITH_TOKEN", "")
-consumer_key  = os.environ.get("SF_CONSUMER_KEY", "")
+username        = os.environ.get("SF_USERNAME", "")
+pw_token        = os.environ.get("SF_PASSWORD_WITH_TOKEN", "")
+consumer_key    = os.environ.get("SF_CONSUMER_KEY", "")
 consumer_secret = os.environ.get("SF_CONSUMER_SECRET", "")
-instance_url  = os.environ.get("SF_INSTANCE_URL", "https://login.salesforce.com")
+instance_url    = os.environ.get("SF_INSTANCE_URL", "https://login.salesforce.com")
 
-print(f"Username: {username}")
-print(f"Instance: {instance_url}")
+summary_file = os.environ.get("GITHUB_STEP_SUMMARY", "/tmp/step_summary.md")
 
-# Try OAuth2 password grant via the org's own token endpoint
+def log(msg):
+    print(msg)
+    with open(summary_file, "a") as f:
+        f.write(msg + "\n")
+
+log(f"## Auth Attempt")
+log(f"Username: `{username}`")
+log(f"Instance: `{instance_url}`")
+log(f"Consumer key prefix: `{consumer_key[:20]}...`")
+log(f"Password+token length: `{len(pw_token)}`")
+
 for url in [
     f"{instance_url}/services/oauth2/token",
     "https://login.salesforce.com/services/oauth2/token",
 ]:
-    print(f"Trying: {url}")
+    log(f"\n### Trying: {url}")
     data = urllib.parse.urlencode({
         "grant_type":    "password",
         "client_id":     consumer_key,
@@ -29,19 +38,18 @@ for url in [
             if "access_token" in resp:
                 token    = resp["access_token"]
                 inst_url = resp["instance_url"]
-                print(f"SUCCESS: {inst_url}")
+                log(f"**SUCCESS**: {inst_url}")
                 sfdx_url = f"force://{consumer_key}:{consumer_secret}:{token}@{inst_url.replace('https://','')}"
                 with open("/tmp/sfdx_auth_url.txt", "w") as f:
                     f.write(sfdx_url)
-                print("SFDX URL written")
                 sys.exit(0)
             else:
-                print(f"No token: {resp}")
+                log(f"**No token**: {json.dumps(resp)}")
     except urllib.error.HTTPError as e:
         err = e.read().decode()
-        print(f"HTTP {e.code}: {err[:300]}")
+        log(f"**HTTP {e.code}**: ```{err[:500]}```")
     except Exception as ex:
-        print(f"{type(ex).__name__}: {ex}")
+        log(f"**Exception**: {type(ex).__name__}: {ex}")
 
-print("All attempts failed")
+log("\n**All attempts failed**")
 sys.exit(1)
