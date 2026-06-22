@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TrinReports/Data_Quality_Account_Completeness</fullName>
+    <description>Trinston Data Quality — Account field completeness check. Shows Accounts with blank Industry, Country, or Owner. Used in Phase 5 data quality analysis task. Pre-cleansing score: 34%.</description>
+    <format>Tabular</format>
+    <name>Data Quality — Account Field Completeness</name>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>INDUSTRY</field>
+    </columns>
+    <columns>
+        <field>BILLING_COUNTRY</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_OWNER</field>
+    </columns>
+    <columns>
+        <field>PHONE</field>
+    </columns>
+    <columns>
+        <field>ANNUAL_REVENUE</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 OR 2 OR 3</booleanFilter>
+        <criteriaItems>
+            <column>INDUSTRY</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>BILLING_COUNTRY</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ANNUAL_REVENUE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+    </filter>
+</Report>
