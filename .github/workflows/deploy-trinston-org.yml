@@ -50,33 +50,33 @@ jobs:
           sf project deploy start --source-dir force-app/main/default/reports --target-org trinston-dev --wait 30 --ignore-conflicts || true
           sf project deploy start --source-dir force-app/main/default/dashboards --target-org trinston-dev --wait 30 --ignore-conflicts || true
 
-      - name: Load Accounts via bulk
+      - name: Load Accounts
         if: ${{ github.event.inputs.deploy_data == 'true' }}
         run: |
-          sf data upsert bulk             --sobject Account             --file data/Accounts.csv             --external-id Name             --target-org trinston-dev             --wait 10
+          sf data create bulk             --sobject Account             --file data/Accounts.csv             --target-org trinston-dev             --wait 10
           sf data query --query "SELECT COUNT() FROM Account" --target-org trinston-dev --result-format human
 
-      - name: Load Contacts via bulk
+      - name: Load Contacts
         if: ${{ github.event.inputs.deploy_data == 'true' }}
         run: |
-          sf data upsert bulk --sobject Contact --file data/Contacts.csv --external-id Id --target-org trinston-dev --wait 10 || true
+          sf data create bulk --sobject Contact --file data/Contacts.csv --target-org trinston-dev --wait 10 || true
           sf data query --query "SELECT COUNT() FROM Contact" --target-org trinston-dev --result-format human
 
-      - name: Load Leads via bulk
+      - name: Load Leads
         if: ${{ github.event.inputs.deploy_data == 'true' }}
-        run: sf data upsert bulk --sobject Lead --file data/Leads.csv --external-id Id --target-org trinston-dev --wait 10 || true
+        run: sf data create bulk --sobject Lead --file data/Leads.csv --target-org trinston-dev --wait 10 || true
 
-      - name: Load Campaigns via bulk
+      - name: Load Campaigns
         if: ${{ github.event.inputs.deploy_data == 'true' }}
-        run: sf data upsert bulk --sobject Campaign --file data/Campaigns.csv --external-id Id --target-org trinston-dev --wait 10 || true
+        run: sf data create bulk --sobject Campaign --file data/Campaigns.csv --target-org trinston-dev --wait 10 || true
 
-      - name: Load Opportunities via bulk
+      - name: Load Opportunities
         if: ${{ github.event.inputs.deploy_data == 'true' }}
-        run: sf data upsert bulk --sobject Opportunity --file data/Opportunities.csv --external-id Id --target-org trinston-dev --wait 10 || true
+        run: sf data create bulk --sobject Opportunity --file data/Opportunities.csv --target-org trinston-dev --wait 10 || true
 
-      - name: Load Cases via bulk
+      - name: Load Cases
         if: ${{ github.event.inputs.deploy_data == 'true' }}
-        run: sf data upsert bulk --sobject Case --file data/Cases.csv --external-id Id --target-org trinston-dev --wait 10 || true
+        run: sf data create bulk --sobject Case --file data/Cases.csv --target-org trinston-dev --wait 10 || true
 
       - name: Final verification
         run: |
