@@ -1,61 +1,62 @@
-import urllib.request, os, re, sys
+import urllib.request, urllib.parse, os, re, sys
 
-username = os.environ['SF_USERNAME']
-password = os.environ['SF_PASSWORD'] + os.environ['SF_SECURITY_TOKEN']
+username = os.environ.get('SF_USERNAME', '')
+pw_only  = os.environ.get('SF_PASSWORD', '')
+token    = os.environ.get('SF_SECURITY_TOKEN', '')
+pw_token = os.environ.get('SF_PASSWORD_WITH_TOKEN', pw_only + token)
 
-print(f"Authenticating: {username}")
-print(f"Password length: {len(os.environ['SF_PASSWORD'])} chars")
-print(f"Token length: {len(os.environ['SF_SECURITY_TOKEN'])} chars")
+print(f"Username: {username}")
+print(f"Trying 3 password combinations...")
 
-soap_body = """<?xml version="1.0" encoding="utf-8"?>
+def try_soap(password_str, label):
+    soap = """<?xml version="1.0" encoding="utf-8"?>
 <env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"
     xmlns:urn="urn:partner.soap.sforce.com">
   <env:Body>
     <urn:login>
-      <urn:username>{username}</urn:username>
-      <urn:password>{password}</urn:password>
+      <urn:username>""" + username + """</urn:username>
+      <urn:password>""" + password_str + """</urn:password>
     </urn:login>
   </env:Body>
-</env:Envelope>""".format(username=username, password=password)
+</env:Envelope>"""
+    req = urllib.request.Request(
+        "https://login.salesforce.com/services/Soap/u/59.0",
+        data=soap.encode(),
+        headers={"Content-Type": "text/xml; charset=UTF-8", "SOAPAction": "login"}
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r:
+            body = r.read().decode()
+            if '<sessionId>' in body:
+                session = re.search(r'<sessionId>(.*?)</sessionId>', body).group(1)
+                server  = re.search(r'<serverUrl>(.*?)</serverUrl>', body).group(1)
+                instance = re.search(r'https://([^/]+)', server).group(1)
+                print(f"SUCCESS [{label}]: {instance}")
+                sfdx_url = f"force://PlatformCLI::{session}@{instance}"
+                with open('/tmp/sfdx_auth_url.txt', 'w') as f:
+                    f.write(sfdx_url)
+                return True
+            else:
+                fault = re.search(r'<faultstring>(.*?)</faultstring>', body)
+                print(f"FAIL [{label}]: {fault.group(1) if fault else body[:200]}")
+                return False
+    except urllib.error.HTTPError as e:
+        body = e.read().decode()
+        fault = re.search(r'<faultstring>(.*?)</faultstring>', body)
+        print(f"HTTP {e.code} [{label}]: {fault.group(1) if fault else body[:200]}")
+        return False
+    except Exception as e:
+        print(f"ERROR [{label}]: {type(e).__name__}: {e}")
+        return False
 
-req = urllib.request.Request(
-    "https://login.salesforce.com/services/Soap/u/59.0",
-    data=soap_body.encode(),
-    headers={"Content-Type": "text/xml; charset=UTF-8", "SOAPAction": "login"}
-)
+if try_soap(pw_token, "password+token combined"):
+    sys.exit(0)
+if try_soap(pw_only, "password only"):
+    sys.exit(0)
+if try_soap(pw_only + token, "concatenated from separate secrets"):
+    sys.exit(0)
 
-try:
-    with urllib.request.urlopen(req, timeout=30) as r:
-        body = r.read().decode()
-        session = re.search(r'<sessionId>(.*?)</sessionId>', body)
-        server  = re.search(r'<serverUrl>(.*?)</serverUrl>', body)
-        if session and server:
-            sid      = session.group(1)
-            srv_url  = server.group(1)
-            instance = re.search(r'https://([^/]+)', srv_url).group(1)
-            print(f"SUCCESS: {instance}")
-            sfdx_url = f"force://PlatformCLI::{sid}@{instance}"
-            with open('/tmp/sfdx_auth_url.txt', 'w') as f:
-                f.write(sfdx_url)
-            print("Auth file written")
-            sys.exit(0)
-        else:
-            # Write full response to a file in workspace for commit
-            print(f"No session. Full response:")
-            print(body)
-            with open('auth_error.txt', 'w') as f:
-                f.write(body)
-            sys.exit(1)
-except urllib.error.HTTPError as e:
-    err = e.read().decode()
-    print(f"HTTP {e.code}: {err}")
-    with open('auth_error.txt', 'w') as f:
-        f.write(f"HTTP {e.code}: {err}")
-    sys.exit(1)
-except Exception as e:
-    print(f"Error: {type(e).__name__}: {e}")
-    with open('auth_error.txt', 'w') as f:
-        f.write(f"{type(e).__name__}: {e}")
-    sys.exit(1)
+print("All attempts failed")
+sys.exit(1)
