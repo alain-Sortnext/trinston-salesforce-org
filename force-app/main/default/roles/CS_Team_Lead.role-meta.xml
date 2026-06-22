@@ -2,9 +2,5 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>CS_Team_Lead</fullName>
     <name>CS Team Lead</name>
-    <description>Fatima Al-Rashid and other CS Team Leads</description>
     <parentRole>CS_Director</parentRole>
-    <caseAccessLevel>Edit</caseAccessLevel>
-    <contactAccessLevel>Read</contactAccessLevel>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
 </Role>
