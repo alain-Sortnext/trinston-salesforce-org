@@ -2,9 +2,5 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Operations_Director</fullName>
     <name>Operations Director</name>
-    <description>Derek Hollis — Operations Director (read-only access model)</description>
     <parentRole>CEO</parentRole>
-    <caseAccessLevel>Read</caseAccessLevel>
-    <contactAccessLevel>Read</contactAccessLevel>
-    <opportunityAccessLevel>Read</opportunityAccessLevel>
 </Role>
