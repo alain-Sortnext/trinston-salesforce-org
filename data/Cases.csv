@@ -1,0 +1,601 @@
+Subject,Priority,Status
+Contract renewal,Medium,New
+Late delivery — SLA breach,Low,New
+Delivery not received,Low,Closed
+Delivery not received,Medium,New
+System error on portal,High,Escalated
+System error on portal,Medium,Closed
+Missing items from order,Medium,New
+Portal login problem,Medium,Closed
+Overcharge on invoice,Medium,New
+Wrong items delivered,Medium,Escalated
+Late delivery — SLA breach,Medium,New
+Contract renewal,Medium,New
+Contract renewal,Medium,New
+Late delivery — SLA breach,Medium,Working
+Escalation — repeated issue,Medium,New
+Account access issue,Low,New
+Rate card query,Medium,New
+Complaint — customer service,Medium,Closed
+Wrong items delivered,Medium,New
+Wrong items delivered,Low,New
+Overcharge on invoice,Medium,New
+System error on portal,Medium,New
+Wrong items delivered,High,New
+Driver issue reported,Medium,New
+Rate card query,Medium,New
+Missing items from order,Medium,Closed
+Late delivery — SLA breach,Low,Escalated
+Delivery not received,Medium,New
+Damaged goods on arrival,Medium,Closed
+Invoice query,High,Escalated
+Return collection needed,Medium,New
+Rate card query,Medium,Working
+Wrong items delivered,Medium,New
+Portal login problem,Medium,Escalated
+Invoice query,High,New
+Collection not completed,Medium,Escalated
+Missing items from order,Medium,New
+System error on portal,Medium,New
+Account access issue,Medium,Escalated
+Wrong items delivered,High,New
+Tracking number not working,Medium,Escalated
+Rate card query,Medium,New
+Overcharge on invoice,Medium,Working
+Damaged goods on arrival,Low,Escalated
+Account access issue,Medium,New
+Account access issue,Medium,New
+Driver issue reported,Medium,New
+Cancel order request,Medium,New
+Contract renewal,Low,New
+Driver issue reported,Medium,Closed
+Tracking number not working,Medium,New
+Overcharge on invoice,Medium,Working
+Return collection needed,Medium,Escalated
+Delivery not received,Medium,New
+Wrong items delivered,Medium,New
+Case 56,Medium,New
+Escalation — repeated issue,Medium,Working
+Escalation — repeated issue,Medium,New
+Missing items from order,Medium,New
+Change of delivery address,High,New
+Rate card query,Low,New
+Collection not completed,Medium,New
+Late delivery — SLA breach,Medium,Working
+Account access issue,High,New
+Damaged goods on arrival,High,New
+Tracking number not working,Medium,Working
+Escalation — repeated issue,Medium,New
+Portal login problem,High,New
+Complaint — customer service,Medium,New
+Invoice query,Low,New
+Late delivery — SLA breach,Medium,New
+Collection not completed,Medium,New
+Complaint — customer service,Medium,New
+Cancel order request,Medium,New
+Damaged goods on arrival,Medium,New
+Damaged goods on arrival,Medium,New
+Missing items from order,Medium,Escalated
+Late delivery — SLA breach,Medium,Closed
+Escalation — repeated issue,Medium,New
+Complaint — customer service,Medium,New
+Collection not completed,Medium,Closed
+Account access issue,Medium,Working
+Driver issue reported,Medium,New
+Damaged goods on arrival,Low,New
+Late delivery — SLA breach,Medium,Closed
+System error on portal,Medium,Closed
+Invoice query,Medium,Escalated
+Return collection needed,Low,New
+Collection not completed,Medium,New
+Escalation — repeated issue,High,Closed
+Return collection needed,Medium,New
+Rate card query,Medium,New
+Overcharge on invoice,Medium,New
+Collection not completed,Medium,New
+Invoice query,Medium,New
+Collection not completed,Medium,New
+Account access issue,Medium,Closed
+Damaged goods on arrival,Medium,New
+Late delivery — SLA breach,Low,New
+Account access issue,Medium,New
+Escalation — repeated issue,Medium,New
+Rate card query,Medium,New
+Tracking number not working,Medium,New
+Overcharge on invoice,Medium,Working
+Complaint — customer service,Medium,New
+Wrong items delivered,Low,New
+Account access issue,Medium,New
+Account access issue,Low,New
+Return collection needed,Low,New
+Late delivery — SLA breach,Medium,New
+Damaged goods on arrival,High,New
+Escalation — repeated issue,Medium,New
+Return collection needed,Medium,New
+Return collection needed,Low,New
+Tracking number not working,Low,New
+Complaint — customer service,Medium,New
+Missing items from order,High,New
+Complaint — customer service,Medium,New
+Account access issue,Medium,New
+Wrong items delivered,Medium,New
+Overcharge on invoice,Medium,New
+Complaint — customer service,Medium,Working
+Wrong items delivered,Medium,New
+Tracking number not working,Medium,Working
+System error on portal,Medium,Closed
+Collection not completed,Medium,New
+Cancel order request,Medium,New
+Tracking number not working,High,New
+Damaged goods on arrival,Medium,New
+Tracking number not working,Medium,Escalated
+Account access issue,Medium,New
+Missing items from order,Low,New
+Complaint — customer service,High,Working
+Invoice query,Medium,Working
+Escalation — repeated issue,Medium,New
+Portal login problem,Medium,Closed
+Invoice query,Medium,New
+Late delivery — SLA breach,High,New
+Invoice query,Medium,New
+Collection not completed,Low,New
+Collection not completed,Medium,New
+Missing items from order,Medium,Escalated
+Invoice query,High,New
+Portal login problem,Medium,New
+Cancel order request,Medium,New
+System error on portal,Medium,New
+Cancel order request,Medium,New
+Missing items from order,High,Closed
+Cancel order request,Medium,New
+Driver issue reported,Medium,New
+Driver issue reported,Medium,Escalated
+Portal login problem,Medium,Escalated
+Invoice query,High,New
+Change of delivery address,Medium,New
+Damaged goods on arrival,Medium,Working
+Complaint — customer service,Medium,Closed
+Complaint — customer service,Medium,Working
+Driver issue reported,Medium,New
+Delivery not received,Medium,New
+Damaged goods on arrival,Medium,Working
+Collection not completed,Medium,New
+Driver issue reported,Medium,New
+Contract renewal,Medium,New
+Wrong items delivered,High,New
+Rate card query,Medium,Closed
+Account access issue,High,New
+Overcharge on invoice,Medium,New
+Account access issue,Medium,Closed
+Return collection needed,Medium,New
+Rate card query,Low,New
+Driver issue reported,Medium,Closed
+Collection not completed,Medium,New
+Collection not completed,High,Working
+Tracking number not working,Medium,New
+Return collection needed,Medium,New
+Return collection needed,Medium,New
+System error on portal,High,Closed
+Contract renewal,High,New
+Contract renewal,Medium,New
+Cancel order request,Low,Escalated
+Tracking number not working,Medium,New
+Collection not completed,Low,New
+Rate card query,Medium,New
+Rate card query,High,Closed
+Driver issue reported,Medium,New
+Wrong items delivered,Medium,New
+Rate card query,Low,Working
+Overcharge on invoice,Medium,Closed
+Cancel order request,Low,New
+System error on portal,Medium,Closed
+Delivery not received,Medium,New
+Portal login problem,High,New
+Damaged goods on arrival,Medium,New
+Collection not completed,Medium,New
+Damaged goods on arrival,Medium,New
+Damaged goods on arrival,Medium,New
+Driver issue reported,Medium,Closed
+Wrong items delivered,Low,Working
+Cancel order request,Medium,New
+Late delivery — SLA breach,Medium,New
+Escalation — repeated issue,Medium,Escalated
+Escalation — repeated issue,Medium,New
+Cancel order request,Medium,New
+Escalation — repeated issue,Medium,New
+Late delivery — SLA breach,Medium,Closed
+Account access issue,Medium,New
+Account access issue,Medium,New
+Wrong items delivered,Medium,New
+Escalation — repeated issue,Medium,New
+Overcharge on invoice,Medium,New
+Wrong items delivered,Medium,New
+Escalation — repeated issue,Medium,New
+Wrong items delivered,Medium,Closed
+Portal login problem,Medium,New
+Driver issue reported,High,New
+System error on portal,Medium,New
+Late delivery — SLA breach,Medium,New
+Collection not completed,Medium,New
+Return collection needed,Medium,New
+Contract renewal,High,New
+Portal login problem,Medium,New
+Tracking number not working,Medium,New
+Change of delivery address,Medium,Closed
+Account access issue,High,New
+Rate card query,Medium,Working
+Contract renewal,Medium,New
+Contract renewal,Low,New
+Escalation — repeated issue,Low,New
+Complaint — customer service,High,Working
+Late delivery — SLA breach,Medium,New
+Change of delivery address,Medium,New
+Complaint — customer service,Medium,New
+Contract renewal,Medium,Working
+Delivery not received,Medium,New
+Delivery not received,Medium,Working
+Escalation — repeated issue,Medium,Escalated
+Delivery not received,Medium,Escalated
+Overcharge on invoice,Medium,Closed
+Escalation — repeated issue,Medium,New
+Escalation — repeated issue,Low,Escalated
+Account access issue,Medium,New
+Tracking number not working,High,New
+Rate card query,Low,Escalated
+Delivery not received,High,Escalated
+Late delivery — SLA breach,High,New
+Contract renewal,Low,New
+Wrong items delivered,Medium,Working
+Damaged goods on arrival,Low,New
+Wrong items delivered,Medium,New
+Contract renewal,Low,New
+Change of delivery address,High,Escalated
+Escalation — repeated issue,Medium,New
+Wrong items delivered,Medium,New
+Collection not completed,High,New
+System error on portal,Medium,Working
+Wrong items delivered,Medium,New
+Damaged goods on arrival,Medium,New
+Wrong items delivered,Medium,Working
+Tracking number not working,Medium,New
+Missing items from order,Medium,Closed
+Wrong items delivered,Medium,New
+Portal login problem,Medium,Working
+Tracking number not working,Medium,Escalated
+Rate card query,Medium,New
+Change of delivery address,Medium,New
+Collection not completed,High,New
+Tracking number not working,Low,New
+Damaged goods on arrival,Medium,New
+Late delivery — SLA breach,Medium,Escalated
+Overcharge on invoice,Medium,New
+Overcharge on invoice,Low,New
+Collection not completed,Medium,New
+Collection not completed,Medium,Working
+Account access issue,Medium,New
+Cancel order request,Medium,Working
+Overcharge on invoice,Medium,Closed
+Escalation — repeated issue,High,Closed
+Invoice query,High,Escalated
+Escalation — repeated issue,High,New
+Late delivery — SLA breach,Medium,New
+Return collection needed,Low,New
+Late delivery — SLA breach,Low,New
+System error on portal,High,New
+Invoice query,Medium,New
+Contract renewal,Medium,Escalated
+Tracking number not working,Medium,New
+Return collection needed,Medium,Working
+System error on portal,Medium,New
+System error on portal,Medium,New
+Missing items from order,Low,New
+Collection not completed,Medium,New
+Delivery not received,Medium,New
+Return collection needed,Medium,New
+Complaint — customer service,Medium,New
+Escalation — repeated issue,Low,New
+Cancel order request,Medium,Closed
+Escalation — repeated issue,High,Escalated
+Wrong items delivered,Medium,Closed
+Complaint — customer service,Medium,New
+Wrong items delivered,Low,New
+Damaged goods on arrival,Medium,New
+Change of delivery address,Low,New
+Account access issue,Medium,New
+Account access issue,Medium,New
+Driver issue reported,High,New
+Cancel order request,Medium,New
+Delivery not received,Medium,Escalated
+Complaint — customer service,Medium,New
+Invoice query,Medium,New
+Overcharge on invoice,Medium,New
+Change of delivery address,Low,New
+Driver issue reported,Medium,New
+Overcharge on invoice,Medium,New
+Complaint — customer service,Medium,New
+Invoice query,Medium,New
+Complaint — customer service,Medium,New
+Rate card query,Low,Escalated
+Contract renewal,Medium,New
+Rate card query,Medium,New
+Late delivery — SLA breach,Medium,New
+Overcharge on invoice,Medium,New
+Invoice query,Medium,Working
+Damaged goods on arrival,High,New
+Wrong items delivered,Medium,New
+System error on portal,Medium,New
+Portal login problem,Medium,New
+Portal login problem,Medium,New
+Portal login problem,Medium,New
+Account access issue,Medium,Closed
+Wrong items delivered,Medium,Working
+Invoice query,Medium,New
+Contract renewal,Medium,Escalated
+Wrong items delivered,Medium,New
+Cancel order request,Medium,New
+Contract renewal,Medium,Working
+Late delivery — SLA breach,Medium,New
+Complaint — customer service,Medium,New
+Late delivery — SLA breach,Medium,New
+Collection not completed,High,New
+Complaint — customer service,Medium,New
+Missing items from order,Medium,New
+Late delivery — SLA breach,High,Escalated
+Escalation — repeated issue,Medium,New
+Portal login problem,Low,Closed
+Escalation — repeated issue,Medium,New
+Return collection needed,Medium,New
+Damaged goods on arrival,Medium,Closed
+System error on portal,Low,Working
+Cancel order request,Medium,New
+Collection not completed,Medium,New
+Collection not completed,Medium,New
+Wrong items delivered,Medium,New
+Missing items from order,Low,New
+Tracking number not working,Medium,New
+Driver issue reported,Medium,New
+Rate card query,Medium,New
+Escalation — repeated issue,Low,New
+Overcharge on invoice,Medium,New
+Driver issue reported,High,New
+Portal login problem,Medium,New
+Cancel order request,Medium,New
+Change of delivery address,Medium,New
+Change of delivery address,Medium,New
+Invoice query,Medium,New
+Delivery not received,Medium,New
+Collection not completed,Medium,New
+Cancel order request,Medium,New
+Change of delivery address,Low,Closed
+Cancel order request,Medium,New
+Delivery not received,Low,Working
+Delivery not received,Medium,Working
+Change of delivery address,High,New
+Collection not completed,High,Closed
+Change of delivery address,Medium,New
+Escalation — repeated issue,Medium,Closed
+Portal login problem,Medium,New
+Escalation — repeated issue,Low,Closed
+Complaint — customer service,Medium,New
+Contract renewal,High,New
+Wrong items delivered,Medium,Working
+Tracking number not working,Medium,New
+System error on portal,Medium,New
+Account access issue,Medium,New
+Account access issue,Medium,New
+Collection not completed,Medium,New
+Escalation — repeated issue,Medium,New
+Portal login problem,Medium,New
+Rate card query,Low,Closed
+Tracking number not working,Medium,Closed
+Cancel order request,Medium,New
+Portal login problem,Medium,New
+Late delivery — SLA breach,Medium,Working
+Tracking number not working,Medium,Escalated
+Collection not completed,High,New
+Delivery not received,Medium,New
+Complaint — customer service,Medium,Escalated
+Portal login problem,Medium,New
+Return collection needed,Medium,New
+Complaint — customer service,High,Working
+Delivery not received,Medium,New
+Driver issue reported,High,New
+Late delivery — SLA breach,Medium,New
+Account access issue,Medium,New
+Change of delivery address,Medium,New
+Cancel order request,Medium,New
+Delivery not received,Medium,New
+Delivery not received,Medium,Escalated
+Overcharge on invoice,Medium,New
+Account access issue,Medium,New
+Late delivery — SLA breach,Medium,New
+Collection not completed,Medium,New
+Rate card query,Low,New
+Invoice query,Medium,New
+Rate card query,High,New
+Wrong items delivered,Medium,New
+Driver issue reported,Medium,Closed
+Delivery not received,Medium,New
+Contract renewal,Medium,Working
+Return collection needed,Medium,New
+Contract renewal,Medium,New
+Return collection needed,Medium,New
+Wrong items delivered,Medium,New
+Return collection needed,High,New
+Driver issue reported,Medium,New
+Contract renewal,Low,New
+Account access issue,High,Working
+Return collection needed,Low,New
+System error on portal,Medium,New
+Invoice query,Medium,Escalated
+Portal login problem,Medium,New
+Account access issue,Medium,New
+Driver issue reported,Medium,New
+Missing items from order,Medium,New
+Wrong items delivered,High,New
+Contract renewal,Low,New
+Invoice query,Medium,New
+Tracking number not working,Medium,New
+Account access issue,Medium,New
+Wrong items delivered,Medium,New
+Collection not completed,Medium,Closed
+Damaged goods on arrival,Medium,New
+Missing items from order,Medium,New
+Account access issue,Medium,Closed
+Invoice query,High,New
+Rate card query,Medium,New
+Account access issue,Low,New
+Complaint — customer service,Low,New
+Missing items from order,Low,Closed
+Complaint — customer service,Medium,New
+Cancel order request,High,New
+Escalation — repeated issue,Medium,New
+Return collection needed,Medium,New
+Rate card query,High,New
+Tracking number not working,Medium,Working
+Change of delivery address,Medium,New
+Collection not completed,Medium,New
+Overcharge on invoice,High,New
+Tracking number not working,Medium,New
+Collection not completed,High,Working
+Contract renewal,Medium,New
+Return collection needed,Medium,New
+Contract renewal,Medium,New
+Delivery not received,Medium,New
+Account access issue,Medium,New
+Change of delivery address,Medium,Closed
+System error on portal,High,Escalated
+Late delivery — SLA breach,High,New
+Late delivery — SLA breach,Medium,New
+Return collection needed,High,New
+Rate card query,Medium,New
+Rate card query,Low,New
+Wrong items delivered,Medium,New
+Contract renewal,Medium,New
+Complaint — customer service,Medium,New
+Damaged goods on arrival,Medium,New
+Tracking number not working,Medium,New
+Portal login problem,Low,New
+Escalation — repeated issue,Medium,New
+Missing items from order,Medium,Working
+Contract renewal,Low,New
+Wrong items delivered,Medium,Working
+Contract renewal,Medium,New
+Complaint — customer service,Medium,New
+Missing items from order,Medium,New
+Damaged goods on arrival,Medium,New
+Delivery not received,Medium,New
+Account access issue,Medium,New
+Invoice query,Medium,Escalated
+Damaged goods on arrival,Low,New
+Contract renewal,Medium,New
+Damaged goods on arrival,Medium,New
+Damaged goods on arrival,High,New
+Damaged goods on arrival,Medium,New
+Escalation — repeated issue,Medium,Working
+Portal login problem,High,New
+Cancel order request,Medium,New
+Portal login problem,Medium,New
+Rate card query,Medium,New
+Contract renewal,Medium,New
+Collection not completed,Medium,New
+Delivery not received,Medium,New
+Rate card query,Medium,New
+Cancel order request,Medium,New
+Escalation — repeated issue,Medium,New
+Portal login problem,Medium,Closed
+Damaged goods on arrival,Medium,Working
+Overcharge on invoice,Medium,New
+Change of delivery address,High,New
+Delivery not received,Medium,New
+Cancel order request,Medium,New
+Return collection needed,Low,Working
+Account access issue,Medium,New
+Return collection needed,Medium,Escalated
+Invoice query,Medium,Working
+Portal login problem,Medium,Escalated
+Invoice query,Medium,Closed
+Contract renewal,Medium,New
+Portal login problem,Medium,New
+Overcharge on invoice,Medium,New
+Overcharge on invoice,Medium,New
+Missing items from order,Medium,New
+Late delivery — SLA breach,Medium,New
+Cancel order request,Medium,New
+Driver issue reported,Medium,New
+Cancel order request,Medium,Working
+Escalation — repeated issue,Medium,New
+Missing items from order,Medium,New
+Return collection needed,Low,New
+Complaint — customer service,Medium,Closed
+Return collection needed,High,New
+Driver issue reported,Medium,New
+Damaged goods on arrival,Medium,New
+Damaged goods on arrival,Low,New
+Delivery not received,Medium,New
+Wrong items delivered,Medium,Working
+Invoice query,Low,New
+Rate card query,High,Escalated
+Return collection needed,Medium,New
+Tracking number not working,Medium,Escalated
+Missing items from order,Medium,New
+Wrong items delivered,Medium,New
+Portal login problem,Medium,Working
+Complaint — customer service,Low,New
+Change of delivery address,Medium,New
+Contract renewal,Medium,Working
+Collection not completed,High,New
+Complaint — customer service,Medium,New
+Portal login problem,High,New
+Damaged goods on arrival,Medium,New
+Contract renewal,Medium,Escalated
+Delivery not received,Medium,Working
+Change of delivery address,Medium,New
+Overcharge on invoice,Medium,New
+Complaint — customer service,Medium,New
+Delivery not received,Medium,New
+Cancel order request,Low,New
+System error on portal,Medium,New
+Overcharge on invoice,Medium,New
+Contract renewal,Medium,New
+Late delivery — SLA breach,High,New
+Invoice query,Low,New
+Change of delivery address,Medium,New
+Driver issue reported,Low,New
+Cancel order request,Medium,Closed
+Late delivery — SLA breach,Low,New
+Portal login problem,High,New
+System error on portal,Medium,New
+Portal login problem,Medium,Escalated
+Change of delivery address,Medium,New
+Account access issue,Medium,Working
+Delivery not received,Medium,New
+Driver issue reported,Medium,New
+Delivery not received,Medium,New
+Account access issue,Medium,New
+Late delivery — SLA breach,Medium,Working
+Missing items from order,Medium,New
+Collection not completed,Medium,New
+Return collection needed,Medium,New
+Account access issue,Medium,Working
+Account access issue,Low,New
+Change of delivery address,Medium,New
+Overcharge on invoice,Medium,Escalated
+Late delivery — SLA breach,Medium,New
+Return collection needed,Medium,Escalated
+Complaint — customer service,Medium,New
+Wrong items delivered,Medium,Escalated
+Late delivery — SLA breach,Medium,New
+Portal login problem,Medium,New
+Escalation — repeated issue,Medium,New
+Change of delivery address,High,New
+Cancel order request,Medium,New
+Delivery not received,Medium,Escalated
+Account access issue,Low,New
+System error on portal,Medium,New
+Cancel order request,High,Closed
+System error on portal,Low,Escalated
+Delivery not received,Medium,New
+Rate card query,Medium,New
+Rate card query,High,New
+Driver issue reported,High,New
