@@ -2,9 +2,7 @@
 <Queue xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Manchester_CS_Queue</fullName>
     <name>Manchester CS Queue</name>
-    <description>CS case queue — Manchester team (Fatima Al-Rashid)</description>
     <doesSendEmailToMembers>false</doesSendEmailToMembers>
-    <email>manchester-cs@trinston.co.uk</email>
     <queueSobject>
         <sobjectType>Case</sobjectType>
     </queueSobject>
