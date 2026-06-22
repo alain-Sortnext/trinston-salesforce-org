@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Regional_Sales_Manager</fullName>
+    <name>Regional Sales Manager</name>
+    <description>Kieran Walsh, Dave Pickering and other regional managers</description>
+    <parentRole>Sales_Director</parentRole>
+    <caseAccessLevel>Read</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+</Role>
