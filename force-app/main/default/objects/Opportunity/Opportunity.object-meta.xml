@@ -7,24 +7,4 @@
         <errorConditionFormula>ISBLANK(CloseDate)</errorConditionFormula>
         <errorMessage>Close Date is required. Please enter a valid future close date.</errorMessage>
     </validationRules>
-    <validationRules>
-        <fullName>Amount_Required_At_Needs_Analysis</fullName>
-        <active>true</active>
-        <description>Amount mandatory from Needs Analysis stage onwards</description>
-        <errorConditionFormula>AND(
-  ISPICKVAL(StageName, "Needs Analysis"),
-  ISBLANK(Amount)
-)</errorConditionFormula>
-        <errorMessage>Amount is required at Needs Analysis stage and beyond. Please enter an opportunity value.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Win_Loss_Reason_Required_On_Close</fullName>
-        <active>true</active>
-        <description>Win/Loss Reason mandatory when stage is Closed Lost</description>
-        <errorConditionFormula>AND(
-  ISPICKVAL(StageName, "Closed Lost"),
-  ISBLANK(WinLossReason__c)
-)</errorConditionFormula>
-        <errorMessage>Win/Loss Reason is required when closing a deal as Lost. Please select a reason.</errorMessage>
-    </validationRules>
 </CustomObject>
