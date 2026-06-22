@@ -1,0 +1,6 @@
+{
+  "packageDirectories": [{"path": "force-app", "default": true}],
+  "name": "trinston-salesforce-crm",
+  "namespace": "",
+  "sourceApiVersion": "59.0"
+}
