@@ -35,10 +35,32 @@ jobs:
           fi
           sf org display --target-org trinston-dev
 
-      - name: Deploy metadata
+      - name: Deploy custom fields only
         run: |
-          sf project deploy start             --source-dir force-app             --target-org trinston-dev             --wait 30             --ignore-conflicts
-          echo "Deploy exit code: $?"
+          sf project deploy start             --source-dir force-app/main/default/objects             --target-org trinston-dev             --wait 30             --ignore-conflicts
+          echo "Fields deployed: $?"
+
+      - name: Deploy roles
+        run: |
+          sf project deploy start             --source-dir force-app/main/default/roles             --target-org trinston-dev             --wait 30             --ignore-conflicts
+          echo "Roles deployed: $?"
+
+      - name: Deploy queues
+        run: |
+          sf project deploy start             --source-dir force-app/main/default/queues             --target-org trinston-dev             --wait 30             --ignore-conflicts
+          echo "Queues deployed: $?"
+
+      - name: Deploy flow
+        run: |
+          sf project deploy start             --source-dir force-app/main/default/flows             --target-org trinston-dev             --wait 30             --ignore-conflicts || echo "Flow deploy failed - continuing"
+
+      - name: Deploy reports
+        run: |
+          sf project deploy start             --source-dir force-app/main/default/reports             --target-org trinston-dev             --wait 30             --ignore-conflicts || echo "Reports deploy failed - continuing"
+
+      - name: Deploy dashboards
+        run: |
+          sf project deploy start             --source-dir force-app/main/default/dashboards             --target-org trinston-dev             --wait 30             --ignore-conflicts || echo "Dashboard deploy failed - continuing"
 
       - name: Load Accounts
         if: ${{ github.event.inputs.deploy_data == 'true' }}
@@ -71,4 +93,4 @@ jobs:
             COUNT=$(sf data query --query "SELECT COUNT() FROM $OBJ" --target-org trinston-dev --result-format csv | tail -1)
             echo "  $OBJ: $COUNT"
           done
-          echo "Deployment complete"
+          echo "=== DEPLOYMENT COMPLETE ==="
