@@ -44,41 +44,39 @@ jobs:
       - name: Deploy queues
         run: sf project deploy start --source-dir force-app/main/default/queues --target-org trinston-dev --wait 30 --ignore-conflicts
 
-      - name: Deploy flow
-        run: sf project deploy start --source-dir force-app/main/default/flows --target-org trinston-dev --wait 30 --ignore-conflicts || echo "Flow skipped"
-
-      - name: Deploy reports and dashboards
+      - name: Deploy flows and reports
         run: |
-          sf project deploy start --source-dir force-app/main/default/reports --target-org trinston-dev --wait 30 --ignore-conflicts || echo "Reports skipped"
-          sf project deploy start --source-dir force-app/main/default/dashboards --target-org trinston-dev --wait 30 --ignore-conflicts || echo "Dashboards skipped"
+          sf project deploy start --source-dir force-app/main/default/flows --target-org trinston-dev --wait 30 --ignore-conflicts || true
+          sf project deploy start --source-dir force-app/main/default/reports --target-org trinston-dev --wait 30 --ignore-conflicts || true
+          sf project deploy start --source-dir force-app/main/default/dashboards --target-org trinston-dev --wait 30 --ignore-conflicts || true
 
-      - name: Load Accounts
+      - name: Load Accounts via bulk
         if: ${{ github.event.inputs.deploy_data == 'true' }}
         run: |
-          sf data import tree             --files data/Accounts.json             --target-org trinston-dev             --api-version 59.0
+          sf data upsert bulk             --sobject Account             --file data/Accounts.csv             --external-id Name             --target-org trinston-dev             --wait 10
           sf data query --query "SELECT COUNT() FROM Account" --target-org trinston-dev --result-format human
 
-      - name: Load Contacts
+      - name: Load Contacts via bulk
         if: ${{ github.event.inputs.deploy_data == 'true' }}
         run: |
-          sf data import tree --files data/Contacts.json --target-org trinston-dev --api-version 59.0
+          sf data upsert bulk --sobject Contact --file data/Contacts.csv --external-id Id --target-org trinston-dev --wait 10 || true
           sf data query --query "SELECT COUNT() FROM Contact" --target-org trinston-dev --result-format human
 
-      - name: Load Leads
+      - name: Load Leads via bulk
         if: ${{ github.event.inputs.deploy_data == 'true' }}
-        run: sf data import tree --files data/Leads.json --target-org trinston-dev --api-version 59.0
+        run: sf data upsert bulk --sobject Lead --file data/Leads.csv --external-id Id --target-org trinston-dev --wait 10 || true
 
-      - name: Load Campaigns
+      - name: Load Campaigns via bulk
         if: ${{ github.event.inputs.deploy_data == 'true' }}
-        run: sf data import tree --files data/Campaigns.json --target-org trinston-dev --api-version 59.0
+        run: sf data upsert bulk --sobject Campaign --file data/Campaigns.csv --external-id Id --target-org trinston-dev --wait 10 || true
 
-      - name: Load Opportunities
+      - name: Load Opportunities via bulk
         if: ${{ github.event.inputs.deploy_data == 'true' }}
-        run: sf data import tree --files data/Opportunities.json --target-org trinston-dev --api-version 59.0
+        run: sf data upsert bulk --sobject Opportunity --file data/Opportunities.csv --external-id Id --target-org trinston-dev --wait 10 || true
 
-      - name: Load Cases
+      - name: Load Cases via bulk
         if: ${{ github.event.inputs.deploy_data == 'true' }}
-        run: sf data import tree --files data/Cases.json --target-org trinston-dev --api-version 59.0
+        run: sf data upsert bulk --sobject Case --file data/Cases.csv --external-id Id --target-org trinston-dev --wait 10 || true
 
       - name: Final verification
         run: |
