@@ -1,0 +1,3 @@
+.forceignore
+**/node_modules/**
+**/.git/**
