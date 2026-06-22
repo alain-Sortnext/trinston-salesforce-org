@@ -4,6 +4,8 @@ username = os.environ['SF_USERNAME']
 password = os.environ['SF_PASSWORD'] + os.environ['SF_SECURITY_TOKEN']
 
 print(f"Authenticating: {username}")
+print(f"Password length: {len(os.environ['SF_PASSWORD'])} chars")
+print(f"Token length: {len(os.environ['SF_SECURITY_TOKEN'])} chars")
 
 soap_body = """<?xml version="1.0" encoding="utf-8"?>
 <env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
@@ -40,11 +42,20 @@ try:
             print("Auth file written")
             sys.exit(0)
         else:
-            print(f"No session in response: {body[:300]}")
+            # Write full response to a file in workspace for commit
+            print(f"No session. Full response:")
+            print(body)
+            with open('auth_error.txt', 'w') as f:
+                f.write(body)
             sys.exit(1)
 except urllib.error.HTTPError as e:
-    print(f"HTTP {e.code}: {e.read().decode()[:300]}")
+    err = e.read().decode()
+    print(f"HTTP {e.code}: {err}")
+    with open('auth_error.txt', 'w') as f:
+        f.write(f"HTTP {e.code}: {err}")
     sys.exit(1)
 except Exception as e:
     print(f"Error: {type(e).__name__}: {e}")
+    with open('auth_error.txt', 'w') as f:
+        f.write(f"{type(e).__name__}: {e}")
     sys.exit(1)
