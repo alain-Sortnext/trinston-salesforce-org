@@ -22,97 +22,22 @@ jobs:
       - name: Install Salesforce CLI
         run: npm install -g @salesforce/cli@latest
 
-      - name: Authenticate via SOAP login
+      - name: Authenticate to Salesforce
         env:
-          SF_USERNAME:       ${{ secrets.SF_USERNAME }}
-          SF_PASSWORD:       ${{ secrets.SF_PASSWORD }}
+          SF_USERNAME: ${{ secrets.SF_USERNAME }}
+          SF_PASSWORD: ${{ secrets.SF_PASSWORD }}
           SF_SECURITY_TOKEN: ${{ secrets.SF_SECURITY_TOKEN }}
-          SF_INSTANCE_URL:   ${{ secrets.SF_INSTANCE_URL }}
+        run: python3 scripts/sf_auth.py
+
+      - name: Login SF CLI
         run: |
-          cat > /tmp/soap_auth.py << 'PYEOF'
-import urllib.request, os, re, sys
-
-username = os.environ['SF_USERNAME']
-password = os.environ['SF_PASSWORD'] + os.environ['SF_SECURITY_TOKEN']
-
-soap_body = f"""<?xml version="1.0" encoding="utf-8"?>
-<env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"
-    xmlns:urn="urn:partner.soap.sforce.com">
-  <env:Body>
-    <urn:login>
-      <urn:username>{username}</urn:username>
-      <urn:password>{password}</urn:password>
-    </urn:login>
-  </env:Body>
-</env:Envelope>"""
-
-req = urllib.request.Request(
-    "https://login.salesforce.com/services/Soap/u/59.0",
-    data=soap_body.encode(),
-    headers={
-        "Content-Type": "text/xml; charset=UTF-8",
-        "SOAPAction": "login"
-    }
-)
-
-try:
-    with urllib.request.urlopen(req, timeout=30) as r:
-        body = r.read().decode()
-        print(f"HTTP {r.status}")
-        
-        # Extract session ID and server URL
-        session = re.search(r'<sessionId>(.*?)</sessionId>', body)
-        server  = re.search(r'<serverUrl>(.*?)</serverUrl>', body)
-        
-        if session and server:
-            sid      = session.group(1)
-            srv_url  = server.group(1)
-            # Get instance from server URL
-            instance = re.search(r'https://([^/]+)', srv_url).group(1)
-            print(f"✅ SOAP login successful")
-            print(f"Instance: {instance}")
-            print(f"Session ID prefix: {sid[:20]}...")
-            
-            # Write SFDX URL using session ID as access token
-            sfdx_url = f"force://PlatformCLI::{sid}@{instance}"
-            with open('/tmp/sfdx_auth_url.txt', 'w') as f:
-                f.write(sfdx_url)
-            print("✅ Auth file written")
-            sys.exit(0)
-        else:
-            print(f"❌ No session in response")
-            print(body[:500])
-            sys.exit(1)
-            
-except urllib.error.HTTPError as e:
-    body = e.read().decode()
-    print(f"HTTP Error {e.code}: {body[:300]}")
-    sys.exit(1)
-except Exception as e:
-    print(f"Exception: {type(e).__name__}: {e}")
-    sys.exit(1)
-PYEOF
-          python3 /tmp/soap_auth.py
-
-      - name: Login SF CLI via session
-        run: |
-          sf org login sfdx-url \
-            --sfdx-url-file /tmp/sfdx_auth_url.txt \
-            --alias trinston-dev \
-            --set-default
-          echo "✅ SF CLI connected"
+          sf org login sfdx-url --sfdx-url-file /tmp/sfdx_auth_url.txt --alias trinston-dev --set-default
           sf org display --target-org trinston-dev
 
       - name: Deploy metadata
         run: |
-          sf project deploy start \
-            --source-dir force-app \
-            --target-org trinston-dev \
-            --wait 30 \
-            --ignore-conflicts
-          echo "✅ Metadata deployed"
+          sf project deploy start --source-dir force-app --target-org trinston-dev --wait 30 --ignore-conflicts
+          echo "Metadata deployed"
 
       - name: Load Accounts
         if: ${{ github.event.inputs.deploy_data == 'true' }}
@@ -140,9 +65,9 @@ PYEOF
 
       - name: Final verification
         run: |
-          echo "=== TRINSTON ORG — FINAL RECORD COUNTS ==="
+          echo "=== TRINSTON ORG RECORD COUNTS ==="
           for OBJ in Account Contact Lead Campaign Opportunity Case; do
             COUNT=$(sf data query --query "SELECT COUNT() FROM $OBJ" --target-org trinston-dev --result-format csv | tail -1)
             echo "  $OBJ: $COUNT"
           done
-          echo "✅ Trinston org deployment complete"
+          echo "Deployment complete"
