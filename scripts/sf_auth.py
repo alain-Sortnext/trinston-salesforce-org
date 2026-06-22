@@ -28,15 +28,14 @@ try:
         inst_url = resp["instance_url"]
         log(f"SUCCESS: {inst_url}")
 
-    # Save for data loading
     os.makedirs("/tmp/sf", exist_ok=True)
     open("/tmp/sf/token", "w").write(token)
     open("/tmp/sf/instance", "w").write(inst_url)
 
-    # Write SFDX URL for sf cli login
+    # Write SFDX URL - sf cli format
     sfdx_url = f"force://{consumer_key}:{consumer_secret}:{token}@{inst_url.replace('https://','')}"
     open("/tmp/sfdx_auth_url.txt","w").write(sfdx_url)
-    log("Credentials saved")
+    log("Auth complete - token and sfdx url saved")
     sys.exit(0)
 
 except urllib.error.HTTPError as e:
