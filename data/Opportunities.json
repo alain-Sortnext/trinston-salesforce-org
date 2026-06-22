@@ -1,0 +1,5051 @@
+{
+  "records": [
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef1"
+      },
+      "Opportunity Name": "Account 215 Ltd \u2014 Distribution Agreement",
+      "Account Name": "Account 215 Ltd",
+      "Stage": "CLOSED WON",
+      "Amount": "55000",
+      "Close Date": "2025-11-01",
+      "Owner": "m.webb.jr@trinston.co.uk",
+      "Created Date": "2025-09-20"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef2"
+      },
+      "Opportunity Name": "Account 183 Ltd \u2014 New Business",
+      "Account Name": "Account 183 Ltd",
+      "Stage": "Id. Decision Makers",
+      "Amount": "42000",
+      "Close Date": "2026-03-21",
+      "Owner": "d.hollis@trinston.co.uk",
+      "Created Date": "2025-02-18"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef3"
+      },
+      "Opportunity Name": "Account 153 Ltd \u2014 New Business",
+      "Account Name": "Account 153 Ltd",
+      "Stage": "Negotiation/Review",
+      "Close Date": "2026-09-16",
+      "Owner": "c.finch@trinston.co.uk",
+      "Created Date": "2022-12-08"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef4"
+      },
+      "Opportunity Name": "Account 229 Ltd \u2014 Distribution Agreement",
+      "Account Name": "Account 229 Ltd",
+      "Stage": "Stage 1",
+      "Amount": "135000",
+      "Close Date": "2026-07-31",
+      "Owner": "t.morgan@trinston.co.uk",
+      "Created Date": "2023-10-14"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef5"
+      },
+      "Opportunity Name": "Account 176 Ltd \u2014 Supply Contract",
+      "Account Name": "Account 176 Ltd",
+      "Stage": "New",
+      "Amount": "12000",
+      "Close Date": "2026-10-09",
+      "Owner": "d.pickering@trinston.co.uk",
+      "Created Date": "2024-07-14"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef6"
+      },
+      "Opportunity Name": "Account 115 Ltd \u2014 Q1 Renewal",
+      "Account Name": "Account 115 Ltd",
+      "Stage": "Needs Analysis",
+      "Amount": "55000",
+      "Close Date": "15/07/2026",
+      "Owner": "d.pickering@trinston.co.uk",
+      "Created Date": "2025-09-21"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef7"
+      },
+      "Opportunity Name": "Whitby Marine \u2014 Q1 Renewal",
+      "Account Name": "Whitby Marine",
+      "Stage": "Negotiation/Review",
+      "Amount": "55000",
+      "Close Date": "TBC",
+      "Owner": "t.morgan@trinston.co.uk",
+      "Created Date": "2024-08-25"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef8"
+      },
+      "Opportunity Name": "Account 187 Ltd \u2014 Logistics Contract",
+      "Account Name": "Account 187 Ltd",
+      "Stage": "CLOSED WON",
+      "Amount": "42000",
+      "Owner": "v.osei@trinston.co.uk",
+      "Created Date": "2022-05-12"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef9"
+      },
+      "Opportunity Name": "Emsworth Logistics \u2014 New Business",
+      "Account Name": "Emsworth Logistics",
+      "Stage": "Id. Decision Makers",
+      "Amount": "75000",
+      "Close Date": "2025-09-04",
+      "Owner": "p.mehta@trinston.co.uk",
+      "Created Date": "2025-11-20"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef10"
+      },
+      "Opportunity Name": "Account 225 Ltd \u2014 New Business",
+      "Account Name": "Account 225 Ltd",
+      "Stage": "Qualification",
+      "Amount": "35000",
+      "Close Date": "2026-05-04",
+      "Owner": "r.patel@trinston.co.uk",
+      "Created Date": "2022-11-01"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef11"
+      },
+      "Opportunity Name": "Account 222 Ltd \u2014 Logistics Contract",
+      "Account Name": "Account 222 Ltd",
+      "Stage": "Stage 2",
+      "Amount": "22000",
+      "Close Date": "2026-06-18",
+      "Owner": "k.walsh@trinston.co.uk",
+      "Created Date": "2025-11-28"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef12"
+      },
+      "Opportunity Name": "Gainsborough Parts \u2014 Annual Framework",
+      "Account Name": "Gainsborough Parts",
+      "Stage": "CLOSED WON",
+      "Amount": "42000",
+      "Close Date": "2026-07-09",
+      "Owner": "v.osei@trinston.co.uk",
+      "Created Date": "2025-11-11"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef13"
+      },
+      "Opportunity Name": "Account 123 Ltd \u2014 Warehousing Deal",
+      "Account Name": "Account 123 Ltd",
+      "Stage": "Closed Lost",
+      "Amount": "15000",
+      "Close Date": "05/08/2026",
+      "Owner": "a.brooks@trinston.co.uk",
+      "Created Date": "2025-02-17"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef14"
+      },
+      "Opportunity Name": "Account 207 Ltd \u2014 Supply Contract",
+      "Account Name": "Account 207 Ltd",
+      "Stage": "Active",
+      "Owner": "f.alrashid@trinston.co.uk",
+      "Created Date": "2023-06-14"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef15"
+      },
+      "Opportunity Name": "Account 126 Ltd \u2014 Supply Contract",
+      "Account Name": "Account 126 Ltd",
+      "Stage": "Stage 2",
+      "Close Date": "08/03/2026",
+      "Owner": "f.alrashid@trinston.co.uk",
+      "Created Date": "2025-11-21"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef16"
+      },
+      "Opportunity Name": "Account 123 Ltd \u2014 Warehousing Deal",
+      "Account Name": "Account 123 Ltd",
+      "Stage": "CLOSED WON",
+      "Amount": "12000",
+      "Close Date": "2025-07-09",
+      "Owner": "n.farquhar@trinston.co.uk",
+      "Created Date": "2022-05-01"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef17"
+      },
+      "Opportunity Name": "Leamington Rubber Ltd \u2014 Logistics Contract",
+      "Account Name": "Leamington Rubber Ltd",
+      "Stage": "qualification",
+      "Close Date": "2025-12-15",
+      "Owner": "f.alrashid@trinston.co.uk",
+      "Created Date": "2023-12-05"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef18"
+      },
+      "Opportunity Name": "Account 147 Ltd \u2014 Supply Contract",
+      "Account Name": "Account 147 Ltd",
+      "Stage": "PROSPECTING",
+      "Amount": "12000",
+      "Close Date": "2025-08-04",
+      "Owner": "k.walsh@trinston.co.uk",
+      "Created Date": "2023-02-27"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef19"
+      },
+      "Opportunity Name": "Rawtenstall Cables \u2014 Warehousing Deal",
+      "Account Name": "Rawtenstall Cables",
+      "Stage": "Id. Decision Makers",
+      "Amount": "42000",
+      "Close Date": "2025-10-07",
+      "Owner": "t.morgan@trinston.co.uk",
+      "Created Date": "2024-06-29"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef20"
+      },
+      "Opportunity Name": "Thatcham Electronics \u2014 Expansion",
+      "Account Name": "Thatcham Electronics",
+      "Stage": "Won",
+      "Amount": "75000",
+      "Close Date": "2026-07-19",
+      "Owner": "c.finch@trinston.co.uk",
+      "Created Date": "2023-02-27"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef21"
+      },
+      "Opportunity Name": "Leamington Rubber Ltd \u2014 Warehousing Deal",
+      "Account Name": "Leamington Rubber Ltd",
+      "Stage": "Lost",
+      "Owner": "k.walsh@trinston.co.uk",
+      "Created Date": "16/09/2024"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef22"
+      },
+      "Opportunity Name": "Account 188 Ltd \u2014 Warehousing Deal",
+      "Account Name": "Account 188 Ltd",
+      "Stage": "In Progress",
+      "Amount": "135000",
+      "Close Date": "2026-02-13",
+      "Owner": "d.pickering@trinston.co.uk"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef23"
+      },
+      "Opportunity Name": "Account 155 Ltd \u2014 Warehousing Deal",
+      "Account Name": "Account 155 Ltd",
+      "Stage": "Stage 1",
+      "Amount": "22000",
+      "Close Date": "TBC",
+      "Owner": "s.davidson@trinston.co.uk",
+      "Created Date": "2023-07-30"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef24"
+      },
+      "Opportunity Name": "Account 119 Ltd \u2014 Distribution Agreement",
+      "Account Name": "Account 119 Ltd",
+      "Stage": "Prospecting",
+      "Amount": "68000",
+      "Close Date": "2025-07-10",
+      "Owner": "n.farquhar@trinston.co.uk",
+      "Created Date": "2024-08-10"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef25"
+      },
+      "Opportunity Name": "Thornton Timber Ltd \u2014 Annual Framework",
+      "Account Name": "Thornton Timber Ltd",
+      "Stage": "PROSPECTING",
+      "Amount": "135000",
+      "Close Date": "2026-08-02",
+      "Owner": "j.hartley@trinston.co.uk",
+      "Created Date": "2024-01-12"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef26"
+      },
+      "Opportunity Name": "Uttoxeter Forgings \u2014 Expansion",
+      "Account Name": "Uttoxeter Forgings",
+      "Stage": "Value Proposition",
+      "Amount": "15000",
+      "Close Date": "01/06/2025",
+      "Owner": "s.davidson@trinston.co.uk",
+      "Created Date": "2022-02-02"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef27"
+      },
+      "Opportunity Name": "Account 217 Ltd \u2014 Warehousing Deal",
+      "Account Name": "Account 217 Ltd",
+      "Stage": "Pipeline",
+      "Amount": "28000",
+      "Close Date": "2026-02-21",
+      "Owner": "f.alrashid@trinston.co.uk",
+      "Created Date": "2024-04-02"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef28"
+      },
+      "Opportunity Name": "Account 226 Ltd \u2014 Q1 Renewal",
+      "Account Name": "Account 226 Ltd",
+      "Stage": "CLOSED WON",
+      "Amount": "-5000",
+      "Owner": "r.patel@trinston.co.uk",
+      "Created Date": "2022-08-14"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef29"
+      },
+      "Opportunity Name": "VERWOOD ELECTRONICS \u2014 Supply Contract",
+      "Account Name": "VERWOOD ELECTRONICS",
+      "Stage": "Won",
+      "Amount": "8500",
+      "Close Date": "2026-07-23",
+      "Owner": "c.finch@trinston.co.uk",
+      "Created Date": "2025-09-01"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef30"
+      },
+      "Opportunity Name": "Account 171 Ltd \u2014 New Business",
+      "Account Name": "Account 171 Ltd",
+      "Stage": "Quoted",
+      "Amount": "90000",
+      "Close Date": "2026-03-05",
+      "Owner": "v.osei@trinston.co.uk",
+      "Created Date": "2023-04-13"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef31"
+      },
+      "Opportunity Name": "Xcel Components \u2014 Q1 Renewal",
+      "Account Name": "Xcel Components",
+      "Stage": "Prospecting",
+      "Amount": "180000",
+      "Owner": "t.morgan@trinston.co.uk",
+      "Created Date": "2023-02-23"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef32"
+      },
+      "Opportunity Name": "Account 120 Ltd \u2014 Logistics Contract",
+      "Account Name": "Account 120 Ltd",
+      "Stage": "Closed Won",
+      "Amount": "42000",
+      "Close Date": "2026-11-16",
+      "Owner": "s.davidson@trinston.co.uk",
+      "Created Date": "2025-07-01"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef33"
+      },
+      "Opportunity Name": "Account 137 Ltd \u2014 New Business",
+      "Account Name": "Account 137 Ltd",
+      "Stage": "Id. Decision Makers",
+      "Amount": "320000",
+      "Close Date": "TBC",
+      "Owner": "t.morgan@trinston.co.uk",
+      "Created Date": "2023-07-30"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef34"
+      },
+      "Opportunity Name": "Newbury Packaging \u2014 Supply Contract",
+      "Account Name": "Newbury Packaging",
+      "Stage": "Pipeline",
+      "Amount": "68000",
+      "Owner": "m.webb.jr@trinston.co.uk"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef35"
+      },
+      "Opportunity Name": "Queensbury Glass \u2014 Logistics Contract",
+      "Account Name": "Queensbury Glass",
+      "Stage": "Negotiation/Review",
+      "Amount": "12000",
+      "Close Date": "14/10/2025",
+      "Owner": "s.davidson@trinston.co.uk",
+      "Created Date": "2024-03-08"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef36"
+      },
+      "Opportunity Name": "Bramley Packaging Ltd \u2014 Distribution Agreement",
+      "Account Name": "Bramley Packaging Ltd",
+      "Amount": "250000",
+      "Close Date": "2025-10-12",
+      "Owner": "p.mehta@trinston.co.uk",
+      "Created Date": "2025-12-03"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef37"
+      },
+      "Opportunity Name": "Hadleigh Tools \u2014 Supply Contract",
+      "Account Name": "Hadleigh Tools",
+      "Stage": "Stage 1",
+      "Amount": "5000",
+      "Owner": "v.osei@trinston.co.uk",
+      "Created Date": "17/10/2022"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef38"
+      },
+      "Opportunity Name": "Canwick Supplies \u2014 New Business",
+      "Account Name": "Canwick Supplies",
+      "Stage": "Stage 2",
+      "Amount": "42000",
+      "Close Date": "2026-04-02",
+      "Owner": "v.osei@trinston.co.uk",
+      "Created Date": "2023-10-25"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef39"
+      },
+      "Opportunity Name": "Account 206 Ltd \u2014 Q1 Renewal",
+      "Account Name": "Account 206 Ltd",
+      "Stage": "qualification",
+      "Amount": "42000",
+      "Close Date": "2026-09-01",
+      "Owner": "d.pickering@trinston.co.uk",
+      "Created Date": "2025-08-18"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef40"
+      },
+      "Opportunity Name": "Account 180 Ltd \u2014 Q1 Renewal",
+      "Account Name": "Account 180 Ltd",
+      "Stage": "Proposal/Price Quote",
+      "Close Date": "2025-12-30",
+      "Owner": "v.osei@trinston.co.uk",
+      "Created Date": "2023-08-29"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef41"
+      },
+      "Opportunity Name": "Hadleigh Tools \u2014 Warehousing Deal",
+      "Account Name": "Hadleigh Tools",
+      "Stage": "Stage 2",
+      "Amount": "28000",
+      "Close Date": "2025-07-22",
+      "Owner": "t.morgan@trinston.co.uk"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef42"
+      },
+      "Opportunity Name": "Emsworth Logistics \u2014 Q1 Renewal",
+      "Account Name": "Emsworth Logistics",
+      "Stage": "Active",
+      "Amount": "8500",
+      "Close Date": "2026-09-08",
+      "Owner": "s.davidson@trinston.co.uk",
+      "Created Date": "2024-09-10"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef43"
+      },
+      "Opportunity Name": "Fakenham Glass \u2014 Annual Framework",
+      "Account Name": "Fakenham Glass",
+      "Stage": "proposal",
+      "Amount": "22000",
+      "Close Date": "2026-03-07",
+      "Owner": "d.hollis@trinston.co.uk",
+      "Created Date": "2024-12-15"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef44"
+      },
+      "Opportunity Name": "Macclesfield Engineering \u2014 New Business",
+      "Account Name": "Macclesfield Engineering",
+      "Stage": "Closed Lost",
+      "Amount": "42000",
+      "Close Date": "16/11/2026",
+      "Owner": "f.alrashid@trinston.co.uk",
+      "Created Date": "2024-06-03"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef45"
+      },
+      "Opportunity Name": "Baldock Engineering \u2014 Warehousing Deal",
+      "Account Name": "Baldock Engineering",
+      "Stage": "Pipeline",
+      "Amount": "90000",
+      "Close Date": "2026-04-22",
+      "Owner": "f.alrashid@trinston.co.uk",
+      "Created Date": "2023-01-06"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef46"
+      },
+      "Opportunity Name": "Account 140 Ltd \u2014 Q1 Renewal",
+      "Account Name": "Account 140 Ltd",
+      "Stage": "Qualification",
+      "Amount": "35000",
+      "Owner": "j.hartley@trinston.co.uk",
+      "Created Date": "14/01/2022"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef47"
+      },
+      "Opportunity Name": "Account 113 Ltd \u2014 Annual Framework",
+      "Account Name": "Account 113 Ltd",
+      "Stage": "Won",
+      "Amount": "75000",
+      "Close Date": "2026-10-11",
+      "Owner": "d.hollis@trinston.co.uk",
+      "Created Date": "2024-10-20"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef48"
+      },
+      "Opportunity Name": "Pennine Hardware \u2014 Expansion",
+      "Account Name": "Pennine Hardware",
+      "Stage": "Proposal/Price Quote",
+      "Amount": "22000",
+      "Close Date": "2026-10-26",
+      "Owner": "a.brooks@trinston.co.uk",
+      "Created Date": "2024-04-22"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef49"
+      },
+      "Opportunity Name": "Account 123 Ltd \u2014 Expansion",
+      "Account Name": "Account 123 Ltd",
+      "Stage": "Negotiation/Review",
+      "Close Date": "2026-07-30",
+      "Owner": "s.davidson@trinston.co.uk",
+      "Created Date": "2025-04-13"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef50"
+      },
+      "Opportunity Name": "Canwick Supplies \u2014 New Business",
+      "Account Name": "Canwick Supplies",
+      "Stage": "Closed Lost",
+      "Amount": "75000",
+      "Close Date": "2026-01-09",
+      "Owner": "t.morgan@trinston.co.uk",
+      "Created Date": "2023-08-17"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef51"
+      },
+      "Opportunity Name": "Account 156 Ltd \u2014 Logistics Contract",
+      "Account Name": "Account 156 Ltd",
+      "Stage": "Quoted",
+      "Close Date": "2025-07-24",
+      "Owner": "n.farquhar@trinston.co.uk",
+      "Created Date": "2023-12-19"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef52"
+      },
+      "Opportunity Name": "Norwood Chemical Co \u2014 Logistics Contract",
+      "Account Name": "Norwood Chemical Co",
+      "Stage": "Lost",
+      "Amount": "12000",
+      "Close Date": "2026-09-12",
+      "Owner": "k.walsh@trinston.co.uk",
+      "Created Date": "2024-09-22"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef53"
+      },
+      "Account Name": "Quinton Plastics",
+      "Stage": "Lost",
+      "Amount": "68000",
+      "Close Date": "TBC",
+      "Owner": "t.morgan@trinston.co.uk"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef54"
+      },
+      "Opportunity Name": "Account 167 Ltd \u2014 Logistics Contract",
+      "Account Name": "Account 167 Ltd",
+      "Stage": "Stage 4",
+      "Amount": "35000",
+      "Close Date": "2025-09-12",
+      "Owner": "a.brooks@trinston.co.uk",
+      "Created Date": "2025-05-24"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef55"
+      },
+      "Opportunity Name": "Account 212 Ltd \u2014 Logistics Contract",
+      "Account Name": "Account 212 Ltd",
+      "Stage": "Stage 4",
+      "Close Date": "2025-07-13",
+      "Owner": "t.morgan@trinston.co.uk",
+      "Created Date": "2023-10-12"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef56"
+      },
+      "Opportunity Name": "Gatwick Logistics Group \u2014 Expansion",
+      "Account Name": "Gatwick Logistics Group",
+      "Stage": "Needs Analysis",
+      "Close Date": "2026-06-18",
+      "Owner": "d.hollis@trinston.co.uk",
+      "Created Date": "09/05/2025"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef57"
+      },
+      "Opportunity Name": "Account 215 Ltd \u2014 Supply Contract",
+      "Account Name": "Account 215 Ltd",
+      "Stage": "Won",
+      "Amount": "35000",
+      "Close Date": "2025-11-21",
+      "Owner": "d.hollis@trinston.co.uk",
+      "Created Date": "2022-12-19"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef58"
+      },
+      "Opportunity Name": "Queensbury Glass \u2014 Distribution Agreement",
+      "Account Name": "Queensbury Glass",
+      "Stage": "Proposal/Price Quote",
+      "Amount": "135000",
+      "Owner": "d.pickering@trinston.co.uk",
+      "Created Date": "2023-03-08"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef59"
+      },
+      "Opportunity Name": "Account 213 Ltd \u2014 Distribution Agreement",
+      "Account Name": "Account 213 Ltd",
+      "Stage": "Stage 2",
+      "Close Date": "2026-06-24",
+      "Owner": "p.mehta@trinston.co.uk",
+      "Created Date": "2022-08-02"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef60"
+      },
+      "Opportunity Name": "Evesham Timber \u2014 Expansion",
+      "Account Name": "Evesham Timber",
+      "Stage": "Lost",
+      "Amount": "5000",
+      "Close Date": "2025-11-21",
+      "Owner": "n.farquhar@trinston.co.uk",
+      "Created Date": "2024-08-03"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef61"
+      },
+      "Opportunity Name": "Account 189 Ltd \u2014 Distribution Agreement",
+      "Account Name": "Account 189 Ltd",
+      "Stage": "New",
+      "Amount": "135000",
+      "Close Date": "2025-12-30",
+      "Owner": "d.hollis@trinston.co.uk",
+      "Created Date": "24/11/2024"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef62"
+      },
+      "Opportunity Name": "Quedgeley Industrial \u2014 Q1 Renewal",
+      "Account Name": "Quedgeley Industrial",
+      "Stage": "Stage 3",
+      "Amount": "5000",
+      "Close Date": "2025-08-12",
+      "Owner": "n.farquhar@trinston.co.uk"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef63"
+      },
+      "Opportunity Name": "Account 188 Ltd \u2014 New Business",
+      "Account Name": "Account 188 Ltd",
+      "Stage": "Value Proposition",
+      "Amount": "90000",
+      "Owner": "d.pickering@trinston.co.uk",
+      "Created Date": "26/01/2025"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef64"
+      },
+      "Opportunity Name": "Fairhaven Components \u2014 Q1 Renewal",
+      "Account Name": "Fairhaven Components",
+      "Stage": "Quoted",
+      "Amount": "68000",
+      "Close Date": "2025-12-15",
+      "Owner": "p.mehta@trinston.co.uk",
+      "Created Date": "2023-03-06"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef65"
+      },
+      "Opportunity Name": "Winsford Chemicals \u2014 Logistics Contract",
+      "Account Name": "Winsford Chemicals",
+      "Stage": "Active",
+      "Amount": "5000",
+      "Owner": "n.farquhar@trinston.co.uk",
+      "Created Date": "2024-02-18"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef66"
+      },
+      "Opportunity Name": "Account 136 Ltd \u2014 Logistics Contract",
+      "Account Name": "Account 136 Ltd",
+      "Stage": "proposal",
+      "Amount": "8500",
+      "Close Date": "2026-08-08",
+      "Owner": "m.webb.jr@trinston.co.uk"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef67"
+      },
+      "Opportunity Name": "Account 209 Ltd \u2014 Supply Contract",
+      "Account Name": "Account 209 Ltd",
+      "Stage": "Closed Won",
+      "Amount": "22000",
+      "Close Date": "2026-10-14",
+      "Owner": "n.farquhar@trinston.co.uk",
+      "Created Date": "2025-06-04"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef68"
+      },
+      "Opportunity Name": "Account 141 Ltd \u2014 Distribution Agreement",
+      "Account Name": "Account 141 Ltd",
+      "Stage": "Closed Won",
+      "Amount": "8500",
+      "Close Date": "2026-10-04",
+      "Owner": "m.webb.jr@trinston.co.uk",
+      "Created Date": "2022-07-19"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef69"
+      },
+      "Opportunity Name": "Tarporley Metals \u2014 Expansion",
+      "Account Name": "Tarporley Metals",
+      "Stage": "Stage 2",
+      "Amount": "90000",
+      "Owner": "m.webb.jr@trinston.co.uk"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef70"
+      },
+      "Opportunity Name": "Account 123 Ltd \u2014 Annual Framework",
+      "Account Name": "Account 123 Ltd",
+      "Stage": "Id. Decision Makers",
+      "Amount": "35000",
+      "Close Date": "2026-06-17",
+      "Owner": "v.osei@trinston.co.uk",
+      "Created Date": "2025-09-04"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef71"
+      },
+      "Opportunity Name": "Account 192 Ltd \u2014 Logistics Contract",
+      "Account Name": "Account 192 Ltd",
+      "Stage": "New",
+      "Amount": "12000",
+      "Close Date": "23/05/2026",
+      "Owner": "n.farquhar@trinston.co.uk",
+      "Created Date": "2024-01-30"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef72"
+      },
+      "Opportunity Name": "Account 176 Ltd \u2014 Expansion",
+      "Account Name": "Account 176 Ltd",
+      "Stage": "Lost",
+      "Amount": "15000",
+      "Close Date": "2026-01-09",
+      "Owner": "s.davidson@trinston.co.uk",
+      "Created Date": "2024-01-18"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef73"
+      },
+      "Opportunity Name": "Account 136 Ltd \u2014 New Business",
+      "Account Name": "Account 136 Ltd",
+      "Stage": "Value Proposition",
+      "Amount": "28000",
+      "Owner": "m.webb.jr@trinston.co.uk",
+      "Created Date": "2023-08-24"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef74"
+      },
+      "Opportunity Name": "Pontefract Cables Ltd \u2014 Warehousing Deal",
+      "Account Name": "Pontefract Cables Ltd",
+      "Stage": "Quoted",
+      "Amount": "28000",
+      "Close Date": "2026-06-11",
+      "Owner": "c.finch@trinston.co.uk",
+      "Created Date": "2024-04-26"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef75"
+      },
+      "Opportunity Name": "Quedgeley Industrial \u2014 Expansion",
+      "Account Name": "Quedgeley Industrial",
+      "Stage": "Quoted",
+      "Amount": "12000",
+      "Owner": "n.farquhar@trinston.co.uk",
+      "Created Date": "2023-11-20"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef76"
+      },
+      "Opportunity Name": "Account 185 Ltd \u2014 Annual Framework",
+      "Account Name": "Account 185 Ltd",
+      "Stage": "Pipeline",
+      "Amount": "180000",
+      "Close Date": "2026-10-01",
+      "Owner": "p.mehta@trinston.co.uk",
+      "Created Date": "2025-11-29"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef77"
+      },
+      "Opportunity Name": "Pontefract Cables Ltd \u2014 Expansion",
+      "Account Name": "Pontefract Cables Ltd",
+      "Stage": "Negotiation/Review",
+      "Amount": "250000",
+      "Close Date": "2026-10-30",
+      "Owner": "a.brooks@trinston.co.uk",
+      "Created Date": "2024-01-19"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef78"
+      },
+      "Opportunity Name": "Account 217 Ltd \u2014 Expansion",
+      "Account Name": "Account 217 Ltd",
+      "Stage": "Perception Analysis",
+      "Amount": "28000",
+      "Close Date": "2026-06-04",
+      "Owner": "t.morgan@trinston.co.uk",
+      "Created Date": "2022-03-08"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef79"
+      },
+      "Opportunity Name": "Account 175 Ltd \u2014 Annual Framework",
+      "Account Name": "Account 175 Ltd",
+      "Stage": "Needs Analysis",
+      "Amount": "22000",
+      "Close Date": "2026-10-09",
+      "Owner": "a.brooks@trinston.co.uk",
+      "Created Date": "2024-08-08"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef80"
+      },
+      "Opportunity Name": "Account 171 Ltd \u2014 Supply Contract",
+      "Account Name": "Account 171 Ltd",
+      "Stage": "PROSPECTING",
+      "Amount": "8500",
+      "Close Date": "2025-11-18",
+      "Owner": "p.mehta@trinston.co.uk"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef81"
+      },
+      "Opportunity Name": "Account 114 Ltd \u2014 Warehousing Deal",
+      "Account Name": "Account 114 Ltd",
+      "Stage": "Needs Analysis",
+      "Close Date": "2025-07-31",
+      "Owner": "v.osei@trinston.co.uk",
+      "Created Date": "2022-11-16"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef82"
+      },
+      "Opportunity Name": "Leamington Rubber \u2014 Warehousing Deal",
+      "Account Name": "Leamington Rubber",
+      "Stage": "Quoted",
+      "Amount": "12000",
+      "Close Date": "2026-02-27",
+      "Owner": "d.pickering@trinston.co.uk",
+      "Created Date": "10/12/2025"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef83"
+      },
+      "Opportunity Name": "Account 127 Ltd \u2014 New Business",
+      "Account Name": "Account 127 Ltd",
+      "Stage": "Needs Analysis",
+      "Amount": "135000",
+      "Owner": "a.brooks@trinston.co.uk",
+      "Created Date": "2023-03-09"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef84"
+      },
+      "Opportunity Name": "Fulton Bearings \u2014 Distribution Agreement",
+      "Account Name": "Fulton Bearings",
+      "Stage": "PROSPECTING",
+      "Amount": "8500",
+      "Close Date": "2026-10-25",
+      "Owner": "d.pickering@trinston.co.uk",
+      "Created Date": "2024-09-22"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef85"
+      },
+      "Opportunity Name": "Account 125 Ltd \u2014 Annual Framework",
+      "Account Name": "Account 125 Ltd",
+      "Stage": "Quoted",
+      "Amount": "28000",
+      "Close Date": "2025-09-23",
+      "Owner": "t.morgan@trinston.co.uk"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef86"
+      },
+      "Opportunity Name": "Account 141 Ltd \u2014 Logistics Contract",
+      "Account Name": "Account 141 Ltd",
+      "Stage": "Perception Analysis",
+      "Amount": "320000",
+      "Close Date": "07/10/2026",
+      "Owner": "t.morgan@trinston.co.uk",
+      "Created Date": "2022-12-04"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef87"
+      },
+      "Opportunity Name": "BOLSOVER CONTAINERS \u2014 Logistics Contract",
+      "Account Name": "BOLSOVER CONTAINERS",
+      "Stage": "In Progress",
+      "Amount": "75000",
+      "Close Date": "2026-03-31",
+      "Owner": "f.alrashid@trinston.co.uk",
+      "Created Date": "2024-10-18"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef88"
+      },
+      "Opportunity Name": "Account 174 Ltd \u2014 Expansion",
+      "Account Name": "Account 174 Ltd",
+      "Stage": "Stage 1",
+      "Amount": "110000",
+      "Close Date": "2026-06-07",
+      "Owner": "f.alrashid@trinston.co.uk",
+      "Created Date": "2024-02-12"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef89"
+      },
+      "Opportunity Name": "Jarvis Building Products \u2014 Q1 Renewal",
+      "Account Name": "Jarvis Building Products",
+      "Stage": "Stage 1",
+      "Amount": "12000",
+      "Close Date": "2025-07-03",
+      "Owner": "n.farquhar@trinston.co.uk",
+      "Created Date": "2024-04-16"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef90"
+      },
+      "Opportunity Name": "Pontefract Cables Ltd \u2014 Distribution Agreement",
+      "Account Name": "Pontefract Cables Ltd",
+      "Stage": "Closed Lost",
+      "Amount": "180000",
+      "Close Date": "2026-07-07",
+      "Owner": "d.hollis@trinston.co.uk",
+      "Created Date": "2023-03-21"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef91"
+      },
+      "Opportunity Name": "Droitwich Supplies \u2014 Q1 Renewal",
+      "Account Name": "Droitwich Supplies",
+      "Stage": "Stage 1",
+      "Amount": "68000",
+      "Close Date": "2025-11-05",
+      "Owner": "d.hollis@trinston.co.uk",
+      "Created Date": "2024-06-11"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef92"
+      },
+      "Opportunity Name": "Account 167 Ltd \u2014 Annual Framework",
+      "Account Name": "Account 167 Ltd",
+      "Stage": "Stage 2",
+      "Owner": "d.pickering@trinston.co.uk",
+      "Created Date": "2023-06-02"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef93"
+      },
+      "Opportunity Name": "Account 211 Ltd \u2014 Distribution Agreement",
+      "Account Name": "Account 211 Ltd",
+      "Stage": "Lost",
+      "Close Date": "25/04/2026",
+      "Owner": "p.mehta@trinston.co.uk",
+      "Created Date": "2023-01-21"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef94"
+      },
+      "Opportunity Name": "Pontefract Cables Ltd \u2014 Supply Contract",
+      "Account Name": "Pontefract Cables Ltd",
+      "Stage": "Quoted",
+      "Amount": "135000",
+      "Close Date": "2026-09-12",
+      "Owner": "v.osei@trinston.co.uk",
+      "Created Date": "19/12/2025"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef95"
+      },
+      "Opportunity Name": "Account 168 Ltd \u2014 Q1 Renewal",
+      "Account Name": "Account 168 Ltd",
+      "Stage": "Value Proposition",
+      "Amount": "135000",
+      "Close Date": "15/12/2025",
+      "Owner": "d.hollis@trinston.co.uk",
+      "Created Date": "2024-02-24"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef96"
+      },
+      "Opportunity Name": "Account 124 Ltd \u2014 Warehousing Deal",
+      "Account Name": "Account 124 Ltd",
+      "Stage": "Closed Won",
+      "Amount": "250000",
+      "Close Date": "18/09/2026",
+      "Owner": "f.alrashid@trinston.co.uk",
+      "Created Date": "2024-05-12"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef97"
+      },
+      "Opportunity Name": "Pennine Hardware \u2014 Expansion",
+      "Account Name": "Pennine Hardware",
+      "Stage": "Stage 2",
+      "Close Date": "2026-08-12",
+      "Owner": "r.patel@trinston.co.uk",
+      "Created Date": "2024-01-19"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef98"
+      },
+      "Opportunity Name": "Account 186 Ltd \u2014 New Business",
+      "Account Name": "Account 186 Ltd",
+      "Stage": "Pipeline",
+      "Close Date": "2026-08-07",
+      "Owner": "t.morgan@trinston.co.uk",
+      "Created Date": "2023-12-06"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef99"
+      },
+      "Opportunity Name": "Account 188 Ltd \u2014 Distribution Agreement",
+      "Account Name": "Account 188 Ltd",
+      "Stage": "Closed Won",
+      "Amount": "110000",
+      "Close Date": "2025-08-18",
+      "Owner": "m.webb.jr@trinston.co.uk",
+      "Created Date": "2022-10-15"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef100"
+      },
+      "Opportunity Name": "Account 177 Ltd \u2014 Expansion",
+      "Account Name": "Account 177 Ltd",
+      "Stage": "Prospecting",
+      "Amount": "55000",
+      "Close Date": "2026-01-15",
+      "Owner": "r.patel@trinston.co.uk",
+      "Created Date": "2023-10-04"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef101"
+      },
+      "Opportunity Name": "Account 189 Ltd \u2014 Logistics Contract",
+      "Account Name": "Account 189 Ltd",
+      "Stage": "Won",
+      "Amount": "15000",
+      "Close Date": "TBC",
+      "Owner": "a.brooks@trinston.co.uk",
+      "Created Date": "2022-04-15"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef102"
+      },
+      "Opportunity Name": "Dalton Freight \u2014 Supply Contract",
+      "Account Name": "Dalton Freight",
+      "Stage": "Stage 1",
+      "Amount": "110000",
+      "Close Date": "2026-07-16",
+      "Owner": "v.osei@trinston.co.uk"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef103"
+      },
+      "Opportunity Name": "Immingham Freight \u2014 Q1 Renewal",
+      "Account Name": "Immingham Freight",
+      "Stage": "Closed Won",
+      "Amount": "55000",
+      "Close Date": "2026-03-29",
+      "Owner": "p.mehta@trinston.co.uk",
+      "Created Date": "2025-02-12"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef104"
+      },
+      "Opportunity Name": "Goole Container Services \u2014 New Business",
+      "Account Name": "Goole Container Services",
+      "Stage": "proposal",
+      "Amount": "75000",
+      "Owner": "m.webb.jr@trinston.co.uk",
+      "Created Date": "2024-11-17"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef105"
+      },
+      "Opportunity Name": "Account 203 Ltd \u2014 Q1 Renewal",
+      "Account Name": "Account 203 Ltd",
+      "Stage": "Quoted",
+      "Close Date": "30/09/2025",
+      "Owner": "v.osei@trinston.co.uk",
+      "Created Date": "2024-12-19"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef106"
+      },
+      "Opportunity Name": "Account 130 Ltd \u2014 Distribution Agreement",
+      "Account Name": "Account 130 Ltd",
+      "Stage": "Pipeline",
+      "Amount": "8500",
+      "Close Date": "2026-09-04",
+      "Owner": "d.hollis@trinston.co.uk",
+      "Created Date": "2025-04-18"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef107"
+      },
+      "Opportunity Name": "Account 112 Ltd \u2014 Expansion",
+      "Account Name": "Account 112 Ltd",
+      "Stage": "Won",
+      "Amount": "42000",
+      "Close Date": "2026-08-16",
+      "Owner": "n.farquhar@trinston.co.uk",
+      "Created Date": "2024-01-16"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef108"
+      },
+      "Opportunity Name": "alcester precision \u2014 Logistics Contract",
+      "Account Name": "alcester precision",
+      "Stage": "Value Proposition",
+      "Amount": "250000",
+      "Owner": "a.brooks@trinston.co.uk",
+      "Created Date": "2024-12-22"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef109"
+      },
+      "Opportunity Name": "Account 230 Ltd \u2014 Annual Framework",
+      "Account Name": "Account 230 Ltd",
+      "Stage": "Negotiation/Review",
+      "Amount": "12000",
+      "Close Date": "2025-10-15",
+      "Owner": "f.alrashid@trinston.co.uk",
+      "Created Date": "2022-10-21"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef110"
+      },
+      "Opportunity Name": "Account 168 Ltd \u2014 Q1 Renewal",
+      "Account Name": "Account 168 Ltd",
+      "Stage": "proposal",
+      "Amount": "135000",
+      "Close Date": "15/12/2025",
+      "Owner": "r.patel@trinston.co.uk",
+      "Created Date": "2024-02-24"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef111"
+      },
+      "Opportunity Name": "Account 201 Ltd \u2014 Warehousing Deal",
+      "Account Name": "Account 201 Ltd",
+      "Stage": "Stage 3",
+      "Amount": "135000",
+      "Owner": "a.brooks@trinston.co.uk",
+      "Created Date": "2023-10-10"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef112"
+      },
+      "Opportunity Name": "Account 129 Ltd \u2014 Distribution Agreement",
+      "Account Name": "Account 129 Ltd",
+      "Stage": "PROSPECTING",
+      "Amount": "68000",
+      "Close Date": "2026-11-14",
+      "Owner": "s.davidson@trinston.co.uk",
+      "Created Date": "2022-10-13"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef113"
+      },
+      "Opportunity Name": "Quorn Industrial \u2014 Q1 Renewal",
+      "Account Name": "Quorn Industrial",
+      "Stage": "Stage 4",
+      "Amount": "68000",
+      "Close Date": "2026-11-22",
+      "Owner": "c.finch@trinston.co.uk",
+      "Created Date": "20/02/2022"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef114"
+      },
+      "Opportunity Name": "Account 111 Ltd \u2014 Expansion",
+      "Account Name": "Account 111 Ltd",
+      "Stage": "Id. Decision Makers",
+      "Amount": "55000",
+      "Close Date": "2026-08-07",
+      "Owner": "n.farquhar@trinston.co.uk",
+      "Created Date": "2022-12-20"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef115"
+      },
+      "Opportunity Name": "Zennor Mining \u2014 Q1 Renewal",
+      "Account Name": "Zennor Mining",
+      "Stage": "Id. Decision Makers",
+      "Amount": "5000",
+      "Close Date": "2025-08-22",
+      "Owner": "n.farquhar@trinston.co.uk",
+      "Created Date": "2024-04-05"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef116"
+      },
+      "Opportunity Name": "Account 163 Ltd \u2014 Warehousing Deal",
+      "Account Name": "Account 163 Ltd",
+      "Stage": "Quoted",
+      "Amount": "55000",
+      "Owner": "f.alrashid@trinston.co.uk",
+      "Created Date": "2022-07-27"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef117"
+      },
+      "Opportunity Name": "Account 229 Ltd \u2014 Warehousing Deal",
+      "Account Name": "Account 229 Ltd",
+      "Stage": "Stage 1",
+      "Amount": "90000",
+      "Close Date": "2026-03-10",
+      "Owner": "m.webb.jr@trinston.co.uk",
+      "Created Date": "2022-09-23"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef118"
+      },
+      "Opportunity Name": "Account 230 Ltd \u2014 New Business",
+      "Account Name": "Account 230 Ltd",
+      "Stage": "Id. Decision Makers",
+      "Amount": "22000",
+      "Close Date": "2026-06-17",
+      "Owner": "d.hollis@trinston.co.uk",
+      "Created Date": "2022-06-21"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef119"
+      },
+      "Opportunity Name": "Account 158 Ltd \u2014 Annual Framework",
+      "Account Name": "Account 158 Ltd",
+      "Stage": "Value Proposition",
+      "Amount": "250000",
+      "Close Date": "2025-09-14",
+      "Owner": "r.patel@trinston.co.uk",
+      "Created Date": "2022-03-27"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef120"
+      },
+      "Opportunity Name": "Account 230 Ltd \u2014 Expansion",
+      "Account Name": "Account 230 Ltd",
+      "Stage": "Lost",
+      "Amount": "250000",
+      "Close Date": "2026-02-24",
+      "Owner": "a.brooks@trinston.co.uk",
+      "Created Date": "2022-11-08"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef121"
+      },
+      "Opportunity Name": "Corsham Precision \u2014 Logistics Contract",
+      "Account Name": "Corsham Precision",
+      "Stage": "Needs Analysis",
+      "Amount": "22000",
+      "Close Date": "2026-09-26",
+      "Owner": "m.webb.jr@trinston.co.uk",
+      "Created Date": "2022-11-07"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef122"
+      },
+      "Opportunity Name": "Quorn Industrial Ltd \u2014 Q1 Renewal",
+      "Account Name": "Quorn Industrial Ltd",
+      "Stage": "Stage 4",
+      "Amount": "68000",
+      "Close Date": "2026-07-05",
+      "Owner": "t.morgan@trinston.co.uk",
+      "Created Date": "2023-06-24"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef123"
+      },
+      "Opportunity Name": "Alcester Precision \u2014 Distribution Agreement",
+      "Account Name": "Alcester Precision",
+      "Stage": "qualification",
+      "Amount": "180000",
+      "Close Date": "2025-08-11",
+      "Owner": "p.mehta@trinston.co.uk",
+      "Created Date": "2025-08-20"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef124"
+      },
+      "Opportunity Name": "Montrose Supplies \u2014 Supply Contract",
+      "Account Name": "Montrose Supplies",
+      "Stage": "In Progress",
+      "Amount": "28000",
+      "Close Date": "TBC",
+      "Owner": "n.farquhar@trinston.co.uk",
+      "Created Date": "2024-11-13"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef125"
+      },
+      "Opportunity Name": "Account 154 Ltd \u2014 Expansion",
+      "Account Name": "Account 154 Ltd",
+      "Stage": "Id. Decision Makers",
+      "Amount": "110000",
+      "Close Date": "2025-07-21",
+      "Owner": "a.brooks@trinston.co.uk",
+      "Created Date": "2025-06-13"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef126"
+      },
+      "Opportunity Name": "Account 125 Ltd \u2014 Q1 Renewal",
+      "Account Name": "Account 125 Ltd",
+      "Stage": "Proposal/Price Quote",
+      "Amount": "5000",
+      "Close Date": "2025-07-20",
+      "Owner": "p.mehta@trinston.co.uk",
+      "Created Date": "2025-04-27"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef127"
+      },
+      "Opportunity Name": "Fakenham Glass \u2014 Annual Framework",
+      "Account Name": "Fakenham Glass",
+      "Stage": "Id. Decision Makers",
+      "Amount": "110000",
+      "Close Date": "2026-08-24",
+      "Owner": "d.pickering@trinston.co.uk",
+      "Created Date": "2025-07-26"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef128"
+      },
+      "Opportunity Name": "Account 132 Ltd \u2014 Annual Framework",
+      "Account Name": "Account 132 Ltd",
+      "Stage": "Pipeline",
+      "Amount": "75000",
+      "Close Date": "2026-02-17",
+      "Owner": "d.hollis@trinston.co.uk",
+      "Created Date": "2023-06-25"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef129"
+      },
+      "Opportunity Name": "Account 157 Ltd \u2014 Annual Framework",
+      "Account Name": "Account 157 Ltd",
+      "Stage": "Stage 2",
+      "Close Date": "TBC",
+      "Owner": "d.hollis@trinston.co.uk"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef130"
+      },
+      "Opportunity Name": "Uttoxeter Forgings \u2014 Logistics Contract",
+      "Account Name": "Uttoxeter Forgings",
+      "Stage": "PROSPECTING",
+      "Amount": "68000",
+      "Close Date": "2026-06-23",
+      "Owner": "a.brooks@trinston.co.uk",
+      "Created Date": "2025-09-04"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef131"
+      },
+      "Opportunity Name": "Account 159 Ltd \u2014 Q1 Renewal",
+      "Account Name": "Account 159 Ltd",
+      "Stage": "Value Proposition",
+      "Amount": "42000",
+      "Owner": "m.webb.jr@trinston.co.uk",
+      "Created Date": "2024-08-20"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef132"
+      },
+      "Opportunity Name": "Account 219 Ltd \u2014 Expansion",
+      "Account Name": "Account 219 Ltd",
+      "Stage": "Stage 2",
+      "Amount": "68000",
+      "Owner": "d.pickering@trinston.co.uk",
+      "Created Date": "2023-11-30"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef133"
+      },
+      "Opportunity Name": "Whitby Marine \u2014 Warehousing Deal",
+      "Account Name": "Whitby Marine",
+      "Stage": "Negotiation/Review",
+      "Amount": "8500",
+      "Close Date": "2025-10-24",
+      "Owner": "r.patel@trinston.co.uk",
+      "Created Date": "2025-10-06"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef134"
+      },
+      "Opportunity Name": "Canwick Supplies \u2014 Annual Framework",
+      "Account Name": "Canwick Supplies",
+      "Stage": "CLOSED WON",
+      "Close Date": "2026-09-30",
+      "Owner": "c.finch@trinston.co.uk",
+      "Created Date": "08/01/2024"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef135"
+      },
+      "Opportunity Name": "Ashton Materials \u2014 Warehousing Deal",
+      "Account Name": "Ashton Materials",
+      "Stage": "Value Proposition",
+      "Amount": "12000",
+      "Close Date": "2026-08-19",
+      "Owner": "r.patel@trinston.co.uk",
+      "Created Date": "2022-09-16"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef136"
+      },
+      "Opportunity Name": "BOLSOVER CONTAINERS \u2014 Q1 Renewal",
+      "Account Name": "BOLSOVER CONTAINERS",
+      "Stage": "Value Proposition",
+      "Amount": "320000",
+      "Owner": "j.hartley@trinston.co.uk",
+      "Created Date": "2025-11-09"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef137"
+      },
+      "Opportunity Name": "Account 152 Ltd \u2014 Logistics Contract",
+      "Account Name": "Account 152 Ltd",
+      "Stage": "Won",
+      "Amount": "135000",
+      "Close Date": "2025-08-15",
+      "Owner": "m.webb.jr@trinston.co.uk",
+      "Created Date": "03/09/2024"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef138"
+      },
+      "Opportunity Name": "Account 112 Ltd \u2014 Distribution Agreement",
+      "Account Name": "Account 112 Ltd",
+      "Stage": "Stage 3",
+      "Amount": "110000",
+      "Close Date": "2025-07-03",
+      "Owner": "k.walsh@trinston.co.uk",
+      "Created Date": "2023-11-07"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef139"
+      },
+      "Opportunity Name": "Account 173 Ltd \u2014 Logistics Contract",
+      "Account Name": "Account 173 Ltd",
+      "Stage": "Closed Lost",
+      "Amount": "75000",
+      "Close Date": "2025-12-12",
+      "Owner": "a.brooks@trinston.co.uk",
+      "Created Date": "2022-02-18"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef140"
+      },
+      "Opportunity Name": "Account 224 Ltd \u2014 Annual Framework",
+      "Account Name": "Account 224 Ltd",
+      "Stage": "Negotiation/Review",
+      "Close Date": "2025-09-25",
+      "Owner": "p.mehta@trinston.co.uk",
+      "Created Date": "2025-03-12"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef141"
+      },
+      "Opportunity Name": "Zennor Mining \u2014 Q1 Renewal",
+      "Account Name": "Zennor Mining",
+      "Stage": "Perception Analysis",
+      "Amount": "135000",
+      "Owner": "r.patel@trinston.co.uk",
+      "Created Date": "28/03/2023"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef142"
+      },
+      "Opportunity Name": "Account 222 Ltd \u2014 Logistics Contract",
+      "Account Name": "Account 222 Ltd",
+      "Stage": "Active",
+      "Amount": "22000",
+      "Close Date": "2026-06-18",
+      "Owner": "c.finch@trinston.co.uk",
+      "Created Date": "2025-11-28"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef143"
+      },
+      "Opportunity Name": "Chatteris Rubber \u2014 Logistics Contract",
+      "Account Name": "Chatteris Rubber",
+      "Stage": "Active",
+      "Amount": "68000",
+      "Owner": "c.finch@trinston.co.uk",
+      "Created Date": "2024-09-15"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef144"
+      },
+      "Opportunity Name": "Account 187 Ltd \u2014 Warehousing Deal",
+      "Account Name": "Account 187 Ltd",
+      "Stage": "Closed Won",
+      "Amount": "28000",
+      "Owner": "r.patel@trinston.co.uk",
+      "Created Date": "2025-03-29"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef145"
+      },
+      "Opportunity Name": "Account 148 Ltd \u2014 Distribution Agreement",
+      "Account Name": "Account 148 Ltd",
+      "Stage": "Negotiation/Review",
+      "Amount": "90000",
+      "Close Date": "23/07/2025",
+      "Owner": "d.pickering@trinston.co.uk",
+      "Created Date": "2023-10-26"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef146"
+      },
+      "Opportunity Name": "Epsom Valves \u2014 Q1 Renewal",
+      "Account Name": "Epsom Valves",
+      "Stage": "Active",
+      "Amount": "55000",
+      "Close Date": "2025-10-23",
+      "Owner": "d.hollis@trinston.co.uk",
+      "Created Date": "2023-09-28"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef147"
+      },
+      "Opportunity Name": "Leamington Rubber \u2014 Supply Contract",
+      "Account Name": "Leamington Rubber",
+      "Stage": "New",
+      "Close Date": "2026-01-22",
+      "Owner": "s.davidson@trinston.co.uk",
+      "Created Date": "2024-04-29"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef148"
+      },
+      "Opportunity Name": "Account 156 Ltd \u2014 Logistics Contract",
+      "Account Name": "Account 156 Ltd",
+      "Stage": "Stage 3",
+      "Close Date": "2026-05-28",
+      "Owner": "m.webb.jr@trinston.co.uk",
+      "Created Date": "2025-04-04"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef149"
+      },
+      "Opportunity Name": "Account 209 Ltd \u2014 Distribution Agreement",
+      "Account Name": "Account 209 Ltd",
+      "Stage": "Prospecting",
+      "Owner": "v.osei@trinston.co.uk",
+      "Created Date": "2022-06-11"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef150"
+      },
+      "Opportunity Name": "Gatwick Logistics Group \u2014 Expansion",
+      "Account Name": "Gatwick Logistics Group",
+      "Stage": "Closed Lost",
+      "Amount": "90000",
+      "Close Date": "10/11/2025",
+      "Owner": "j.hartley@trinston.co.uk",
+      "Created Date": "2024-01-15"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef151"
+      },
+      "Opportunity Name": "Account 112 Ltd \u2014 Distribution Agreement",
+      "Account Name": "Account 112 Ltd",
+      "Stage": "proposal",
+      "Amount": "35000",
+      "Close Date": "2026-03-25",
+      "Owner": "s.davidson@trinston.co.uk",
+      "Created Date": "2025-07-23"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef152"
+      },
+      "Opportunity Name": "Account 146 Ltd \u2014 Supply Contract",
+      "Account Name": "Account 146 Ltd",
+      "Stage": "Needs Analysis",
+      "Amount": "8500",
+      "Close Date": "2026-11-14",
+      "Owner": "d.hollis@trinston.co.uk"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef153"
+      },
+      "Opportunity Name": "Yoxall Components \u2014 Supply Contract",
+      "Account Name": "Yoxall Components",
+      "Stage": "qualification",
+      "Amount": "8500",
+      "Close Date": "2025-09-27",
+      "Owner": "j.hartley@trinston.co.uk"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef154"
+      },
+      "Opportunity Name": "Chatteris Rubber \u2014 New Business",
+      "Account Name": "Chatteris Rubber",
+      "Stage": "Value Proposition",
+      "Amount": "42000",
+      "Close Date": "2025-11-04",
+      "Owner": "p.mehta@trinston.co.uk",
+      "Created Date": "2022-02-10"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef155"
+      },
+      "Opportunity Name": "Account 209 Ltd \u2014 Supply Contract",
+      "Account Name": "Account 209 Ltd",
+      "Stage": "Qualification",
+      "Owner": "v.osei@trinston.co.uk",
+      "Created Date": "2024-12-13"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef156"
+      },
+      "Opportunity Name": "Account 184 Ltd \u2014 Warehousing Deal",
+      "Account Name": "Account 184 Ltd",
+      "Stage": "Stage 3",
+      "Amount": "42000",
+      "Close Date": "2025-07-02",
+      "Owner": "d.pickering@trinston.co.uk",
+      "Created Date": "2023-01-05"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef157"
+      },
+      "Opportunity Name": "Croft Industrial Supplies \u2014 Annual Framework",
+      "Account Name": "Croft Industrial Supplies",
+      "Stage": "Stage 2",
+      "Amount": "135000",
+      "Close Date": "2025-10-30",
+      "Owner": "d.hollis@trinston.co.uk",
+      "Created Date": "22/08/2024"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef158"
+      },
+      "Opportunity Name": "Account 167 Ltd \u2014 Logistics Contract",
+      "Account Name": "Account 167 Ltd",
+      "Stage": "In Progress",
+      "Amount": "55000",
+      "Close Date": "2026-05-01",
+      "Owner": "d.hollis@trinston.co.uk",
+      "Created Date": "2022-11-11"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef159"
+      },
+      "Opportunity Name": "Account 141 Ltd \u2014 Supply Contract",
+      "Account Name": "Account 141 Ltd",
+      "Stage": "PROSPECTING",
+      "Amount": "35000",
+      "Close Date": "2026-06-07",
+      "Owner": "a.brooks@trinston.co.uk",
+      "Created Date": "2023-07-03"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef160"
+      },
+      "Opportunity Name": "Ingleby Fasteners \u2014 Warehousing Deal",
+      "Account Name": "Ingleby Fasteners",
+      "Stage": "CLOSED WON",
+      "Amount": "28000",
+      "Close Date": "2025-11-12",
+      "Owner": "v.osei@trinston.co.uk",
+      "Created Date": "2023-07-07"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef161"
+      },
+      "Opportunity Name": "Ely Packaging \u2014 Q1 Renewal",
+      "Account Name": "Ely Packaging",
+      "Stage": "Stage 1",
+      "Amount": "90000",
+      "Close Date": "01/06/2025",
+      "Owner": "t.morgan@trinston.co.uk",
+      "Created Date": "2023-03-15"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef162"
+      },
+      "Opportunity Name": "Account 210 Ltd \u2014 Warehousing Deal",
+      "Account Name": "Account 210 Ltd",
+      "Stage": "Closed Lost",
+      "Amount": "90000",
+      "Close Date": "08/07/2026",
+      "Owner": "d.pickering@trinston.co.uk",
+      "Created Date": "2023-03-21"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef163"
+      },
+      "Opportunity Name": "Account 191 Ltd \u2014 Distribution Agreement",
+      "Account Name": "Account 191 Ltd",
+      "Stage": "Closed Lost",
+      "Amount": "15000",
+      "Close Date": "2026-02-10",
+      "Owner": "a.brooks@trinston.co.uk",
+      "Created Date": "2023-07-12"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef164"
+      },
+      "Opportunity Name": "Ventnor Marine \u2014 Warehousing Deal",
+      "Account Name": "Ventnor Marine",
+      "Stage": "Value Proposition",
+      "Amount": "68000",
+      "Close Date": "2025-11-26",
+      "Owner": "k.walsh@trinston.co.uk",
+      "Created Date": "2023-07-04"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef165"
+      },
+      "Opportunity Name": "Account 186 Ltd \u2014 Distribution Agreement",
+      "Account Name": "Account 186 Ltd",
+      "Stage": "Stage 1",
+      "Amount": "75000",
+      "Close Date": "2026-01-25",
+      "Owner": "k.walsh@trinston.co.uk",
+      "Created Date": "14/05/2023"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef166"
+      },
+      "Opportunity Name": "Ripley Chemicals \u2014 Distribution Agreement",
+      "Account Name": "Ripley Chemicals",
+      "Stage": "Stage 4",
+      "Amount": "135000",
+      "Close Date": "2026-02-16",
+      "Owner": "r.patel@trinston.co.uk",
+      "Created Date": "2024-02-03"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef167"
+      },
+      "Opportunity Name": "Farndon Components \u2014 Expansion",
+      "Account Name": "Farndon Components",
+      "Stage": "Lost",
+      "Close Date": "2025-08-16",
+      "Owner": "j.hartley@trinston.co.uk",
+      "Created Date": "2023-06-01"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef168"
+      },
+      "Opportunity Name": "Jarvis Building Products \u2014 Distribution Agreement",
+      "Account Name": "Jarvis Building Products",
+      "Stage": "Qualification",
+      "Amount": "68000",
+      "Close Date": "2026-03-15",
+      "Owner": "t.morgan@trinston.co.uk"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef169"
+      },
+      "Opportunity Name": "Redhill Engineering \u2014 Supply Contract",
+      "Account Name": "Redhill Engineering",
+      "Stage": "Stage 4",
+      "Owner": "p.mehta@trinston.co.uk",
+      "Created Date": "2023-01-22"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef170"
+      },
+      "Opportunity Name": "Account 219 Ltd \u2014 Logistics Contract",
+      "Account Name": "Account 219 Ltd",
+      "Stage": "In Progress",
+      "Amount": "42000",
+      "Close Date": "2025-07-10",
+      "Owner": "m.webb.jr@trinston.co.uk",
+      "Created Date": "23/06/2022"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef171"
+      },
+      "Opportunity Name": "Evesham Timber \u2014 Expansion",
+      "Account Name": "Evesham Timber",
+      "Stage": "Id. Decision Makers",
+      "Amount": "320000",
+      "Close Date": "2026-04-04",
+      "Owner": "r.patel@trinston.co.uk",
+      "Created Date": "2023-03-20"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef172"
+      },
+      "Opportunity Name": "Yarrow Ceramics \u2014 Supply Contract",
+      "Account Name": "Yarrow Ceramics",
+      "Stage": "In Progress",
+      "Amount": "250000",
+      "Close Date": "2025-10-23",
+      "Owner": "f.alrashid@trinston.co.uk",
+      "Created Date": "2024-12-18"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef173"
+      },
+      "Opportunity Name": "Account 181 Ltd \u2014 New Business",
+      "Account Name": "Account 181 Ltd",
+      "Stage": "qualification",
+      "Amount": "42000",
+      "Close Date": "2025-07-26",
+      "Owner": "f.alrashid@trinston.co.uk",
+      "Created Date": "2024-03-30"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef174"
+      },
+      "Opportunity Name": "Whitby Marine \u2014 Expansion",
+      "Account Name": "Whitby Marine",
+      "Stage": "CLOSED WON",
+      "Amount": "8500",
+      "Close Date": "2026-03-18",
+      "Owner": "k.walsh@trinston.co.uk",
+      "Created Date": "2023-01-02"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef175"
+      },
+      "Opportunity Name": "Redhill Engineering \u2014 Q1 Renewal",
+      "Account Name": "Redhill Engineering",
+      "Stage": "Closed Lost",
+      "Amount": "180000",
+      "Close Date": "2026-01-02",
+      "Owner": "s.davidson@trinston.co.uk",
+      "Created Date": "2023-08-17"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef176"
+      },
+      "Opportunity Name": "Account 128 Ltd \u2014 Distribution Agreement",
+      "Account Name": "Account 128 Ltd",
+      "Stage": "Won",
+      "Amount": "110000",
+      "Close Date": "2026-04-13",
+      "Owner": "a.brooks@trinston.co.uk",
+      "Created Date": "2023-06-15"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef177"
+      },
+      "Opportunity Name": "Account 113 Ltd \u2014 Logistics Contract",
+      "Account Name": "Account 113 Ltd",
+      "Stage": "Needs Analysis",
+      "Amount": "135000",
+      "Owner": "s.davidson@trinston.co.uk",
+      "Created Date": "2024-10-08"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef178"
+      },
+      "Opportunity Name": "Account 171 Ltd \u2014 Warehousing Deal",
+      "Account Name": "Account 171 Ltd",
+      "Stage": "proposal",
+      "Amount": "22000",
+      "Close Date": "2025-07-09",
+      "Owner": "n.farquhar@trinston.co.uk",
+      "Created Date": "2022-03-08"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef179"
+      },
+      "Opportunity Name": "Account 166 Ltd \u2014 Annual Framework",
+      "Account Name": "Account 166 Ltd",
+      "Stage": "CLOSED WON",
+      "Close Date": "2025-10-20",
+      "Owner": "n.farquhar@trinston.co.uk",
+      "Created Date": "2025-09-07"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef180"
+      },
+      "Opportunity Name": "Account 160 Ltd \u2014 Expansion",
+      "Account Name": "Account 160 Ltd",
+      "Stage": "Value Proposition",
+      "Amount": "90000",
+      "Close Date": "2026-03-22",
+      "Owner": "k.walsh@trinston.co.uk",
+      "Created Date": "2024-03-08"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef181"
+      },
+      "Opportunity Name": "Account 223 Ltd \u2014 Logistics Contract",
+      "Account Name": "Account 223 Ltd",
+      "Stage": "Proposal/Price Quote",
+      "Amount": "135000",
+      "Close Date": "2025-07-13",
+      "Owner": "j.hartley@trinston.co.uk",
+      "Created Date": "31/10/2024"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef182"
+      },
+      "Opportunity Name": "Jarvis Building Products \u2014 Q1 Renewal",
+      "Account Name": "Jarvis Building Products",
+      "Stage": "Perception Analysis",
+      "Amount": "320000",
+      "Owner": "t.morgan@trinston.co.uk",
+      "Created Date": "2022-01-25"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef183"
+      },
+      "Opportunity Name": "Account 130 Ltd \u2014 Logistics Contract",
+      "Account Name": "Account 130 Ltd",
+      "Stage": "Closed Lost",
+      "Amount": "55000",
+      "Close Date": "2026-05-23",
+      "Owner": "f.alrashid@trinston.co.uk"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef184"
+      },
+      "Opportunity Name": "Zennor Mining \u2014 Q1 Renewal",
+      "Account Name": "Zennor Mining",
+      "Stage": "Stage 1",
+      "Amount": "5000",
+      "Close Date": "2025-08-22",
+      "Owner": "m.webb.jr@trinston.co.uk",
+      "Created Date": "2024-04-05"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef185"
+      },
+      "Opportunity Name": "Account 117 Ltd \u2014 Distribution Agreement",
+      "Account Name": "Account 117 Ltd",
+      "Stage": "Lost",
+      "Amount": "68000",
+      "Close Date": "2025-08-18",
+      "Owner": "d.hollis@trinston.co.uk"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef186"
+      },
+      "Opportunity Name": "Account 137 Ltd \u2014 Supply Contract",
+      "Account Name": "Account 137 Ltd",
+      "Stage": "Perception Analysis",
+      "Amount": "15000",
+      "Owner": "v.osei@trinston.co.uk",
+      "Created Date": "2023-11-12"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef187"
+      },
+      "Opportunity Name": "Account 174 Ltd \u2014 Annual Framework",
+      "Account Name": "Account 174 Ltd",
+      "Stage": "In Progress",
+      "Amount": "135000",
+      "Owner": "n.farquhar@trinston.co.uk",
+      "Created Date": "2024-10-12"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef188"
+      },
+      "Opportunity Name": "Account 173 Ltd \u2014 Supply Contract",
+      "Account Name": "Account 173 Ltd",
+      "Stage": "Negotiation/Review",
+      "Amount": "75000",
+      "Close Date": "2026-10-04",
+      "Owner": "f.alrashid@trinston.co.uk",
+      "Created Date": "2024-05-11"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef189"
+      },
+      "Opportunity Name": "Account 129 Ltd \u2014 Expansion",
+      "Account Name": "Account 129 Ltd",
+      "Stage": "Closed Won",
+      "Amount": "22000",
+      "Close Date": "11/07/2025",
+      "Owner": "p.mehta@trinston.co.uk",
+      "Created Date": "2025-01-23"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef190"
+      },
+      "Opportunity Name": "Account 170 Ltd \u2014 Supply Contract",
+      "Account Name": "Account 170 Ltd",
+      "Stage": "Closed Won",
+      "Close Date": "2025-10-13",
+      "Owner": "j.hartley@trinston.co.uk",
+      "Created Date": "2023-02-24"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef191"
+      },
+      "Opportunity Name": "Account 230 Ltd \u2014 Warehousing Deal",
+      "Account Name": "Account 230 Ltd",
+      "Stage": "PROSPECTING",
+      "Amount": "8500",
+      "Close Date": "2025-07-07",
+      "Owner": "r.patel@trinston.co.uk"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef192"
+      },
+      "Opportunity Name": "Kendal Slate \u2014 Q1 Renewal",
+      "Account Name": "Kendal Slate",
+      "Stage": "Lost",
+      "Amount": "75000",
+      "Close Date": "2026-10-03",
+      "Owner": "m.webb.jr@trinston.co.uk",
+      "Created Date": "2023-12-07"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef193"
+      },
+      "Opportunity Name": "Westgate Industrial \u2014 Supply Contract",
+      "Account Name": "Westgate Industrial",
+      "Stage": "Closed Won",
+      "Close Date": "2025-10-24",
+      "Owner": "c.finch@trinston.co.uk",
+      "Created Date": "2025-06-27"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef194"
+      },
+      "Opportunity Name": "Account 174 Ltd \u2014 Warehousing Deal",
+      "Account Name": "Account 174 Ltd",
+      "Stage": "Perception Analysis",
+      "Amount": "180000",
+      "Close Date": "2026-08-23",
+      "Owner": "d.pickering@trinston.co.uk",
+      "Created Date": "2023-06-26"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef195"
+      },
+      "Opportunity Name": "Account 180 Ltd \u2014 Expansion",
+      "Account Name": "Account 180 Ltd",
+      "Stage": "Perception Analysis",
+      "Close Date": "TBC",
+      "Owner": "v.osei@trinston.co.uk",
+      "Created Date": "01/12/2023"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef196"
+      },
+      "Opportunity Name": "Account 214 Ltd \u2014 Q1 Renewal",
+      "Account Name": "Account 214 Ltd",
+      "Stage": "CLOSED WON",
+      "Owner": "n.farquhar@trinston.co.uk",
+      "Created Date": "2022-06-15"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef197"
+      },
+      "Opportunity Name": "Uttoxeter Forgings \u2014 Logistics Contract",
+      "Account Name": "Uttoxeter Forgings",
+      "Stage": "Negotiation/Review",
+      "Amount": "68000",
+      "Close Date": "2026-06-23",
+      "Owner": "n.farquhar@trinston.co.uk",
+      "Created Date": "2025-09-04"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef198"
+      },
+      "Opportunity Name": "Quedgeley Industrial \u2014 Expansion",
+      "Account Name": "Quedgeley Industrial",
+      "Stage": "Perception Analysis",
+      "Close Date": "2025-12-09",
+      "Owner": "a.brooks@trinston.co.uk",
+      "Created Date": "2024-10-27"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef199"
+      },
+      "Opportunity Name": "Account 135 Ltd \u2014 New Business",
+      "Account Name": "Account 135 Ltd",
+      "Stage": "Closed Won",
+      "Close Date": "2025-12-21",
+      "Owner": "n.farquhar@trinston.co.uk",
+      "Created Date": "2025-06-14"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef200"
+      },
+      "Opportunity Name": "Account 221 Ltd \u2014 Q1 Renewal",
+      "Account Name": "Account 221 Ltd",
+      "Stage": "CLOSED WON",
+      "Amount": "12000",
+      "Close Date": "2026-01-22",
+      "Owner": "j.hartley@trinston.co.uk",
+      "Created Date": "2022-03-17"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef201"
+      },
+      "Opportunity Name": "Thornton Timber \u2014 Warehousing Deal",
+      "Account Name": "Thornton Timber",
+      "Stage": "Won",
+      "Amount": "180000",
+      "Close Date": "2026-09-10",
+      "Owner": "a.brooks@trinston.co.uk",
+      "Created Date": "2022-07-29"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef202"
+      },
+      "Opportunity Name": "Account 160 Ltd \u2014 Supply Contract",
+      "Account Name": "Account 160 Ltd",
+      "Stage": "CLOSED WON",
+      "Close Date": "2025-09-30",
+      "Owner": "r.patel@trinston.co.uk",
+      "Created Date": "2024-11-30"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef203"
+      },
+      "Opportunity Name": "Croft Industrial Supplies \u2014 Distribution Agreement",
+      "Account Name": "Croft Industrial Supplies",
+      "Stage": "Quoted",
+      "Amount": "42000",
+      "Close Date": "09/07/2025",
+      "Owner": "d.pickering@trinston.co.uk",
+      "Created Date": "2024-05-31"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef204"
+      },
+      "Opportunity Name": "Account 207 Ltd \u2014 Expansion",
+      "Account Name": "Account 207 Ltd",
+      "Stage": "Stage 1",
+      "Amount": "135000",
+      "Close Date": "2025-12-07",
+      "Owner": "p.mehta@trinston.co.uk",
+      "Created Date": "2022-08-17"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef205"
+      },
+      "Opportunity Name": "Quorn Industrial Ltd \u2014 Expansion",
+      "Account Name": "Quorn Industrial Ltd",
+      "Stage": "Prospecting",
+      "Amount": "320000",
+      "Close Date": "2025-07-17",
+      "Owner": "d.pickering@trinston.co.uk",
+      "Created Date": "2022-10-03"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef206"
+      },
+      "Opportunity Name": "Quedgeley Industrial \u2014 Expansion",
+      "Account Name": "Quedgeley Industrial",
+      "Stage": "Qualification",
+      "Amount": "75000",
+      "Close Date": "2026-05-07",
+      "Owner": "v.osei@trinston.co.uk",
+      "Created Date": "2025-02-25"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef207"
+      },
+      "Opportunity Name": "Upminster Logistics \u2014 Logistics Contract",
+      "Account Name": "Upminster Logistics",
+      "Stage": "Stage 3",
+      "Close Date": "2026-11-08",
+      "Owner": "n.farquhar@trinston.co.uk",
+      "Created Date": "2025-06-01"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef208"
+      },
+      "Opportunity Name": "Account 134 Ltd \u2014 Logistics Contract",
+      "Account Name": "Account 134 Ltd",
+      "Stage": "Qualification",
+      "Close Date": "2026-07-14",
+      "Owner": "d.pickering@trinston.co.uk",
+      "Created Date": "2023-04-17"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef209"
+      },
+      "Opportunity Name": "Account 205 Ltd \u2014 Logistics Contract",
+      "Account Name": "Account 205 Ltd",
+      "Stage": "Won",
+      "Close Date": "2026-11-16",
+      "Owner": "j.hartley@trinston.co.uk",
+      "Created Date": "2025-11-13"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef210"
+      },
+      "Opportunity Name": "Account 163 Ltd \u2014 Annual Framework",
+      "Account Name": "Account 163 Ltd",
+      "Stage": "Stage 4",
+      "Amount": "35000",
+      "Close Date": "2026-01-08",
+      "Owner": "t.morgan@trinston.co.uk",
+      "Created Date": "2023-01-24"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef211"
+      },
+      "Opportunity Name": "Pennine Hardware \u2014 Distribution Agreement",
+      "Account Name": "Pennine Hardware",
+      "Stage": "Stage 4",
+      "Amount": "90000",
+      "Close Date": "2026-05-28",
+      "Owner": "c.finch@trinston.co.uk",
+      "Created Date": "2022-02-28"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef212"
+      },
+      "Opportunity Name": "Account 228 Ltd \u2014 Expansion",
+      "Account Name": "Account 228 Ltd",
+      "Stage": "Closed Won",
+      "Owner": "d.pickering@trinston.co.uk",
+      "Created Date": "2023-05-30"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef213"
+      },
+      "Opportunity Name": "Dereham Steel \u2014 Q1 Renewal",
+      "Account Name": "Dereham Steel",
+      "Stage": "Proposal/Price Quote",
+      "Amount": "320000",
+      "Close Date": "TBC",
+      "Owner": "s.davidson@trinston.co.uk",
+      "Created Date": "2023-03-01"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef214"
+      },
+      "Opportunity Name": "Account 197 Ltd \u2014 Distribution Agreement",
+      "Account Name": "Account 197 Ltd",
+      "Stage": "PROSPECTING",
+      "Amount": "75000",
+      "Close Date": "2026-01-22",
+      "Owner": "a.brooks@trinston.co.uk",
+      "Created Date": "2023-06-06"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef215"
+      },
+      "Opportunity Name": "Account 180 Ltd \u2014 Q1 Renewal",
+      "Account Name": "Account 180 Ltd",
+      "Stage": "Perception Analysis",
+      "Close Date": "2025-12-30",
+      "Owner": "m.webb.jr@trinston.co.uk",
+      "Created Date": "2023-08-29"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef216"
+      },
+      "Opportunity Name": "Account 200 Ltd \u2014 Expansion",
+      "Account Name": "Account 200 Ltd",
+      "Stage": "Prospecting",
+      "Close Date": "15/05/2026",
+      "Owner": "c.finch@trinston.co.uk",
+      "Created Date": "2022-05-02"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef217"
+      },
+      "Opportunity Name": "Account 174 Ltd \u2014 Annual Framework",
+      "Account Name": "Account 174 Ltd",
+      "Stage": "Needs Analysis",
+      "Amount": "12000",
+      "Close Date": "2026-06-27",
+      "Owner": "c.finch@trinston.co.uk",
+      "Created Date": "2025-07-26"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef218"
+      },
+      "Opportunity Name": "Meridian Metals UK \u2014 Logistics Contract",
+      "Account Name": "Meridian Metals UK",
+      "Stage": "Stage 1",
+      "Amount": "5000",
+      "Owner": "k.walsh@trinston.co.uk",
+      "Created Date": "2024-06-06"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef219"
+      },
+      "Opportunity Name": "Frodsham Castings \u2014 New Business",
+      "Account Name": "Frodsham Castings",
+      "Stage": "Lost",
+      "Amount": "12000",
+      "Close Date": "2025-10-29",
+      "Owner": "d.pickering@trinston.co.uk",
+      "Created Date": "2024-06-18"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef220"
+      },
+      "Opportunity Name": "Dereham Steel \u2014 Logistics Contract",
+      "Account Name": "Dereham Steel",
+      "Stage": "Stage 4",
+      "Amount": "35000",
+      "Close Date": "2026-04-12",
+      "Owner": "a.brooks@trinston.co.uk",
+      "Created Date": "2023-05-19"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef221"
+      },
+      "Opportunity Name": "Account 183 Ltd \u2014 New Business",
+      "Account Name": "Account 183 Ltd",
+      "Stage": "proposal",
+      "Amount": "8500",
+      "Close Date": "2026-11-07",
+      "Owner": "j.hartley@trinston.co.uk",
+      "Created Date": "02/03/2025"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef222"
+      },
+      "Opportunity Name": "Immingham Freight \u2014 Annual Framework",
+      "Account Name": "Immingham Freight",
+      "Stage": "Id. Decision Makers",
+      "Amount": "5000",
+      "Close Date": "2026-03-28",
+      "Owner": "p.mehta@trinston.co.uk",
+      "Created Date": "2023-02-01"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef223"
+      },
+      "Opportunity Name": "Account 156 Ltd \u2014 Warehousing Deal",
+      "Account Name": "Account 156 Ltd",
+      "Stage": "qualification",
+      "Amount": "5000",
+      "Close Date": "2026-03-20",
+      "Owner": "r.patel@trinston.co.uk",
+      "Created Date": "2022-06-18"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef224"
+      },
+      "Opportunity Name": "Account 202 Ltd \u2014 Distribution Agreement",
+      "Account Name": "Account 202 Ltd",
+      "Stage": "PROSPECTING",
+      "Amount": "55000",
+      "Close Date": "2026-08-12",
+      "Owner": "p.mehta@trinston.co.uk",
+      "Created Date": "2024-07-06"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef225"
+      },
+      "Opportunity Name": "Evesham Timber \u2014 Expansion",
+      "Account Name": "Evesham Timber",
+      "Stage": "Needs Analysis",
+      "Amount": "320000",
+      "Close Date": "2026-04-04",
+      "Owner": "s.davidson@trinston.co.uk",
+      "Created Date": "2023-03-20"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef226"
+      },
+      "Opportunity Name": "Tilbury Shipping \u2014 Expansion",
+      "Account Name": "Tilbury Shipping",
+      "Stage": "Stage 4",
+      "Close Date": "2026-03-16",
+      "Owner": "k.walsh@trinston.co.uk",
+      "Created Date": "2023-11-08"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef227"
+      },
+      "Opportunity Name": "Abingdon Fasteners \u2014 Logistics Contract",
+      "Account Name": "Abingdon Fasteners",
+      "Stage": "Pipeline",
+      "Amount": "42000",
+      "Close Date": "2026-06-18",
+      "Owner": "d.hollis@trinston.co.uk",
+      "Created Date": "2024-07-18"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef228"
+      },
+      "Opportunity Name": "Account 224 Ltd \u2014 Logistics Contract",
+      "Account Name": "Account 224 Ltd",
+      "Stage": "Closed Lost",
+      "Close Date": "2026-05-11",
+      "Owner": "d.hollis@trinston.co.uk",
+      "Created Date": "08/07/2024"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef229"
+      },
+      "Opportunity Name": "Account 174 Ltd \u2014 Q1 Renewal",
+      "Account Name": "Account 174 Ltd",
+      "Stage": "Stage 2",
+      "Close Date": "2026-09-16",
+      "Owner": "m.webb.jr@trinston.co.uk",
+      "Created Date": "2023-01-11"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef230"
+      },
+      "Opportunity Name": "Oldham Industrial \u2014 Logistics Contract",
+      "Account Name": "Oldham Industrial",
+      "Stage": "New",
+      "Amount": "55000",
+      "Close Date": "2026-05-22",
+      "Owner": "d.hollis@trinston.co.uk"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef231"
+      },
+      "Opportunity Name": "Harwood Distribution \u2014 Distribution Agreement",
+      "Account Name": "Harwood Distribution",
+      "Stage": "Quoted",
+      "Amount": "68000",
+      "Owner": "a.brooks@trinston.co.uk",
+      "Created Date": "2022-06-18"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef232"
+      },
+      "Opportunity Name": "Account 212 Ltd \u2014 Supply Contract",
+      "Account Name": "Account 212 Ltd",
+      "Stage": "Closed Won",
+      "Amount": "320000",
+      "Close Date": "2025-07-06",
+      "Owner": "c.finch@trinston.co.uk",
+      "Created Date": "2022-10-17"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef233"
+      },
+      "Opportunity Name": "Account 186 Ltd \u2014 New Business",
+      "Account Name": "Account 186 Ltd",
+      "Stage": "Negotiation/Review",
+      "Amount": "135000",
+      "Close Date": "2026-06-28",
+      "Owner": "c.finch@trinston.co.uk",
+      "Created Date": "2024-08-02"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef234"
+      },
+      "Opportunity Name": "Thornton Timber Ltd \u2014 Q1 Renewal",
+      "Account Name": "Thornton Timber Ltd",
+      "Stage": "Won",
+      "Amount": "110000",
+      "Owner": "t.morgan@trinston.co.uk",
+      "Created Date": "2025-05-21"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef235"
+      },
+      "Opportunity Name": "Account 136 Ltd \u2014 Distribution Agreement",
+      "Account Name": "Account 136 Ltd",
+      "Stage": "Active",
+      "Amount": "15000",
+      "Close Date": "2026-01-14",
+      "Owner": "p.mehta@trinston.co.uk",
+      "Created Date": "2023-05-13"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef236"
+      },
+      "Opportunity Name": "Account 177 Ltd \u2014 Q1 Renewal",
+      "Account Name": "Account 177 Ltd",
+      "Stage": "Stage 1",
+      "Owner": "k.walsh@trinston.co.uk",
+      "Created Date": "2022-06-19"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef237"
+      },
+      "Opportunity Name": "dereham steel \u2014 Logistics Contract",
+      "Account Name": "dereham steel",
+      "Stage": "In Progress",
+      "Amount": "320000",
+      "Close Date": "2026-08-23",
+      "Owner": "s.davidson@trinston.co.uk",
+      "Created Date": "2023-01-12"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef238"
+      },
+      "Opportunity Name": "Harwood Distribution \u2014 Annual Framework",
+      "Account Name": "Harwood Distribution",
+      "Stage": "Qualification",
+      "Amount": "12000",
+      "Close Date": "2026-06-14",
+      "Owner": "c.finch@trinston.co.uk",
+      "Created Date": "2023-11-08"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef239"
+      },
+      "Opportunity Name": "Oakfield Textiles \u2014 Annual Framework",
+      "Account Name": "Oakfield Textiles",
+      "Stage": "CLOSED WON",
+      "Amount": "180000",
+      "Owner": "a.brooks@trinston.co.uk",
+      "Created Date": "2023-02-14"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef240"
+      },
+      "Opportunity Name": "Montrose Supplies \u2014 Q1 Renewal",
+      "Account Name": "Montrose Supplies",
+      "Stage": "PROSPECTING",
+      "Amount": "75000",
+      "Close Date": "2025-09-09",
+      "Owner": "m.webb.jr@trinston.co.uk",
+      "Created Date": "2025-04-18"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef241"
+      },
+      "Opportunity Name": "Chatteris Rubber \u2014 Warehousing Deal",
+      "Account Name": "Chatteris Rubber",
+      "Stage": "CLOSED WON",
+      "Amount": "180000",
+      "Close Date": "2026-03-23",
+      "Owner": "a.brooks@trinston.co.uk",
+      "Created Date": "2024-10-11"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef242"
+      },
+      "Opportunity Name": "Account 202 Ltd \u2014 Q1 Renewal",
+      "Account Name": "Account 202 Ltd",
+      "Stage": "Stage 1",
+      "Amount": "8500",
+      "Close Date": "01/06/2025",
+      "Owner": "j.hartley@trinston.co.uk",
+      "Created Date": "2022-07-25"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef243"
+      },
+      "Opportunity Name": "Account 118 Ltd \u2014 Expansion",
+      "Account Name": "Account 118 Ltd",
+      "Stage": "Stage 3",
+      "Amount": "35000",
+      "Owner": "v.osei@trinston.co.uk",
+      "Created Date": "2025-08-11"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef244"
+      },
+      "Opportunity Name": "Selby Chemicals \u2014 Warehousing Deal",
+      "Account Name": "Selby Chemicals",
+      "Stage": "Id. Decision Makers",
+      "Amount": "320000",
+      "Close Date": "2025-12-22",
+      "Owner": "p.mehta@trinston.co.uk",
+      "Created Date": "2023-02-23"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef245"
+      },
+      "Opportunity Name": "Account 218 Ltd \u2014 Distribution Agreement",
+      "Account Name": "Account 218 Ltd",
+      "Stage": "PROSPECTING",
+      "Amount": "55000",
+      "Close Date": "2026-05-18",
+      "Owner": "r.patel@trinston.co.uk",
+      "Created Date": "2025-08-04"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef246"
+      },
+      "Opportunity Name": "Newbury Packaging \u2014 Q1 Renewal",
+      "Account Name": "Newbury Packaging",
+      "Stage": "CLOSED WON",
+      "Amount": "35000",
+      "Close Date": "01/06/2025",
+      "Owner": "k.walsh@trinston.co.uk",
+      "Created Date": "2023-08-26"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef247"
+      },
+      "Opportunity Name": "Emsworth Logistics \u2014 Annual Framework",
+      "Account Name": "Emsworth Logistics",
+      "Stage": "Active",
+      "Amount": "68000",
+      "Close Date": "2026-10-10",
+      "Owner": "d.pickering@trinston.co.uk",
+      "Created Date": "2022-05-15"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef248"
+      },
+      "Opportunity Name": "Account 158 Ltd \u2014 Distribution Agreement",
+      "Account Name": "Account 158 Ltd",
+      "Stage": "Quoted",
+      "Amount": "28000",
+      "Close Date": "2026-10-12",
+      "Owner": "m.webb.jr@trinston.co.uk",
+      "Created Date": "2022-11-15"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef249"
+      },
+      "Opportunity Name": "Quinton Plastics \u2014 Warehousing Deal",
+      "Account Name": "Quinton Plastics",
+      "Stage": "Active",
+      "Amount": "8500",
+      "Close Date": "2026-03-10",
+      "Owner": "k.walsh@trinston.co.uk",
+      "Created Date": "2023-07-18"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef250"
+      },
+      "Opportunity Name": "Tilbury Shipping \u2014 Annual Framework",
+      "Account Name": "Tilbury Shipping",
+      "Stage": "Proposal/Price Quote",
+      "Close Date": "2026-01-12",
+      "Owner": "k.walsh@trinston.co.uk",
+      "Created Date": "2022-01-19"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef251"
+      },
+      "Opportunity Name": "Account 169 Ltd \u2014 Annual Framework",
+      "Account Name": "Account 169 Ltd",
+      "Stage": "qualification",
+      "Amount": "110000",
+      "Close Date": "28/10/2025",
+      "Owner": "v.osei@trinston.co.uk",
+      "Created Date": "2025-03-16"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef252"
+      },
+      "Opportunity Name": "Account 129 Ltd \u2014 Expansion",
+      "Account Name": "Account 129 Ltd",
+      "Stage": "Needs Analysis",
+      "Amount": "8500",
+      "Close Date": "2026-09-18",
+      "Owner": "n.farquhar@trinston.co.uk",
+      "Created Date": "2023-07-06"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef253"
+      },
+      "Opportunity Name": "Croft Industrial Supplies \u2014 Annual Framework",
+      "Account Name": "Croft Industrial Supplies",
+      "Stage": "Closed Won",
+      "Amount": "250000",
+      "Close Date": "24/10/2026",
+      "Owner": "k.walsh@trinston.co.uk"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef254"
+      },
+      "Opportunity Name": "alcester precision \u2014 Logistics Contract",
+      "Account Name": "alcester precision",
+      "Stage": "Needs Analysis",
+      "Amount": "15000",
+      "Close Date": "2026-10-11",
+      "Owner": "v.osei@trinston.co.uk",
+      "Created Date": "2024-12-27"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef255"
+      },
+      "Opportunity Name": "Montrose Supplies \u2014 Expansion",
+      "Account Name": "Montrose Supplies",
+      "Stage": "Quoted",
+      "Amount": "5000",
+      "Close Date": "2026-09-05",
+      "Owner": "d.hollis@trinston.co.uk",
+      "Created Date": "2024-06-07"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef256"
+      },
+      "Opportunity Name": "Account 140 Ltd \u2014 Q1 Renewal",
+      "Account Name": "Account 140 Ltd",
+      "Stage": "Perception Analysis",
+      "Amount": "35000",
+      "Owner": "s.davidson@trinston.co.uk",
+      "Created Date": "14/01/2022"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef257"
+      },
+      "Opportunity Name": "Nailsworth Ceramics \u2014 Warehousing Deal",
+      "Account Name": "Nailsworth Ceramics",
+      "Stage": "Lost",
+      "Close Date": "22/12/2025",
+      "Owner": "d.hollis@trinston.co.uk",
+      "Created Date": "2024-11-01"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef258"
+      },
+      "Opportunity Name": "Account 156 Ltd \u2014 Q1 Renewal",
+      "Account Name": "Account 156 Ltd",
+      "Stage": "Closed Won",
+      "Amount": "35000",
+      "Close Date": "2026-10-26",
+      "Owner": "r.patel@trinston.co.uk",
+      "Created Date": "2025-05-28"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef259"
+      },
+      "Opportunity Name": "Meridian Metals UK \u2014 Warehousing Deal",
+      "Account Name": "Meridian Metals UK",
+      "Stage": "Pipeline",
+      "Amount": "75000",
+      "Close Date": "21/11/2025",
+      "Owner": "s.davidson@trinston.co.uk",
+      "Created Date": "2023-03-03"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef260"
+      },
+      "Opportunity Name": "alcester precision \u2014 Logistics Contract",
+      "Account Name": "alcester precision",
+      "Stage": "proposal",
+      "Amount": "250000",
+      "Owner": "j.hartley@trinston.co.uk",
+      "Created Date": "2024-12-22"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef261"
+      },
+      "Opportunity Name": "Account 172 Ltd \u2014 Distribution Agreement",
+      "Account Name": "Account 172 Ltd",
+      "Stage": "Proposal/Price Quote",
+      "Amount": "180000",
+      "Close Date": "2026-02-08",
+      "Owner": "p.mehta@trinston.co.uk",
+      "Created Date": "2024-09-18"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef262"
+      },
+      "Opportunity Name": "Elsworth Manufacturing \u2014 Q1 Renewal",
+      "Account Name": "Elsworth Manufacturing",
+      "Stage": "Id. Decision Makers",
+      "Amount": "250000",
+      "Close Date": "2026-01-17",
+      "Owner": "r.patel@trinston.co.uk",
+      "Created Date": "2025-06-06"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef263"
+      },
+      "Opportunity Name": "Account 143 Ltd \u2014 Distribution Agreement",
+      "Account Name": "Account 143 Ltd",
+      "Stage": "Active",
+      "Amount": "12000",
+      "Close Date": "2025-10-09",
+      "Owner": "k.walsh@trinston.co.uk",
+      "Created Date": "2023-05-26"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef264"
+      },
+      "Opportunity Name": "Account 183 Ltd \u2014 Distribution Agreement",
+      "Account Name": "Account 183 Ltd",
+      "Stage": "Won",
+      "Amount": "42000",
+      "Close Date": "2025-10-18",
+      "Owner": "j.hartley@trinston.co.uk",
+      "Created Date": "2025-02-04"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef265"
+      },
+      "Opportunity Name": "Gatwick Logistics Group \u2014 Distribution Agreement",
+      "Account Name": "Gatwick Logistics Group",
+      "Stage": "New",
+      "Amount": "35000",
+      "Close Date": "01/06/2025",
+      "Owner": "d.hollis@trinston.co.uk",
+      "Created Date": "2022-07-25"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef266"
+      },
+      "Opportunity Name": "Immingham Freight \u2014 Logistics Contract",
+      "Account Name": "Immingham Freight",
+      "Stage": "Pipeline",
+      "Amount": "35000",
+      "Close Date": "2026-05-08",
+      "Owner": "d.hollis@trinston.co.uk",
+      "Created Date": "2025-10-18"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef267"
+      },
+      "Opportunity Name": "Epsom Valves \u2014 Supply Contract",
+      "Account Name": "Epsom Valves",
+      "Stage": "Pipeline",
+      "Amount": "12000",
+      "Close Date": "2026-10-08",
+      "Owner": "j.hartley@trinston.co.uk",
+      "Created Date": "2025-02-28"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef268"
+      },
+      "Opportunity Name": "Goole Container Services \u2014 Supply Contract",
+      "Account Name": "Goole Container Services",
+      "Stage": "Qualification",
+      "Amount": "15000",
+      "Close Date": "2026-04-22",
+      "Owner": "k.walsh@trinston.co.uk",
+      "Created Date": "2023-05-06"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef269"
+      },
+      "Opportunity Name": "Abingdon Fasteners \u2014 Supply Contract",
+      "Account Name": "Abingdon Fasteners",
+      "Stage": "Prospecting",
+      "Amount": "90000",
+      "Close Date": "2026-01-03",
+      "Owner": "t.morgan@trinston.co.uk",
+      "Created Date": "2024-10-09"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef270"
+      },
+      "Opportunity Name": "Jarvis Building Products \u2014 New Business",
+      "Account Name": "Jarvis Building Products",
+      "Stage": "Lost",
+      "Amount": "110000",
+      "Close Date": "2026-02-24",
+      "Owner": "p.mehta@trinston.co.uk",
+      "Created Date": "2024-05-09"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef271"
+      },
+      "Opportunity Name": "Emsworth Logistics \u2014 Q1 Renewal",
+      "Account Name": "Emsworth Logistics",
+      "Stage": "Qualification",
+      "Amount": "15000",
+      "Close Date": "09/04/2026",
+      "Owner": "s.davidson@trinston.co.uk",
+      "Created Date": "2022-05-22"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef272"
+      },
+      "Opportunity Name": "Account 221 Ltd \u2014 Warehousing Deal",
+      "Account Name": "Account 221 Ltd",
+      "Stage": "Lost",
+      "Amount": "42000",
+      "Close Date": "01/06/2025",
+      "Owner": "v.osei@trinston.co.uk",
+      "Created Date": "2025-06-20"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef273"
+      },
+      "Opportunity Name": "Daventry Polymers \u2014 Expansion",
+      "Account Name": "Daventry Polymers",
+      "Stage": "qualification",
+      "Amount": "35000",
+      "Close Date": "2026-04-17",
+      "Owner": "n.farquhar@trinston.co.uk",
+      "Created Date": "2024-10-12"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef274"
+      },
+      "Opportunity Name": "Yoxall Components \u2014 Distribution Agreement",
+      "Account Name": "Yoxall Components",
+      "Stage": "Prospecting",
+      "Amount": "250000",
+      "Close Date": "2026-08-30",
+      "Owner": "s.davidson@trinston.co.uk",
+      "Created Date": "2023-12-05"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef275"
+      },
+      "Opportunity Name": "Account 157 Ltd \u2014 Q1 Renewal",
+      "Account Name": "Account 157 Ltd",
+      "Stage": "Id. Decision Makers",
+      "Amount": "68000",
+      "Close Date": "2026-01-18",
+      "Owner": "d.pickering@trinston.co.uk",
+      "Created Date": "2025-01-08"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef276"
+      },
+      "Opportunity Name": "Account 153 Ltd \u2014 New Business",
+      "Account Name": "Account 153 Ltd",
+      "Stage": "Stage 2",
+      "Amount": "12000",
+      "Close Date": "2026-05-29",
+      "Owner": "t.morgan@trinston.co.uk",
+      "Created Date": "2025-12-07"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef277"
+      },
+      "Opportunity Name": "Account 207 Ltd \u2014 Distribution Agreement",
+      "Account Name": "Account 207 Ltd",
+      "Stage": "In Progress",
+      "Amount": "42000",
+      "Close Date": "2025-11-08",
+      "Owner": "n.farquhar@trinston.co.uk",
+      "Created Date": "2023-11-08"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef278"
+      },
+      "Opportunity Name": "Uxbridge Tools \u2014 Distribution Agreement",
+      "Account Name": "Uxbridge Tools",
+      "Stage": "Won",
+      "Amount": "55000",
+      "Close Date": "2026-01-22",
+      "Owner": "m.webb.jr@trinston.co.uk",
+      "Created Date": "2024-05-23"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef279"
+      },
+      "Opportunity Name": "Croft Industrial Supplies \u2014 Annual Framework",
+      "Account Name": "Croft Industrial Supplies",
+      "Stage": "Pipeline",
+      "Amount": "42000",
+      "Close Date": "2026-03-22",
+      "Owner": "k.walsh@trinston.co.uk",
+      "Created Date": "2025-08-17"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef280"
+      },
+      "Opportunity Name": "Account 172 Ltd \u2014 Expansion",
+      "Account Name": "Account 172 Ltd",
+      "Stage": "Closed Lost",
+      "Owner": "n.farquhar@trinston.co.uk",
+      "Created Date": "2023-02-23"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef281"
+      },
+      "Opportunity Name": "Ely Packaging \u2014 New Business",
+      "Account Name": "Ely Packaging",
+      "Stage": "CLOSED WON",
+      "Amount": "12000",
+      "Owner": "m.webb.jr@trinston.co.uk",
+      "Created Date": "2023-01-30"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef282"
+      },
+      "Opportunity Name": "Oakfield Textiles \u2014 Warehousing Deal",
+      "Account Name": "Oakfield Textiles",
+      "Stage": "Negotiation/Review",
+      "Close Date": "2025-07-11",
+      "Owner": "k.walsh@trinston.co.uk",
+      "Created Date": "2022-12-12"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef283"
+      },
+      "Opportunity Name": "Account 173 Ltd \u2014 Supply Contract",
+      "Account Name": "Account 173 Ltd",
+      "Stage": "Value Proposition",
+      "Amount": "75000",
+      "Close Date": "2026-10-04",
+      "Owner": "r.patel@trinston.co.uk",
+      "Created Date": "2024-05-11"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef284"
+      },
+      "Opportunity Name": "Evesham Timber \u2014 Logistics Contract",
+      "Account Name": "Evesham Timber",
+      "Stage": "Quoted",
+      "Amount": "250000",
+      "Owner": "j.hartley@trinston.co.uk",
+      "Created Date": "05/04/2022"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef285"
+      },
+      "Opportunity Name": "Verwood Metals \u2014 Expansion",
+      "Account Name": "Verwood Metals",
+      "Stage": "qualification",
+      "Amount": "35000",
+      "Close Date": "2026-06-16",
+      "Owner": "d.pickering@trinston.co.uk",
+      "Created Date": "2022-06-07"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef286"
+      },
+      "Opportunity Name": "Account 187 Ltd \u2014 New Business",
+      "Account Name": "Account 187 Ltd",
+      "Stage": "Active",
+      "Amount": "22000",
+      "Close Date": "2026-03-20",
+      "Owner": "j.hartley@trinston.co.uk",
+      "Created Date": "2025-06-22"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef287"
+      },
+      "Opportunity Name": "Account 136 Ltd \u2014 Expansion",
+      "Account Name": "Account 136 Ltd",
+      "Stage": "Quoted",
+      "Close Date": "2026-07-08",
+      "Owner": "t.morgan@trinston.co.uk",
+      "Created Date": "2023-09-03"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef288"
+      },
+      "Opportunity Name": "Ingleby Fasteners \u2014 New Business",
+      "Account Name": "Ingleby Fasteners",
+      "Stage": "PROSPECTING",
+      "Amount": "22000",
+      "Owner": "r.patel@trinston.co.uk",
+      "Created Date": "2024-04-19"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef289"
+      },
+      "Opportunity Name": "Account 145 Ltd \u2014 Expansion",
+      "Account Name": "Account 145 Ltd",
+      "Stage": "In Progress",
+      "Close Date": "2026-09-28",
+      "Owner": "j.hartley@trinston.co.uk",
+      "Created Date": "2025-08-03"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef290"
+      },
+      "Opportunity Name": "Alcester Precision \u2014 Annual Framework",
+      "Account Name": "Alcester Precision",
+      "Stage": "CLOSED WON",
+      "Amount": "250000",
+      "Close Date": "2026-08-21",
+      "Owner": "t.morgan@trinston.co.uk",
+      "Created Date": "2024-10-12"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef291"
+      },
+      "Opportunity Name": "Beccles Manufacturing UK \u2014 Warehousing Deal",
+      "Account Name": "Beccles Manufacturing UK",
+      "Stage": "New",
+      "Amount": "110000",
+      "Close Date": "TBC",
+      "Owner": "d.pickering@trinston.co.uk"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef292"
+      },
+      "Opportunity Name": "Oakfield Textiles \u2014 Warehousing Deal",
+      "Account Name": "Oakfield Textiles",
+      "Stage": "Negotiation/Review",
+      "Amount": "68000",
+      "Close Date": "2026-11-12",
+      "Owner": "k.walsh@trinston.co.uk",
+      "Created Date": "2022-01-23"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef293"
+      },
+      "Opportunity Name": "Account 131 Ltd \u2014 Logistics Contract",
+      "Account Name": "Account 131 Ltd",
+      "Stage": "Proposal/Price Quote",
+      "Amount": "8500",
+      "Close Date": "2026-05-05",
+      "Owner": "k.walsh@trinston.co.uk",
+      "Created Date": "2023-05-12"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef294"
+      },
+      "Opportunity Name": "Thornton Timber \u2014 Annual Framework",
+      "Account Name": "Thornton Timber",
+      "Stage": "Perception Analysis",
+      "Amount": "135000",
+      "Close Date": "2025-08-22",
+      "Owner": "a.brooks@trinston.co.uk",
+      "Created Date": "2024-05-07"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef295"
+      },
+      "Opportunity Name": "Alcester Precision \u2014 Annual Framework",
+      "Account Name": "Alcester Precision",
+      "Stage": "PROSPECTING",
+      "Amount": "42000",
+      "Owner": "f.alrashid@trinston.co.uk",
+      "Created Date": "2023-08-12"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef296"
+      },
+      "Opportunity Name": "Aldridge Steel \u2014 Q1 Renewal",
+      "Account Name": "Aldridge Steel",
+      "Stage": "Prospecting",
+      "Amount": "68000",
+      "Owner": "t.morgan@trinston.co.uk",
+      "Created Date": "2022-05-03"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef297"
+      },
+      "Opportunity Name": "Account 153 Ltd \u2014 New Business",
+      "Account Name": "Account 153 Ltd",
+      "Stage": "Stage 1",
+      "Amount": "68000",
+      "Close Date": "2025-12-02",
+      "Owner": "k.walsh@trinston.co.uk",
+      "Created Date": "2022-10-26"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef298"
+      },
+      "Opportunity Name": "Harwood Distribution \u2014 Warehousing Deal",
+      "Account Name": "Harwood Distribution",
+      "Stage": "CLOSED WON",
+      "Close Date": "2026-04-07",
+      "Owner": "d.hollis@trinston.co.uk",
+      "Created Date": "2022-09-11"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef299"
+      },
+      "Opportunity Name": "Account 114 Ltd \u2014 Logistics Contract",
+      "Account Name": "Account 114 Ltd",
+      "Stage": "Closed Lost",
+      "Amount": "22000",
+      "Close Date": "2026-01-03",
+      "Owner": "c.finch@trinston.co.uk",
+      "Created Date": "2023-11-14"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef300"
+      },
+      "Opportunity Name": "Account 113 Ltd \u2014 Distribution Agreement",
+      "Account Name": "Account 113 Ltd",
+      "Stage": "Active",
+      "Amount": "250000",
+      "Close Date": "2026-07-06",
+      "Owner": "f.alrashid@trinston.co.uk",
+      "Created Date": "2025-07-30"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef301"
+      },
+      "Opportunity Name": "Account 121 Ltd \u2014 Q1 Renewal",
+      "Account Name": "Account 121 Ltd",
+      "Stage": "New",
+      "Amount": "28000",
+      "Close Date": "2026-10-05",
+      "Owner": "a.brooks@trinston.co.uk",
+      "Created Date": "2022-04-02"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef302"
+      },
+      "Opportunity Name": "Pontefract Cables Ltd \u2014 Distribution Agreement",
+      "Account Name": "Pontefract Cables Ltd",
+      "Stage": "PROSPECTING",
+      "Close Date": "2026-05-06",
+      "Owner": "s.davidson@trinston.co.uk",
+      "Created Date": "2022-12-27"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef303"
+      },
+      "Opportunity Name": "Grantham Tools \u2014 Supply Contract",
+      "Account Name": "Grantham Tools",
+      "Stage": "CLOSED WON",
+      "Amount": "12000",
+      "Close Date": "2026-03-22",
+      "Owner": "r.patel@trinston.co.uk",
+      "Created Date": "2025-01-22"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef304"
+      },
+      "Opportunity Name": "Account 164 Ltd \u2014 Expansion",
+      "Account Name": "Account 164 Ltd",
+      "Stage": "Stage 4",
+      "Amount": "42000",
+      "Close Date": "2025-09-03",
+      "Owner": "d.hollis@trinston.co.uk",
+      "Created Date": "2025-09-08"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef305"
+      },
+      "Opportunity Name": "VERWOOD ELECTRONICS \u2014 Warehousing Deal",
+      "Account Name": "VERWOOD ELECTRONICS",
+      "Stage": "In Progress",
+      "Amount": "42000",
+      "Close Date": "2026-11-18",
+      "Owner": "t.morgan@trinston.co.uk",
+      "Created Date": "2023-05-22"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef306"
+      },
+      "Opportunity Name": "Account 129 Ltd \u2014 Expansion",
+      "Account Name": "Account 129 Ltd",
+      "Stage": "Qualification",
+      "Amount": "22000",
+      "Close Date": "11/07/2025",
+      "Owner": "j.hartley@trinston.co.uk",
+      "Created Date": "2025-01-23"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef307"
+      },
+      "Opportunity Name": "Canwick Supplies \u2014 Annual Framework",
+      "Account Name": "Canwick Supplies",
+      "Stage": "qualification",
+      "Amount": "35000",
+      "Close Date": "2025-10-21",
+      "Owner": "s.davidson@trinston.co.uk",
+      "Created Date": "2023-10-15"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef308"
+      },
+      "Opportunity Name": "Nantwich Ceramics \u2014 New Business",
+      "Account Name": "Nantwich Ceramics",
+      "Stage": "Active",
+      "Amount": "12000",
+      "Close Date": "2026-10-16",
+      "Owner": "d.hollis@trinston.co.uk",
+      "Created Date": "2022-08-10"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef309"
+      },
+      "Opportunity Name": "Dunmore Steel Holdings \u2014 Logistics Contract",
+      "Account Name": "Dunmore Steel Holdings",
+      "Stage": "Proposal/Price Quote",
+      "Amount": "110000",
+      "Close Date": "2026-03-31",
+      "Owner": "m.webb.jr@trinston.co.uk",
+      "Created Date": "2025-12-19"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef310"
+      },
+      "Opportunity Name": "Account 181 Ltd \u2014 Annual Framework",
+      "Account Name": "Account 181 Ltd",
+      "Stage": "Negotiation/Review",
+      "Amount": "5000",
+      "Close Date": "TBC",
+      "Owner": "s.davidson@trinston.co.uk",
+      "Created Date": "2025-11-17"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef311"
+      },
+      "Opportunity Name": "Kelso Wholesale Ltd \u2014 Supply Contract",
+      "Account Name": "Kelso Wholesale Ltd",
+      "Stage": "Stage 2",
+      "Amount": "22000",
+      "Close Date": "TBC",
+      "Owner": "j.hartley@trinston.co.uk",
+      "Created Date": "2022-12-26"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef312"
+      },
+      "Opportunity Name": "Account 192 Ltd \u2014 Distribution Agreement",
+      "Account Name": "Account 192 Ltd",
+      "Stage": "Stage 2",
+      "Amount": "135000",
+      "Close Date": "2026-02-11",
+      "Owner": "d.hollis@trinston.co.uk",
+      "Created Date": "2023-04-12"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef313"
+      },
+      "Opportunity Name": "Sandwich Electronics \u2014 Supply Contract",
+      "Account Name": "Sandwich Electronics",
+      "Stage": "Negotiation/Review",
+      "Amount": "8500",
+      "Close Date": "2026-08-08",
+      "Owner": "n.farquhar@trinston.co.uk",
+      "Created Date": "2022-10-21"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef314"
+      },
+      "Opportunity Name": "Elsworth Manufacturing \u2014 Q1 Renewal",
+      "Account Name": "Elsworth Manufacturing",
+      "Stage": "Quoted",
+      "Close Date": "2025-09-27",
+      "Owner": "r.patel@trinston.co.uk",
+      "Created Date": "10/12/2022"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef315"
+      },
+      "Opportunity Name": "Account 126 Ltd \u2014 Supply Contract",
+      "Account Name": "Account 126 Ltd",
+      "Stage": "Negotiation/Review",
+      "Amount": "12000",
+      "Owner": "n.farquhar@trinston.co.uk",
+      "Created Date": "2024-08-25"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef316"
+      },
+      "Opportunity Name": "Pontefract Cables Ltd \u2014 Warehousing Deal",
+      "Account Name": "Pontefract Cables Ltd",
+      "Stage": "Prospecting",
+      "Amount": "110000",
+      "Close Date": "2026-02-03",
+      "Owner": "d.hollis@trinston.co.uk",
+      "Created Date": "2025-10-11"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef317"
+      },
+      "Opportunity Name": "Account 109 Ltd \u2014 Annual Framework",
+      "Account Name": "Account 109 Ltd",
+      "Stage": "In Progress",
+      "Amount": "12000",
+      "Close Date": "2025-09-17",
+      "Owner": "c.finch@trinston.co.uk",
+      "Created Date": "2025-03-18"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef318"
+      },
+      "Opportunity Name": "Renfrew Manufacturing \u2014 New Business",
+      "Account Name": "Renfrew Manufacturing",
+      "Stage": "Proposal/Price Quote",
+      "Amount": "55000",
+      "Close Date": "2026-01-25",
+      "Owner": "p.mehta@trinston.co.uk"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef319"
+      },
+      "Opportunity Name": "VERWOOD ELECTRONICS \u2014 New Business",
+      "Account Name": "VERWOOD ELECTRONICS",
+      "Stage": "New",
+      "Owner": "a.brooks@trinston.co.uk",
+      "Created Date": "2022-03-17"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef320"
+      },
+      "Opportunity Name": "Account 170 Ltd \u2014 Expansion",
+      "Account Name": "Account 170 Ltd",
+      "Stage": "Pipeline",
+      "Amount": "135000",
+      "Close Date": "01/09/2026",
+      "Owner": "n.farquhar@trinston.co.uk",
+      "Created Date": "2023-11-11"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef321"
+      },
+      "Opportunity Name": "Account 131 Ltd \u2014 Logistics Contract",
+      "Account Name": "Account 131 Ltd",
+      "Stage": "Qualification",
+      "Amount": "8500",
+      "Close Date": "2026-05-05",
+      "Owner": "r.patel@trinston.co.uk",
+      "Created Date": "2023-05-12"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef322"
+      },
+      "Opportunity Name": "Account 111 Ltd \u2014 Expansion",
+      "Account Name": "Account 111 Ltd",
+      "Stage": "PROSPECTING",
+      "Amount": "55000",
+      "Close Date": "2026-08-07",
+      "Owner": "v.osei@trinston.co.uk",
+      "Created Date": "2022-12-20"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef323"
+      },
+      "Opportunity Name": "Account 121 Ltd \u2014 Expansion",
+      "Account Name": "Account 121 Ltd",
+      "Stage": "Pipeline",
+      "Amount": "42000",
+      "Owner": "p.mehta@trinston.co.uk",
+      "Created Date": "21/03/2025"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef324"
+      },
+      "Opportunity Name": "Tarporley Metals \u2014 New Business",
+      "Account Name": "Tarporley Metals",
+      "Stage": "Stage 4",
+      "Amount": "15000",
+      "Close Date": "2026-08-09",
+      "Owner": "p.mehta@trinston.co.uk",
+      "Created Date": "2025-06-17"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef325"
+      },
+      "Opportunity Name": "Account 131 Ltd \u2014 Q1 Renewal",
+      "Account Name": "Account 131 Ltd",
+      "Stage": "CLOSED WON",
+      "Amount": "22000",
+      "Close Date": "2025-07-13",
+      "Owner": "j.hartley@trinston.co.uk",
+      "Created Date": "2025-02-25"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef326"
+      },
+      "Opportunity Name": "Elsworth Manufacturing \u2014 Distribution Agreement",
+      "Account Name": "Elsworth Manufacturing",
+      "Stage": "Pipeline",
+      "Close Date": "2026-07-01",
+      "Owner": "d.pickering@trinston.co.uk",
+      "Created Date": "2023-06-13"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef327"
+      },
+      "Opportunity Name": "Thatcham Electronics \u2014 Distribution Agreement",
+      "Account Name": "Thatcham Electronics",
+      "Stage": "Negotiation/Review",
+      "Amount": "22000",
+      "Close Date": "2025-07-12",
+      "Owner": "j.hartley@trinston.co.uk",
+      "Created Date": "2023-03-02"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef328"
+      },
+      "Opportunity Name": "Account 113 Ltd \u2014 Logistics Contract",
+      "Account Name": "Account 113 Ltd",
+      "Stage": "Lost",
+      "Amount": "250000",
+      "Close Date": "11/08/2026",
+      "Owner": "p.mehta@trinston.co.uk",
+      "Created Date": "2023-05-11"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef329"
+      },
+      "Opportunity Name": "Gainsborough Parts \u2014 Distribution Agreement",
+      "Account Name": "Gainsborough Parts",
+      "Stage": "Stage 4",
+      "Amount": "35000",
+      "Owner": "c.finch@trinston.co.uk",
+      "Created Date": "2023-08-31"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef330"
+      },
+      "Opportunity Name": "Tarporley Metals \u2014 Logistics Contract",
+      "Account Name": "Tarporley Metals",
+      "Stage": "Lost",
+      "Amount": "135000",
+      "Close Date": "2025-08-04",
+      "Owner": "a.brooks@trinston.co.uk",
+      "Created Date": "14/09/2022"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef331"
+      },
+      "Opportunity Name": "Account 132 Ltd \u2014 New Business",
+      "Account Name": "Account 132 Ltd",
+      "Stage": "In Progress",
+      "Amount": "320000",
+      "Close Date": "TBC",
+      "Owner": "c.finch@trinston.co.uk",
+      "Created Date": "2024-03-30"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef332"
+      },
+      "Opportunity Name": "Account 227 Ltd \u2014 Supply Contract",
+      "Account Name": "Account 227 Ltd",
+      "Stage": "In Progress",
+      "Close Date": "2026-07-12",
+      "Owner": "d.hollis@trinston.co.uk"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef333"
+      },
+      "Opportunity Name": "Hertford Cables \u2014 Distribution Agreement",
+      "Account Name": "Hertford Cables",
+      "Stage": "Proposal/Price Quote",
+      "Amount": "42000",
+      "Close Date": "2026-08-15",
+      "Owner": "j.hartley@trinston.co.uk"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef334"
+      },
+      "Opportunity Name": "Ilkeston Plastics \u2014 Annual Framework",
+      "Account Name": "Ilkeston Plastics",
+      "Stage": "Pipeline",
+      "Amount": "42000",
+      "Close Date": "2025-07-02",
+      "Owner": "r.patel@trinston.co.uk",
+      "Created Date": "2022-02-27"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef335"
+      },
+      "Opportunity Name": "Account 183 Ltd \u2014 Distribution Agreement",
+      "Account Name": "Account 183 Ltd",
+      "Stage": "CLOSED WON",
+      "Amount": "5000",
+      "Owner": "k.walsh@trinston.co.uk",
+      "Created Date": "2022-03-22"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef336"
+      },
+      "Opportunity Name": "Ashton Materials \u2014 Q1 Renewal",
+      "Account Name": "Ashton Materials",
+      "Stage": "Needs Analysis",
+      "Amount": "135000",
+      "Close Date": "2026-11-20",
+      "Owner": "d.hollis@trinston.co.uk",
+      "Created Date": "2024-10-08"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef337"
+      },
+      "Opportunity Name": "Account 129 Ltd \u2014 Distribution Agreement",
+      "Account Name": "Account 129 Ltd",
+      "Stage": "Pipeline",
+      "Amount": "180000",
+      "Owner": "d.pickering@trinston.co.uk",
+      "Created Date": "2025-10-04"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef338"
+      },
+      "Opportunity Name": "Account 180 Ltd \u2014 Supply Contract",
+      "Account Name": "Account 180 Ltd",
+      "Stage": "Lost",
+      "Amount": "68000",
+      "Close Date": "2026-11-12",
+      "Owner": "d.hollis@trinston.co.uk",
+      "Created Date": "2025-06-12"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef339"
+      },
+      "Opportunity Name": "Goole Container Services \u2014 Logistics Contract",
+      "Account Name": "Goole Container Services",
+      "Stage": "Closed Lost",
+      "Amount": "320000",
+      "Close Date": "2025-12-20",
+      "Owner": "n.farquhar@trinston.co.uk",
+      "Created Date": "2023-07-04"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef340"
+      },
+      "Opportunity Name": "Account 125 Ltd \u2014 Distribution Agreement",
+      "Account Name": "Account 125 Ltd",
+      "Stage": "Closed Lost",
+      "Amount": "28000",
+      "Close Date": "2026-05-25",
+      "Owner": "v.osei@trinston.co.uk",
+      "Created Date": "25/05/2023"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef341"
+      },
+      "Opportunity Name": "Harwood Distribution \u2014 Annual Framework",
+      "Account Name": "Harwood Distribution",
+      "Stage": "Won",
+      "Amount": "68000",
+      "Close Date": "2026-06-22",
+      "Owner": "a.brooks@trinston.co.uk",
+      "Created Date": "2022-08-15"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef342"
+      },
+      "Opportunity Name": "Gainsborough Parts \u2014 Q1 Renewal",
+      "Account Name": "Gainsborough Parts",
+      "Stage": "In Progress",
+      "Amount": "22000",
+      "Close Date": "2026-01-05",
+      "Owner": "s.davidson@trinston.co.uk"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef343"
+      },
+      "Opportunity Name": "Ely Packaging \u2014 Warehousing Deal",
+      "Account Name": "Ely Packaging",
+      "Stage": "Proposal/Price Quote",
+      "Amount": "90000",
+      "Close Date": "2025-09-01",
+      "Owner": "j.hartley@trinston.co.uk",
+      "Created Date": "2022-02-23"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef344"
+      },
+      "Opportunity Name": "Verwood Metals \u2014 Expansion",
+      "Account Name": "Verwood Metals",
+      "Stage": "Stage 2",
+      "Amount": "35000",
+      "Close Date": "2026-06-16",
+      "Owner": "c.finch@trinston.co.uk",
+      "Created Date": "2022-06-07"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef345"
+      },
+      "Opportunity Name": "Account 169 Ltd \u2014 Distribution Agreement",
+      "Account Name": "Account 169 Ltd",
+      "Stage": "New",
+      "Amount": "22000",
+      "Close Date": "01/06/2025",
+      "Owner": "t.morgan@trinston.co.uk",
+      "Created Date": "2023-09-18"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef346"
+      },
+      "Opportunity Name": "Daventry Polymers \u2014 Logistics Contract",
+      "Account Name": "Daventry Polymers",
+      "Stage": "Perception Analysis",
+      "Amount": "250000",
+      "Close Date": "2026-01-12",
+      "Owner": "p.mehta@trinston.co.uk",
+      "Created Date": "2024-04-20"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef347"
+      },
+      "Opportunity Name": "Chatteris Rubber \u2014 Warehousing Deal",
+      "Account Name": "Chatteris Rubber",
+      "Stage": "Active",
+      "Amount": "35000",
+      "Close Date": "2025-11-10",
+      "Owner": "k.walsh@trinston.co.uk",
+      "Created Date": "2022-09-18"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef348"
+      },
+      "Opportunity Name": "Account 148 Ltd \u2014 Annual Framework",
+      "Account Name": "Account 148 Ltd",
+      "Stage": "Pipeline",
+      "Amount": "12000",
+      "Owner": "s.davidson@trinston.co.uk",
+      "Created Date": "2025-11-23"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef349"
+      },
+      "Opportunity Name": "Pontefract Cables Ltd \u2014 Distribution Agreement",
+      "Account Name": "Pontefract Cables Ltd",
+      "Stage": "Stage 4",
+      "Close Date": "2026-05-06",
+      "Owner": "v.osei@trinston.co.uk",
+      "Created Date": "2022-12-27"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef350"
+      },
+      "Opportunity Name": "Dalton Freight \u2014 Supply Contract",
+      "Account Name": "Dalton Freight",
+      "Stage": "Negotiation/Review",
+      "Amount": "68000",
+      "Close Date": "2026-02-11",
+      "Owner": "v.osei@trinston.co.uk",
+      "Created Date": "2022-09-20"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef351"
+      },
+      "Opportunity Name": "Account 191 Ltd \u2014 Distribution Agreement",
+      "Account Name": "Account 191 Ltd",
+      "Stage": "New",
+      "Amount": "15000",
+      "Close Date": "2026-02-10",
+      "Owner": "a.brooks@trinston.co.uk",
+      "Created Date": "2023-07-12"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef352"
+      },
+      "Opportunity Name": "Account 112 Ltd \u2014 Distribution Agreement",
+      "Account Name": "Account 112 Ltd",
+      "Stage": "New",
+      "Amount": "35000",
+      "Close Date": "2026-03-25",
+      "Owner": "k.walsh@trinston.co.uk",
+      "Created Date": "2025-07-23"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef353"
+      },
+      "Opportunity Name": "Account 202 Ltd \u2014 Supply Contract",
+      "Account Name": "Account 202 Ltd",
+      "Stage": "Proposal/Price Quote",
+      "Amount": "5000",
+      "Close Date": "2025-07-21",
+      "Owner": "d.pickering@trinston.co.uk",
+      "Created Date": "2022-03-01"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef354"
+      },
+      "Opportunity Name": "Tarporley Metals \u2014 Logistics Contract",
+      "Account Name": "Tarporley Metals",
+      "Stage": "Won",
+      "Amount": "135000",
+      "Close Date": "2025-08-04",
+      "Owner": "s.davidson@trinston.co.uk",
+      "Created Date": "14/09/2022"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef355"
+      },
+      "Opportunity Name": "Account 165 Ltd \u2014 Distribution Agreement",
+      "Account Name": "Account 165 Ltd",
+      "Stage": "Lost",
+      "Amount": "42000",
+      "Close Date": "2026-09-03",
+      "Owner": "m.webb.jr@trinston.co.uk",
+      "Created Date": "2024-01-02"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef356"
+      },
+      "Opportunity Name": "Account 164 Ltd \u2014 Annual Framework",
+      "Account Name": "Account 164 Ltd",
+      "Stage": "Needs Analysis",
+      "Amount": "22000",
+      "Close Date": "2026-04-21",
+      "Owner": "j.hartley@trinston.co.uk",
+      "Created Date": "2022-08-14"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef357"
+      },
+      "Opportunity Name": "Account 200 Ltd \u2014 Distribution Agreement",
+      "Account Name": "Account 200 Ltd",
+      "Stage": "qualification",
+      "Amount": "110000",
+      "Close Date": "2025-12-17",
+      "Owner": "d.pickering@trinston.co.uk",
+      "Created Date": "2024-01-10"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef358"
+      },
+      "Opportunity Name": "Account 166 Ltd \u2014 Logistics Contract",
+      "Account Name": "Account 166 Ltd",
+      "Stage": "qualification",
+      "Amount": "68000",
+      "Close Date": "TBC",
+      "Owner": "r.patel@trinston.co.uk",
+      "Created Date": "2022-11-01"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef359"
+      },
+      "Opportunity Name": "Account 155 Ltd \u2014 Annual Framework",
+      "Account Name": "Account 155 Ltd",
+      "Stage": "PROSPECTING",
+      "Close Date": "2026-11-19",
+      "Owner": "n.farquhar@trinston.co.uk",
+      "Created Date": "2024-02-04"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef360"
+      },
+      "Opportunity Name": "Ilkeston Plastics \u2014 New Business",
+      "Account Name": "Ilkeston Plastics",
+      "Stage": "Stage 1",
+      "Amount": "28000",
+      "Close Date": "2026-09-11",
+      "Owner": "t.morgan@trinston.co.uk",
+      "Created Date": "2024-05-02"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef361"
+      },
+      "Opportunity Name": "Sandwich Electronics \u2014 Q1 Renewal",
+      "Account Name": "Sandwich Electronics",
+      "Stage": "Id. Decision Makers",
+      "Amount": "110000",
+      "Close Date": "2026-06-15",
+      "Owner": "d.hollis@trinston.co.uk",
+      "Created Date": "2025-12-30"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef362"
+      },
+      "Opportunity Name": "Account 221 Ltd \u2014 Q1 Renewal",
+      "Account Name": "Account 221 Ltd",
+      "Stage": "CLOSED WON",
+      "Close Date": "2025-12-03",
+      "Owner": "f.alrashid@trinston.co.uk",
+      "Created Date": "2025-09-21"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef363"
+      },
+      "Opportunity Name": "Account 134 Ltd \u2014 Expansion",
+      "Account Name": "Account 134 Ltd",
+      "Stage": "Stage 4",
+      "Amount": "42000",
+      "Close Date": "2026-08-20",
+      "Owner": "f.alrashid@trinston.co.uk",
+      "Created Date": "2022-05-06"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef364"
+      },
+      "Opportunity Name": "Account 196 Ltd \u2014 Distribution Agreement",
+      "Account Name": "Account 196 Ltd",
+      "Stage": "Stage 4",
+      "Amount": "320000",
+      "Close Date": "2026-02-02",
+      "Owner": "a.brooks@trinston.co.uk",
+      "Created Date": "2022-02-10"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef365"
+      },
+      "Opportunity Name": "Harwood Distribution \u2014 Logistics Contract",
+      "Account Name": "Harwood Distribution",
+      "Stage": "Negotiation/Review",
+      "Amount": "320000",
+      "Close Date": "2026-09-17",
+      "Owner": "f.alrashid@trinston.co.uk",
+      "Created Date": "2025-10-17"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef366"
+      },
+      "Opportunity Name": "Account 224 Ltd \u2014 Logistics Contract",
+      "Account Name": "Account 224 Ltd",
+      "Stage": "Prospecting",
+      "Close Date": "2026-05-11",
+      "Owner": "j.hartley@trinston.co.uk",
+      "Created Date": "08/07/2024"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef367"
+      },
+      "Opportunity Name": "Emsworth Logistics \u2014 Q1 Renewal",
+      "Account Name": "Emsworth Logistics",
+      "Stage": "PROSPECTING",
+      "Amount": "5000",
+      "Close Date": "2025-11-09",
+      "Owner": "n.farquhar@trinston.co.uk",
+      "Created Date": "08/12/2022"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef368"
+      },
+      "Opportunity Name": "Evesham Timber \u2014 Distribution Agreement",
+      "Account Name": "Evesham Timber",
+      "Stage": "Qualification",
+      "Amount": "35000",
+      "Close Date": "2026-04-09",
+      "Owner": "n.farquhar@trinston.co.uk",
+      "Created Date": "2025-08-20"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef369"
+      },
+      "Opportunity Name": "Quinton Plastics \u2014 Distribution Agreement",
+      "Account Name": "Quinton Plastics",
+      "Stage": "PROSPECTING",
+      "Amount": "22000",
+      "Close Date": "2025-07-22",
+      "Owner": "a.brooks@trinston.co.uk"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef370"
+      },
+      "Opportunity Name": "Tarporley Metals \u2014 Logistics Contract",
+      "Account Name": "Tarporley Metals",
+      "Stage": "qualification",
+      "Amount": "180000",
+      "Close Date": "2026-08-23",
+      "Owner": "m.webb.jr@trinston.co.uk",
+      "Created Date": "2023-01-26"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef371"
+      },
+      "Opportunity Name": "Account 226 Ltd \u2014 Supply Contract",
+      "Account Name": "Account 226 Ltd",
+      "Stage": "Stage 3",
+      "Amount": "250000",
+      "Close Date": "2025-09-30",
+      "Owner": "c.finch@trinston.co.uk",
+      "Created Date": "2025-05-08"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef372"
+      },
+      "Opportunity Name": "Account 148 Ltd \u2014 Distribution Agreement",
+      "Account Name": "Account 148 Ltd",
+      "Stage": "Lost",
+      "Amount": "75000",
+      "Close Date": "2025-12-31",
+      "Owner": "k.walsh@trinston.co.uk",
+      "Created Date": "2024-10-13"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef373"
+      },
+      "Opportunity Name": "Westgate Industrial \u2014 Warehousing Deal",
+      "Account Name": "Westgate Industrial",
+      "Stage": "Qualification",
+      "Amount": "22000",
+      "Close Date": "2026-07-02",
+      "Owner": "k.walsh@trinston.co.uk",
+      "Created Date": "2023-07-25"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef374"
+      },
+      "Opportunity Name": "Verwood Electronics \u2014 Distribution Agreement",
+      "Account Name": "Verwood Electronics",
+      "Stage": "Negotiation/Review",
+      "Close Date": "01/06/2025",
+      "Owner": "d.pickering@trinston.co.uk",
+      "Created Date": "2024-03-31"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef375"
+      },
+      "Opportunity Name": "Account 160 Ltd \u2014 Distribution Agreement",
+      "Account Name": "Account 160 Ltd",
+      "Stage": "Closed Lost",
+      "Close Date": "2026-07-26",
+      "Owner": "k.walsh@trinston.co.uk"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef376"
+      },
+      "Opportunity Name": "Account 197 Ltd \u2014 Logistics Contract",
+      "Account Name": "Account 197 Ltd",
+      "Stage": "proposal",
+      "Amount": "55000",
+      "Close Date": "2026-07-29",
+      "Owner": "f.alrashid@trinston.co.uk",
+      "Created Date": "2025-06-08"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef377"
+      },
+      "Opportunity Name": "Account 223 Ltd \u2014 Expansion",
+      "Account Name": "Account 223 Ltd",
+      "Stage": "Qualification",
+      "Amount": "35000",
+      "Close Date": "01/06/2025",
+      "Owner": "r.patel@trinston.co.uk",
+      "Created Date": "2023-11-02"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef378"
+      },
+      "Opportunity Name": "Thornton Timber \u2014 Supply Contract",
+      "Account Name": "Thornton Timber",
+      "Stage": "Pipeline",
+      "Amount": "180000",
+      "Close Date": "2025-07-07",
+      "Owner": "r.patel@trinston.co.uk",
+      "Created Date": "20/03/2024"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef379"
+      },
+      "Opportunity Name": "Vale Packaging \u2014 Warehousing Deal",
+      "Account Name": "Vale Packaging",
+      "Stage": "Perception Analysis",
+      "Amount": "110000",
+      "Close Date": "2026-08-12",
+      "Owner": "d.hollis@trinston.co.uk",
+      "Created Date": "2022-01-08"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef380"
+      },
+      "Opportunity Name": "Account 181 Ltd \u2014 New Business",
+      "Account Name": "Account 181 Ltd",
+      "Stage": "Stage 1",
+      "Amount": "68000",
+      "Close Date": "2025-09-03",
+      "Owner": "t.morgan@trinston.co.uk"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef381"
+      },
+      "Opportunity Name": "Dereham Steel UK \u2014 Supply Contract",
+      "Account Name": "Dereham Steel UK",
+      "Stage": "Closed Lost",
+      "Amount": "180000",
+      "Close Date": "2025-09-18",
+      "Owner": "n.farquhar@trinston.co.uk",
+      "Created Date": "2025-07-18"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef382"
+      },
+      "Opportunity Name": "Account 212 Ltd \u2014 Distribution Agreement",
+      "Account Name": "Account 212 Ltd",
+      "Stage": "CLOSED WON",
+      "Amount": "8500",
+      "Close Date": "2025-09-18",
+      "Owner": "k.walsh@trinston.co.uk",
+      "Created Date": "2024-08-05"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef383"
+      },
+      "Opportunity Name": "Account 126 Ltd \u2014 Supply Contract",
+      "Account Name": "Account 126 Ltd",
+      "Stage": "Prospecting",
+      "Amount": "180000",
+      "Close Date": "2025-08-28",
+      "Owner": "v.osei@trinston.co.uk",
+      "Created Date": "2024-06-07"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef384"
+      },
+      "Opportunity Name": "Account 164 Ltd \u2014 Expansion",
+      "Account Name": "Account 164 Ltd",
+      "Stage": "Stage 1",
+      "Close Date": "2025-11-10",
+      "Owner": "n.farquhar@trinston.co.uk",
+      "Created Date": "2024-04-05"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef385"
+      },
+      "Opportunity Name": "Account 147 Ltd \u2014 Annual Framework",
+      "Account Name": "Account 147 Ltd",
+      "Stage": "Negotiation/Review",
+      "Amount": "250000",
+      "Close Date": "2026-11-11",
+      "Owner": "a.brooks@trinston.co.uk",
+      "Created Date": "2023-07-05"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef386"
+      },
+      "Opportunity Name": "Macclesfield Engineering \u2014 Expansion",
+      "Account Name": "Macclesfield Engineering",
+      "Stage": "Closed Lost",
+      "Amount": "250000",
+      "Close Date": "2025-11-12",
+      "Owner": "p.mehta@trinston.co.uk",
+      "Created Date": "2024-07-12"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef387"
+      },
+      "Opportunity Name": "Account 133 Ltd \u2014 New Business",
+      "Account Name": "Account 133 Ltd",
+      "Stage": "Won",
+      "Amount": "250000",
+      "Owner": "d.hollis@trinston.co.uk",
+      "Created Date": "2024-12-10"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef388"
+      },
+      "Opportunity Name": "Account 205 Ltd \u2014 Warehousing Deal",
+      "Account Name": "Account 205 Ltd",
+      "Stage": "Value Proposition",
+      "Amount": "8500",
+      "Owner": "r.patel@trinston.co.uk",
+      "Created Date": "2023-05-14"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef389"
+      },
+      "Opportunity Name": "Account 145 Ltd \u2014 Supply Contract",
+      "Account Name": "Account 145 Ltd",
+      "Stage": "Lost",
+      "Amount": "135000",
+      "Close Date": "01/06/2025",
+      "Owner": "v.osei@trinston.co.uk",
+      "Created Date": "2023-11-18"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef390"
+      },
+      "Opportunity Name": "Wantage Logistics \u2014 Annual Framework",
+      "Account Name": "Wantage Logistics",
+      "Stage": "Prospecting",
+      "Amount": "35000",
+      "Owner": "j.hartley@trinston.co.uk",
+      "Created Date": "2025-05-25"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef391"
+      },
+      "Opportunity Name": "Newbury Packaging \u2014 Q1 Renewal",
+      "Account Name": "Newbury Packaging",
+      "Stage": "Lost",
+      "Amount": "12000",
+      "Close Date": "2026-03-21",
+      "Owner": "n.farquhar@trinston.co.uk",
+      "Created Date": "2024-01-25"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef392"
+      },
+      "Opportunity Name": "Account 163 Ltd \u2014 Annual Framework",
+      "Account Name": "Account 163 Ltd",
+      "Stage": "qualification",
+      "Amount": "35000",
+      "Close Date": "2026-01-08",
+      "Owner": "v.osei@trinston.co.uk",
+      "Created Date": "2023-01-24"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef393"
+      },
+      "Opportunity Name": "Account 140 Ltd \u2014 Logistics Contract",
+      "Account Name": "Account 140 Ltd",
+      "Stage": "Closed Won",
+      "Amount": "42000",
+      "Close Date": "2026-08-18",
+      "Owner": "v.osei@trinston.co.uk",
+      "Created Date": "2024-01-24"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef394"
+      },
+      "Opportunity Name": "Yateley Components \u2014 New Business",
+      "Account Name": "Yateley Components",
+      "Stage": "Qualification",
+      "Amount": "68000",
+      "Close Date": "29/11/2025",
+      "Owner": "m.webb.jr@trinston.co.uk",
+      "Created Date": "2022-01-22"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef395"
+      },
+      "Opportunity Name": "Honiton Woodworks \u2014 Supply Contract",
+      "Account Name": "Honiton Woodworks",
+      "Stage": "qualification",
+      "Amount": "90000",
+      "Close Date": "2025-09-03",
+      "Owner": "d.hollis@trinston.co.uk",
+      "Created Date": "2023-05-03"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef396"
+      },
+      "Opportunity Name": "Zenith Distribution \u2014 Distribution Agreement",
+      "Account Name": "Zenith Distribution",
+      "Stage": "Qualification",
+      "Close Date": "2026-08-26",
+      "Owner": "p.mehta@trinston.co.uk"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef397"
+      },
+      "Opportunity Name": "Thornton Timber \u2014 Distribution Agreement",
+      "Account Name": "Thornton Timber",
+      "Stage": "Stage 3",
+      "Amount": "180000",
+      "Close Date": "2026-11-17",
+      "Owner": "f.alrashid@trinston.co.uk",
+      "Created Date": "2024-08-19"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef398"
+      },
+      "Opportunity Name": "Account 208 Ltd \u2014 Annual Framework",
+      "Account Name": "Account 208 Ltd",
+      "Stage": "proposal",
+      "Amount": "135000",
+      "Close Date": "2026-06-22",
+      "Owner": "s.davidson@trinston.co.uk",
+      "Created Date": "2025-09-16"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef399"
+      },
+      "Opportunity Name": "Account 149 Ltd \u2014 Logistics Contract",
+      "Account Name": "Account 149 Ltd",
+      "Stage": "Prospecting",
+      "Amount": "5000",
+      "Close Date": "2025-12-13",
+      "Owner": "t.morgan@trinston.co.uk",
+      "Created Date": "2022-06-10"
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OpportunityRef400"
+      },
+      "Opportunity Name": "Zennor Mining \u2014 Q1 Renewal",
+      "Account Name": "Zennor Mining",
+      "Stage": "Active",
+      "Amount": "5000",
+      "Close Date": "2025-08-22",
+      "Owner": "n.farquhar@trinston.co.uk",
+      "Created Date": "2024-04-05"
+    }
+  ]
+}
