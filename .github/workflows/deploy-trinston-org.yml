@@ -23,27 +23,10 @@ jobs:
         run: npm install -g @salesforce/cli@latest
 
       - name: Authenticate to Salesforce
-        id: auth
         env:
           SF_USERNAME: ${{ secrets.SF_USERNAME }}
           SF_PASSWORD_WITH_TOKEN: ${{ secrets.SF_PASSWORD_WITH_TOKEN }}
-        run: python3 scripts/sf_auth.py || true
-
-      - name: Commit auth result to repo
-        run: |
-          git config user.email "actions@github.com"
-          git config user.name "GitHub Actions"
-          if [ -f auth_result.txt ]; then
-            git add auth_result.txt
-            git commit -m "Auth result [skip ci]"
-            git push
-            echo "Result committed"
-            cat auth_result.txt
-          fi
-          if ! grep -q "SUCCESS:" auth_result.txt 2>/dev/null; then
-            echo "Auth failed - see auth_result.txt"
-            exit 1
-          fi
+        run: python3 scripts/sf_auth.py
 
       - name: Login SF CLI
         run: |
