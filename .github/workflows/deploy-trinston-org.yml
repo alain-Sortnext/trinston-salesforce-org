@@ -1,0 +1,133 @@
+name: Deploy Trinston Salesforce Org
+
+on:
+  workflow_dispatch:
+    inputs:
+      deploy_data:
+        description: 'Load data records after metadata deploy?'
+        required: true
+        default: 'true'
+        type: choice
+        options: ['true', 'false']
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Salesforce CLI
+        run: |
+          npm install -g @salesforce/cli@latest
+          sf --version
+
+      - name: Authenticate to Salesforce org
+        run: |
+          echo "${{ secrets.SF_SFDX_AUTH_URL }}" > ./auth-url.txt
+          sf org login sfdx-url --sfdx-url-file ./auth-url.txt --alias trinston-dev --set-default
+          rm ./auth-url.txt
+          sf org display --target-org trinston-dev
+
+      - name: Validate metadata before deploy
+        run: |
+          sf project deploy validate \
+            --source-dir force-app \
+            --target-org trinston-dev \
+            --wait 20
+        continue-on-error: true
+
+      - name: Deploy metadata to org
+        run: |
+          sf project deploy start \
+            --source-dir force-app \
+            --target-org trinston-dev \
+            --wait 30 \
+            --ignore-conflicts
+          echo "✅ Metadata deployed successfully"
+
+      - name: Verify custom fields exist
+        run: |
+          sf data query \
+            --query "SELECT QualifiedApiName, Label FROM FieldDefinition WHERE EntityDefinition.QualifiedApiName IN ('Account','Opportunity','Case','Contact','Lead','Campaign') AND QualifiedApiName LIKE '%__c%' ORDER BY EntityDefinition.QualifiedApiName, QualifiedApiName" \
+            --target-org trinston-dev \
+            --result-format human
+
+      - name: Verify role hierarchy
+        run: |
+          sf data query \
+            --query "SELECT Name, ParentRoleId FROM UserRole ORDER BY Name" \
+            --target-org trinston-dev \
+            --result-format human
+
+      - name: Load Accounts (250 records)
+        if: ${{ github.event.inputs.deploy_data == 'true' }}
+        run: |
+          sf data import tree \
+            --files data/Accounts.json \
+            --target-org trinston-dev
+          echo "✅ Accounts loaded"
+
+      - name: Load Contacts (1000 records)
+        if: ${{ github.event.inputs.deploy_data == 'true' }}
+        run: |
+          sf data import tree \
+            --files data/Contacts.json \
+            --target-org trinston-dev
+          echo "✅ Contacts loaded"
+
+      - name: Load Leads (500 records)
+        if: ${{ github.event.inputs.deploy_data == 'true' }}
+        run: |
+          sf data import tree \
+            --files data/Leads.json \
+            --target-org trinston-dev
+          echo "✅ Leads loaded"
+
+      - name: Load Campaigns (100 records)
+        if: ${{ github.event.inputs.deploy_data == 'true' }}
+        run: |
+          sf data import tree \
+            --files data/Campaigns.json \
+            --target-org trinston-dev
+          echo "✅ Campaigns loaded"
+
+      - name: Load Opportunities (400 records)
+        if: ${{ github.event.inputs.deploy_data == 'true' }}
+        run: |
+          sf data import tree \
+            --files data/Opportunities.json \
+            --target-org trinston-dev
+          echo "✅ Opportunities loaded"
+
+      - name: Load Cases (600 records)
+        if: ${{ github.event.inputs.deploy_data == 'true' }}
+        run: |
+          sf data import tree \
+            --files data/Cases.json \
+            --target-org trinston-dev
+          echo "✅ Cases loaded"
+
+      - name: Create candidate user
+        run: |
+          sf data create record \
+            --sobject User \
+            --values "FirstName='Candidate' LastName='User' Email='candidate@trinston-sim.co.uk' Username='candidate.user@trinston-simulation.co.uk' Alias='cand' TimeZoneSidKey='Europe/London' LocaleSidKey='en_GB' EmailEncodingKey='UTF-8' LanguageLocaleKey='en_US' ProfileId='$(sf data query --query "SELECT Id FROM Profile WHERE Name='"'"'Trinston Candidate'"'"'" --target-org trinston-dev --result-format csv | tail -1)'" \
+            --target-org trinston-dev || echo "User may already exist"
+
+      - name: Final verification — record counts
+        run: |
+          echo "=== RECORD COUNTS ==="
+          for obj in Account Contact Lead Campaign Opportunity Case; do
+            count=$(sf data query --query "SELECT COUNT() FROM $obj" --target-org trinston-dev --result-format csv | tail -1)
+            echo "$obj: $count records"
+          done
+
+      - name: Print org URL for candidate access
+        run: |
+          echo "=== ORG ACCESS DETAILS ==="
+          sf org display --target-org trinston-dev
+          echo ""
+          echo "Candidate login URL: ${{ secrets.SF_INSTANCE_URL }}/login?un=candidate.user@trinston-simulation.co.uk"
